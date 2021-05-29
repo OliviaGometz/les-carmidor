@@ -1,0 +1,82 @@
+// Main colors
+
+$primary: #6189bf;
+$secondary: #a77ec3;
+$tertiary: #cd838a;
+
+$primaryLight: #95b4df;
+$secondaryLight: #c3a5d7;
+$tertiaryLight: #e2b0b5;
+
+$primaryUltraLight: #d1dff2;
+$secondaryUltraLight: #e4dde8;
+$tertiaryUltraLight: #f0dadc;
+
+$primaryDark: #7085a2;
+$secondaryDark: #7a608b;
+$tertiaryDark: #86646d;
+
+$primaryUltraDark: #263e60;
+$secondaryUltraDark: #645968;
+$tertiaryUltraDark: #412129;
+
+$colors: (
+    primary: (
+        main: $primary,
+        light: $primaryLight,
+        ultraLight: $primaryUltraLight,
+        dark: $primaryDark,
+        ultraDark: $primaryUltraDark
+    ),
+    secondary: (
+        main: $secondary,
+        light: $secondaryLight,
+        ultraLight: $secondaryUltraLight,
+        dark: $secondaryDark,
+        ultraDark: $secondaryUltraDark
+    ),
+    tertiary: (
+        main: $tertiary,
+        light: $tertiaryLight,
+        ultraLight: $tertiaryUltraLight,
+        dark: $tertiaryDark,
+        ultraDark: $tertiaryUltraDark
+    )
+);
+
+$gradients: (
+    gradient1: (
+        base: map-get($colors, primary),
+        shade: map-get($colors, secondary)
+    ),
+    gradient2: (
+        base: map-get($colors, secondary),
+        shade: map-get($colors, tertiary)
+    )
+);
+
+$pallet: map-merge($colors, $gradients);
+
+// Status
+
+$status: (
+    success: #4b9724,
+    warning: #df7f09,
+    danger: #de4444
+);
+
+$bgTransparent: 0.9;
+
+// White and black
+
+$white00: #ffffff;
+$white10: #f9f9f9;
+$white20: #ececec;
+$grey00: #dedede;
+$grey10: #cdcdcd;
+$grey20: #b1b1b1;
+$grey30: #a0a0a0;
+$grey40: #888888;
+$grey50: #4e4e4e;
+$grey60: #292929;
+$black00: #000000;

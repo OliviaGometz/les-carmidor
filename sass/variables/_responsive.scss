@@ -1,0 +1,33 @@
+$widthSM: 550px;
+$widthMD: 960px;
+$widthLG: 1200px;
+$widthXL: 1350px;
+
+$minSM: "(min-width: #{$widthSM})";
+$minMD: "(min-width: #{$widthMD})";
+$minLG: "(min-width: #{$widthLG})";
+$minXL: "(min-width: #{$widthXL})";
+$maxSM: "(max-width: #{$widthSM - 1})";
+$maxMD: "(max-width: #{$widthMD - 1})";
+$maxLG: "(max-width: #{$widthLG - 1})";
+$maxXL: "(max-width: #{$widthXL - 1})";
+
+$menuMobile: $maxLG;
+$menuDesktop: $minLG;
+
+$responsiveSpaces: (
+    $minSM: $spaceMD,
+    $minMD: $spaceLG,
+    $minLG: $spaceXL,
+    $minXL: $spaceXXL
+);
+
+@mixin responsiveProp($prop, $coeff: 1) {
+    @each $mediaQuery, $space in $responsiveSpaces {
+        #{$prop}: $spaceSM * $coeff;
+
+        @media #{$mediaQuery} {
+            #{$prop}: $space * $coeff;
+        }
+    }
+}

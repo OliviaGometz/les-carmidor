@@ -1,0 +1,52 @@
+body,
+main,
+header,
+footer,
+section,
+article,
+aside,
+div,
+form,
+small,
+svg,
+::before,
+::after {
+    box-sizing: border-box;
+    display: block;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $fontDefault, serif;
+    font-size: $fontSizeBase;
+    line-height: $lineHeightMD;
+    background-color: $white20;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $fontMain, serif;
+    font-weight: $normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+button {
+    outline: none;
+}
+
+p {
+    margin: 0;
+}

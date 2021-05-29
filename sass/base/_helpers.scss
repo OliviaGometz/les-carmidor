@@ -1,0 +1,7 @@
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@include spacesClasses(padding);
+@include spacesClasses(margin);
