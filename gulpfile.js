@@ -1,14 +1,20 @@
-var gulp = require("gulp"),
+const gulp = require("gulp"),
   sass = require("gulp-sass"),
   postcss = require("gulp-postcss"),
   autoprefixer = require("autoprefixer"),
   cssnano = require("cssnano"),
-  sourcemaps = require("gulp-sourcemaps");
+  sourcemaps = require("gulp-sourcemaps"),
+  nunjucksRender = require("gulp-nunjucks-render"),
+  data = require("gulp-data");
 
-var paths = {
+const paths = {
   styles: {
     src: "sass/**/*.scss",
     dest: "css",
+  },
+  njk: {
+    src: "app/**/**/*.njk",
+    dest: ".",
   },
 };
 
@@ -23,9 +29,25 @@ function style() {
     .pipe(gulp.dest(paths.styles.dest));
 }
 
-function watch() {
-  gulp.watch(paths.styles.src, style);
+function html() {
+  return gulp
+    .src("app/pages/**/*.njk")
+    .pipe(
+      data(function () {
+        return require("./app/content/characters.json");
+      })
+    )
+    .pipe(
+      nunjucksRender({
+        path: ["app/templates"],
+      })
+    )
+    .pipe(gulp.dest(paths.njk.dest));
 }
 
-exports.style = style;
+function watch() {
+  gulp.watch(paths.styles.src, style);
+  gulp.watch(paths.njk.src, html);
+}
+
 exports.watch = watch;
