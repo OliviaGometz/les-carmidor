@@ -13,7 +13,7 @@ const paths = {
     dest: "css",
   },
   njk: {
-    src: "app/**/**/*.njk",
+    src: "app/**/**/*",
     dest: ".",
   },
 };
