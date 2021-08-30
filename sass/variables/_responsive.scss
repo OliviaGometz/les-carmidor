@@ -7,13 +7,13 @@ $minSM: "(min-width: #{$widthSM})";
 $minMD: "(min-width: #{$widthMD})";
 $minLG: "(min-width: #{$widthLG})";
 $minXL: "(min-width: #{$widthXL})";
-$maxSM: "(max-width: #{$widthSM - 1})";
-$maxMD: "(max-width: #{$widthMD - 1})";
-$maxLG: "(max-width: #{$widthLG - 1})";
-$maxXL: "(max-width: #{$widthXL - 1})";
+$maxSM: "not all and #{$minSM}";
+$maxMD: "not all and #{$minMD}";
+$maxLG: "not all and #{$minLG}";
+$maxXL: "not all and #{$minXL}";
 
-$menuMobile: $maxLG;
-$menuDesktop: $minLG;
+$menuMobile: $maxMD;
+$menuDesktop: $minMD;
 
 $responsiveSpaces: (
     $minSM: $spaceMD,

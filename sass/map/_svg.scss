@@ -1,0 +1,19 @@
+.map {
+    svg {
+        * {
+            transition: opacity $durationSM, stroke-opacity $durationSM;
+        }
+
+        text {
+            path {
+                fill: none;
+            }
+        }
+    }
+
+    @import "svg/decoration";
+    @import "svg/lands";
+    @import "svg/montains";
+    @import "svg/water";
+    @import "svg/zoom";
+}

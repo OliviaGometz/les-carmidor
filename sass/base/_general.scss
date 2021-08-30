@@ -1,5 +1,6 @@
 body,
 main,
+nav,
 header,
 footer,
 section,
@@ -15,16 +16,11 @@ svg,
     display: block;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
+    background-color: $white00;
     font-family: $fontDefault, serif;
     font-size: $fontSizeBase;
     line-height: $lineHeightMD;
-    background-color: $white20;
-    overflow-x: hidden;
 }
 
 h1,
@@ -34,17 +30,18 @@ h3 {
     font-weight: $normal;
 }
 
+a,
+button {
+    box-sizing: border-box;
+    outline: none;
+}
+
 a {
     text-decoration: none;
 }
 
 button {
     cursor: pointer;
-}
-
-a,
-button {
-    outline: none;
 }
 
 p {

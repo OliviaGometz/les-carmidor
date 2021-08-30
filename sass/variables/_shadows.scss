@@ -6,8 +6,6 @@ $blackShadowMD: 0 0 $shadowMD transparentize($black00, 0.8);
 
 $primaryShadowSM: 0 -#{$shadowSM} $shadowMD transparentize($primary, 0.92);
 $secondaryShadowSM: -#{$shadowSM} $shadowSM $shadowMD transparentize($secondary, 0.92);
-$tertiaryShadowSM: $shadowSM $shadowSM $shadowMD transparentize($tertiary, 0.92);
 
 $primaryShadowMD: 0 -#{$shadowSM} $shadowMD transparentize($primary, 0.8);
 $secondaryShadowMD: -#{$shadowSM} $shadowSM $shadowMD transparentize($secondary, 0.8);
-$tertiaryShadowMD: $shadowSM $shadowSM $shadowMD transparentize($tertiary, 0.8);

@@ -3,8 +3,8 @@
 @import "variables/colors";
 @import "variables/fonts";
 @import "variables/shadows";
-@import "variables/sizes";
 @import "variables/spaces";
+@import "variables/sizes";
 @import "variables/z-index";
 @import "variables/responsive";
 
@@ -12,3 +12,18 @@
 @import "base/normalize";
 @import "base/general";
 @import "base/helpers";
+
+// Structure
+@import "structure/nav";
+@import "structure/main";
+
+// Components
+@import "components/logo";
+@import "components/buttons";
+@import "components/links";
+@import "components/range";
+
+// Carte
+@import "map/container";
+@import "map/svg";
+@import "map/controls";

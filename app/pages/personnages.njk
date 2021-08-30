@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor - Les personnages</title>
+{% endblock %}
+
+{% block content %}
+    {% import 'macros/nav.njk' as nav %}
+    {{nav.active('characters')}}
+
+    <main>
+        <h1>Les personnages</h1>
+
+        <div class="characters">
+            {% for character in characters %}
+                <p>
+                    {{character.surname}}
+                    <strong>{{character.name}}</strong> (famille : {{character.family}})
+                    {% if (character.name != character.family) %}- {% if (character.gender == 'f') %}Bâtarde{% else %}Bâtard{% endif %}{% endif %}
+                </p>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}

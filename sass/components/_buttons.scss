@@ -1,0 +1,39 @@
+.button {
+    position: relative;
+    z-index: $z-index-content;
+    height: $buttonHeight;
+    padding: 0 ($spaceSM - 2) 0 $spaceSM;
+    display: flex;
+    align-items: center;
+    font-family: $fontMain, serif;
+    font-size: $fontSizeSM;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: $spacingLG;
+    border: $line solid $primary;
+    color: $primary;
+    transition: color $durationSM;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: $z-index-bg-link;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: $primary;
+        transition: all $durationSM;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        color: $white00;
+
+        &::before {
+            height: 100%;
+        }
+    }
+}
