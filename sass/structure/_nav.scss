@@ -1,0 +1,22 @@
+nav {
+    height: $navHeight;
+    background-color: $white20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spaceXS;
+    padding-right: $spaceMD;
+
+    ul {
+        list-style-type: none;
+        margin: 0 $spaceSM;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 $spaceMD;
+        }
+    }
+}

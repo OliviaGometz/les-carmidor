@@ -1,9 +1,15 @@
-$line: 0.1em;
+$line: 1px;
 
-$radioSize: 21px;
-$radioCircleSize: $radioSize - 10px;
+$buttonHeight: 36px;
+$navHeight: $buttonHeight + ($spaceXS * 2);
 
-$widthCard: 300px;
-$widthBlock: 620px;
-$widthContent: 780px;
-$widthContainer: 1100px;
+$rangeDisc: 15px;
+$rangeWidth: 150px;
+
+// $radioSize: 21px;
+// $radioCircleSize: $radioSize - ($line * 6);
+
+// $widthCard: 300px;
+// $widthBlock: 620px;
+// $widthContent: 780px;
+// $widthContainer: 1100px;

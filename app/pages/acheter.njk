@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor - Acheter le roman</title>
+{% endblock %}
+
+{% block content %}
+    {% import 'macros/nav.njk' as nav %}
+    {{nav.active('buy')}}
+
+    <main>
+        <h1>Acheter le roman</h1>
+
+        <p>Description</p>
+    </main>
+{% endblock %}

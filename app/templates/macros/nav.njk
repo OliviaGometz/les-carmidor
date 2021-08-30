@@ -1,0 +1,37 @@
+{% macro active(activePage='') %}
+<nav>
+    <a href="/" class="logo{%if activePage == 'home' %} animated{% endif %}">
+        {% include 'svg/cormoran.svg' %}
+    </a>
+
+    <ul>
+        <li>
+            <a href="/" class="link{%if activePage == 'home' %} active{% endif %}">
+                Découvrir
+            </a>
+        </li>
+        
+        <li>
+            <a href="/monde" class="link{%if activePage == 'world' %} active{% endif %}">
+                Le monde
+            </a>
+        </li>
+        
+        <li>
+            <a href="/personnages" class="link{%if activePage == 'characters' %} active{% endif %}">
+                Les personnages
+            </a>
+        </li>
+        
+        <li>
+            <a href="/autrice" class="link{%if activePage == 'author' %} active{% endif %}">
+                L'autrice
+            </a>
+        </li>
+    </ul>
+
+    <a href="/acheter" class="button{%if activePage == 'buy' %} active{% endif %}">
+        Acheter
+    </a>
+</nav>
+{% endmacro %}

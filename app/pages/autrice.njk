@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor - L'autrice</title>
+{% endblock %}
+
+{% block content %}
+    {% import 'macros/nav.njk' as nav %}
+    {{nav.active('author')}}
+
+    <main>
+        <h1>L'autrice</h1>
+
+        <p>Description</p>
+    </main>
+{% endblock %}

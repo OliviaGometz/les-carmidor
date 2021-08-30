@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Les Carmidor</title>
-
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        
-    
-    
-<nav>
-    <a href="/" class="logo animated">
-        <svg viewBox="0 0 757 340">
+<svg viewBox="0 0 757 340">
 <path d="M754.5,150.2c-20.8-15.8-41.5-28.9-57.4-38.2c21.1,11.5,41.5,23,45.2,24.2c7.5,2.5,11.1-1.3,9.8-3.3
     c-44.8-27.6-84.8-43.9-88.9-45.6c-29.1-13.2-72.1-32.5-103-32.5c-29.2,0-109.4,74.6-109.4,74.6c-11.3,9.7-30.7,2.4-43.2-2.1
     c-0.7-0.2-1.3-0.3-2-0.3c0-30.1-10.1-34.5-24.7-49.5c-6.5-6.6,2.1-21.9,6.8-27.6c4.8-5.9,10.4-10.8,21-19.4l0.1-0.1
@@ -69,45 +52,3 @@
     c9.1,5.3,16.3,3,15.4,0.8c-17.9-16.2-38.6-31.6-54.9-43.1c21.3,14.2,43.7,29.7,47.7,31.4C748,153.8,755.7,152.3,754.5,150.2z
     M406.5,15.8c-3.3,4-7.2,2.2-9.4-0.6C402.5,10.4,406.5,15.8,406.5,15.8z" />
 </svg>
-    </a>
-
-    <ul>
-        <li>
-            <a href="/" class="link active">
-                Découvrir
-            </a>
-        </li>
-        
-        <li>
-            <a href="/monde" class="link">
-                Le monde
-            </a>
-        </li>
-        
-        <li>
-            <a href="/personnages" class="link">
-                Les personnages
-            </a>
-        </li>
-        
-        <li>
-            <a href="/autrice" class="link">
-                L'autrice
-            </a>
-        </li>
-    </ul>
-
-    <a href="/acheter" class="button">
-        Acheter
-    </a>
-</nav>
-
-
-    <main>
-        <h1>Coming soon</h1>
-
-        <p>Les Carmidor sont en train de <strong>dev leur site</strong> (oui oui ils sont dev aussi des fois).</p>
-    </main>
-
-    </body>
-</html>

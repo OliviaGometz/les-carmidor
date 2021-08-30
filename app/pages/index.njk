@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor</title>
+{% endblock %}
+
+{% block content %}
+    {% import 'macros/nav.njk' as nav %}
+    {{nav.active('home')}}
+
+    <main>
+        <h1>Coming soon</h1>
+
+        <p>Les Carmidor sont en train de <strong>dev leur site</strong> (oui oui ils sont dev aussi des fois).</p>
+    </main>
+{% endblock %}

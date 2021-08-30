@@ -1,0 +1,10 @@
+.map {
+    background-color: $primaryDark;
+    background-image: url('../img/map-bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    font-family: $fontMain, serif;
+    scroll-behavior: initial;
+    user-select: none;
+    cursor: grab;
+}
