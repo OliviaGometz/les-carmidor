@@ -8,8 +8,16 @@ $gradient: 10vw;
     align-items: center;
     background-color: transparentize($white00, 0.1);
     padding: $spaceXXS;
-    padding-right: $gradient;
-    mask-image: linear-gradient(to left, transparent, black #{$gradient});
+
+    @media #{$menuMobile} {
+        width: 100%;
+    }
+
+    @media #{$menuDesktop} {
+        max-width: 100%;
+        padding-right: $gradient;
+        mask-image: linear-gradient(to left, transparent, black #{$gradient});
+    }
 
     &::before {
         content: '';
@@ -25,6 +33,10 @@ $gradient: 10vw;
         margin: 0;
         font-size: $titleSizeMD;
         line-height: normal;
+
+        @media #{$menuMobile} {
+            display: none; // temp
+        }
     }
 }
 

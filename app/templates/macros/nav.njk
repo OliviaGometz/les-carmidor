@@ -1,10 +1,16 @@
 {% macro active(activePage='') %}
 <nav>
+    <button type="button" class="hamburger" data-js="click" data-click="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <a href="/" class="logo{%if activePage == 'home' %} animated{% endif %}">
         {% include 'svg/cormoran.svg' %}
     </a>
 
-    <ul>
+    <ul data-id="menu">
         <li>
             <a href="/" class="link{%if activePage == 'home' %} active{% endif %}">
                 Découvrir
@@ -30,7 +36,8 @@
         </li>
     </ul>
 
-    <a href="/acheter" class="button{%if activePage == 'buy' %} active{% endif %}">
+    <a href="/acheter" class="button icon-mobile{%if activePage == 'buy' %} active{% endif %}">
+        {% include 'svg/icons/cart.svg' %}
         Acheter
     </a>
 </nav>
