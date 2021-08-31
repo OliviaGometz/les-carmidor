@@ -1,6 +1,5 @@
 main {
-    height: calc(100vh - #{$navHeight});
-    overflow-x: hidden;
+    padding-top: $navHeight;
     scroll-behavior: smooth;
     opacity: 0;
 

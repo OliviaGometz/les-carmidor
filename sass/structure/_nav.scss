@@ -1,10 +1,21 @@
 nav {
+    position: fixed;
+    z-index: $z-index-topbar;
+    width: 100%;
+    top: 0;
+    left: 0;
     height: $navHeight;
     background-color: $white20;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: $spaceXS;
+
+    &.not-fixed-on-desktop {
+        @media #{$minMD} {
+            position: relative;
+        }
+    }
 
     @media #{$menuDesktop} {
         padding-right: $spaceMD;

@@ -1,5 +1,5 @@
 {% macro active(activePage='') %}
-<nav>
+<nav class="{%if activePage == 'world' %}not-fixed-on-desktop{% endif %}">
     <button type="button" class="hamburger" data-js="click" data-click="menu">
         <span></span>
         <span></span>
