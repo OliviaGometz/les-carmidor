@@ -1,9 +1,13 @@
+const body = document.getElementsByTagName('body')[0];
 const container = document.getElementsByClassName('map')[0];
 const map = container.getElementsByTagName('svg')[0];
-const zoomRange = document.getElementById('map-zoom');
-const scale = document.getElementById('echelle');
+const scaleElement = {};
 
-const zoomData = 'data-zoom';
+['a', 'b', 'c'].forEach(letter => {
+    scaleElement[letter] = document.getElementsByClassName('level-' + letter)[0];
+});
+
+const grabbingCss = 'js-grabbing';
 
 // Moove with grab
 
@@ -23,11 +27,11 @@ const mouseUpHandler = function() {
     container.removeEventListener('mousemove', mouseMoveHandler);
     container.removeEventListener('mouseup', mouseUpHandler);
 
-    container.style.removeProperty('cursor');
+    container.classList.remove(grabbingCss);
 };
 
 const mouseDownHandler = function(e) {
-    container.style.cursor = 'grabbing';
+    container.classList.add(grabbingCss);
 
     pos = {
         // The current scroll 
@@ -44,74 +48,91 @@ const mouseDownHandler = function(e) {
 
 container.addEventListener('mousedown', mouseDownHandler);
 
-// Zoom with range
+// Zoom
 
-const rangeChangeHandler = function() {
-    map.style.width = this.value + '%';
+const minZoom = 1;
+const maxZoom = 4.5;
+let zoom = 1;
 
-    if (this.value < 150) {
-        container.setAttribute(zoomData, 1);
-        scale.setAttribute(zoomData, 1);
-        scale.style.width = (18.3 * this.value / 100) + 'vw';
-    } else if (this.value < 200) {
-        container.setAttribute(zoomData, 2);
-        scale.setAttribute(zoomData, 2);
-        scale.style.width = (11 * this.value / 100) + 'vw';
+const scaleWidth = {
+    a: 18,
+    b: 10.8,
+    c: 5.4
+};
+
+const mapZoom = function(z) {
+    if (z < minZoom) {
+        z = minZoom;
+    } else if (z > maxZoom) {
+        z = maxZoom;
     } else {
-        container.setAttribute(zoomData, 3);
-        scale.setAttribute(zoomData, 3);
-        scale.style.width = (5.5 * this.value / 100) + 'vw';
+        z = Math.round(z * 100) / 100;
+    }
+
+    body.setAttribute('data-zoom', Math.round(z * 2) / 2);
+    map.style.width = z * 100 + '%';
+
+    for (const [key, value] of Object.entries(scaleWidth)) {
+        scaleElement[key].style.width = (z * value) + 'vw';
     }
 };
 
-zoomRange.addEventListener('input', rangeChangeHandler);
+// Zoom with wheel
+
+container.addEventListener('wheel', function(e) {
+    if (!(e.ctrlKey || e.metaKey)) {
+        return;
+    }
+    e.preventDefault();
+
+    zoom += (e.deltaY < 0) ? 0.1 : -0.1;
+    mapZoom(zoom);
+    return;
+});
 
 // Zoom with pinch
 
-let mapScale = 1;
-let start = {};
+// let start = {};
 
-// Calculate distance between two fingers
-const distance = (e) => {
-    return Math.hypot(
-        e.touches[0].pageX - e.touches[1].pageX,
-        e.touches[0].pageY - e.touches[1].pageY
-    );
-};
+// // Calculate distance between two fingers
+// const distance = (e) => {
+//     return Math.hypot(
+//         e.touches[0].pageX - e.touches[1].pageX,
+//         e.touches[0].pageY - e.touches[1].pageY
+//     );
+// };
 
-container.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 2) {
-        e.preventDefault(); // Prevent page scroll
+// container.addEventListener('touchstart', (e) => {
+//     if (e.touches.length === 2) {
+//         e.preventDefault(); // Prevent page scroll
 
-        // Calculate where the fingers have started on the X and Y axis
-        start.x = (e.touches[0].pageX + e.touches[1].pageX) / 2;
-        start.y = (e.touches[0].pageY + e.touches[1].pageY) / 2;
-        start.distance = distance(e);
-    }
-});
+//         // Calculate where the fingers have started on the X and Y axis
+//         start.x = (e.touches[0].pageX + e.touches[1].pageX) / 2;
+//         start.y = (e.touches[0].pageY + e.touches[1].pageY) / 2;
+//         start.distance = distance(e);
+//     }
+// });
 
-container.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 2) {
-        e.preventDefault(); // Prevent page scroll
+// container.addEventListener('touchmove', (e) => {
+//     if (e.touches.length === 2) {
+//         e.preventDefault(); // Prevent page scroll
 
-        // Safari provides e.scale as two fingers move on the screen
-        // For other browsers just calculate the scale manually
-        let scale;
+//         // Safari provides e.scale as two fingers move on the screen
+//         // For other browsers just calculate the scale manually
 
-        if (e.scale) {
-            scale = e.scale;
-        } else {
-            const deltaDistance = distance(e);
-            scale = deltaDistance / start.distance;
-        }
+//         if (e.scale) {
+//             zoom += e.scale;
+//         } else {
+//             const deltaDistance = distance(e);
+//             zoom += deltaDistance / start.distance;
+//         }
 
-        mapScale = Math.min(Math.max(1, scale), 4);
+//         // Calculate how much the fingers have moved on the X and Y axis
+//         const deltaX = (((e.touches[0].pageX + e.touches[1].pageX) / 2) - start.x); // x2 for accelarated movement
+//         const deltaY = (((e.touches[0].pageY + e.touches[1].pageY) / 2) - start.y); // x2 for accelarated movement
 
-        // Calculate how much the fingers have moved on the X and Y axis
-        const deltaX = (((e.touches[0].pageX + e.touches[1].pageX) / 2) - start.x) * 2; // x2 for accelarated movement
-        const deltaY = (((e.touches[0].pageY + e.touches[1].pageY) / 2) - start.y) * 2; // x2 for accelarated movement
-
-        // Transform the image to make it grow and move with fingers
-        container.style.transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(${mapScale})`;
-    }
-});
+//         // Transform the image to make it grow and move with fingers
+//         // container.style.transform = `translate3d(${deltaX}px, ${deltaY}px, 0)`;
+//         mapZoom(zoom);
+//     }
+// });

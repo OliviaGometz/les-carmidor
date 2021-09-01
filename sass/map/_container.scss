@@ -10,6 +10,14 @@
     background-position: center;
     font-family: $fontMain, serif;
 
+    &.js-grabbing {
+        cursor: grabbing;
+
+        * {
+            cursor: grabbing;
+        }
+    }
+
     @media #{$minMD} {
         height: calc(100vh - #{$navHeight});
         padding-top: 0;

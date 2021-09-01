@@ -1,6 +1,6 @@
 <svg viewBox="0 0 817 1125">
 <g class="grids">
-    <g class="grid-1">
+    <g class="grid-a">
         <g>
             <line x2="817" y1="37" y2="37" />
             <line x2="817" y1="187" y2="187" />
@@ -23,7 +23,7 @@
 
     </g>
 
-    <g class="grid-2">
+    <g class="grid-b">
         <g>
             <line x2="817" y1="22" y2="22" />
             <line x2="817" y1="112" y2="112" />
@@ -53,7 +53,7 @@
         </g>
     </g>
 
-    <g class="grid-3">
+    <g class="grid-c">
         <g>
             <line x2="817" y1="22" y2="22" />
             <line x2="817" y1="67" y2="67" />

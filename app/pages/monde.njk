@@ -8,26 +8,17 @@
     {% import 'macros/nav.njk' as nav %}
     {{nav.active('world')}}
 
-    <main class="map" data-zoom="1">
+    <main class="map">
         {% include 'svg/map.svg' %}
     </main>
 
-    <section class="map-controls">
+    <section class="map-legend">
         <h1>Les terres émergées</h1>
 
-        <div class="zoom-control">
-            {% include 'svg/icons/mountains.svg' %}
-
-            <input type="range" min="100" max="250" value="100" id="map-zoom" />
-
-            {% include 'svg/icons/mountains.svg' %}
-        </div>
-
-        <div class="echelle" id="echelle" data-zoom="1">
-            <span class="zoom-1">1&#8239;000</span>
-            <span class="zoom-2">600</span>
-            <span class="zoom-3">300</span>
-            km
+        <div class="echelle">
+            <span class="level-a">1&#8239;000&nbsp;km</span>
+            <span class="level-b">600&nbsp;km</span>
+            <span class="level-c">300&nbsp;km</span>
         </div>
     </section>
 

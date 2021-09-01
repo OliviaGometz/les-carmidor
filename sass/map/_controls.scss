@@ -1,6 +1,6 @@
-$gradient: 10vw;
+$gradient: 8vw;
 
-.map-controls {
+.map-legend {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -9,78 +9,43 @@ $gradient: 10vw;
     background-color: transparentize($white00, 0.1);
     padding: $spaceXXS;
 
-    @media #{$menuMobile} {
+    @media #{$maxMD} {
+        justify-content: space-between;
         width: 100%;
     }
 
-    @media #{$menuDesktop} {
+    @media #{$minMD} {
         max-width: 100%;
         padding-right: $gradient;
         mask-image: linear-gradient(to left, transparent, black #{$gradient});
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: $line*2;
-        left: 0;
-        height: $line;
-        width: 100%;
-        background-color: $secondary;
-    }
-
     h1 {
         margin: 0;
-        font-size: $titleSizeMD;
+        font-size: $titleSizeXS;
         line-height: normal;
 
-        @media #{$menuMobile} {
-            display: none; // temp
-        }
-    }
-}
-
-.zoom-control {
-    display: flex;
-    align-items: center;
-    padding: 0 $spaceLG;
-
-    svg {
-        fill: none;
-        stroke: $secondary;
-        margin: 0 $spaceXS;
-        transition: all $durationSM;
-
-        &:first-of-type {
-            width: 20px;
-            stroke-width: 16px;
-        }
-
-        &:last-of-type {
-            width: 38px;
-            stroke-width: 10px;
+        @media #{$minMD} {
+            margin-right: $spaceXXL;
+            font-size: $titleSizeMD;
         }
     }
 }
 
 .echelle {
-    width: 18.3vw; // default value at zoom = 100%
-    border: $line solid $primary;
-    border-top: none;
-    color: $primary;
-    text-align: center;
-    font-size: $fontSizeXXS;
-    line-height: 1;
-
     span {
         display: none;
+        box-sizing: border-box;
+        border: $line solid $primary;
+        border-top: none;
+        color: $primary;
+        text-align: center;
+        font-size: $fontSizeXXS;
+        line-height: 1;
+        transition: all $durationXS linear;
     }
 
-    @for $i from 1 through 3 {
-        &[data-zoom="#{$i}"] {
-            .zoom-#{$i} {
-                display: inline;
-            }
-        }
+    .level-a {
+        width: 18vw; // default value at zoom = 100%
     }
 }

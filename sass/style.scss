@@ -21,9 +21,9 @@
 @import "components/logo";
 @import "components/buttons";
 @import "components/links";
-@import "components/range";
 
 // Carte
 @import "map/container";
 @import "map/svg";
 @import "map/controls";
+@import "map/zoom";
