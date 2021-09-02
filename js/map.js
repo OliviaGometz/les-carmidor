@@ -1,6 +1,10 @@
 const body = document.getElementsByTagName('body')[0];
 const container = document.getElementsByClassName('map')[0];
 const map = container.getElementsByTagName('svg')[0];
+const zoomButtons = {
+    minus: document.getElementById('zoomMinus'),
+    plus: document.getElementById('zoomPlus'),
+};
 const scaleElement = {};
 
 ['a', 'b', 'c'].forEach(letter => {
@@ -54,28 +58,52 @@ const minZoom = 1;
 const maxZoom = 4.5;
 let zoom = 1;
 
+/**
+ * 
+ * @param {number} z 
+ */
+const setZoom = function(z) {
+    zoom += z;
+
+    if (zoom <= minZoom) {
+        zoom = minZoom;
+        zoomButtons.minus.setAttribute('disabled', 'disabled');
+    } else if (zoom >= maxZoom) {
+        zoom = maxZoom;
+        zoomButtons.plus.setAttribute('disabled', 'disabled');
+    } else {
+        zoom = Math.round(zoom * 100) / 100;
+        zoomButtons.minus.removeAttribute('disabled');
+        zoomButtons.plus.removeAttribute('disabled');
+    }
+};
+
 const scaleWidth = {
     a: 18,
     b: 10.8,
     c: 5.4
 };
 
-const mapZoom = function(z) {
-    if (z < minZoom) {
-        z = minZoom;
-    } else if (z > maxZoom) {
-        z = maxZoom;
-    } else {
-        z = Math.round(z * 100) / 100;
-    }
-
-    body.setAttribute('data-zoom', Math.round(z * 2) / 2);
-    map.style.width = z * 100 + '%';
+const mapZoom = function() {
+    body.setAttribute('data-zoom', Math.round(zoom * 2) / 2);
+    map.style.width = zoom * 100 + '%';
 
     for (const [key, value] of Object.entries(scaleWidth)) {
-        scaleElement[key].style.width = (z * value) + 'vw';
+        scaleElement[key].style.width = (zoom * value) + 'vw';
     }
 };
+
+// Zoom with buttons
+
+zoomButtons.minus.addEventListener('click', function() {
+    setZoom(-0.5);
+    mapZoom();
+});
+
+zoomButtons.plus.addEventListener('click', function() {
+    setZoom(0.5);
+    mapZoom();
+});
 
 // Zoom with wheel
 
@@ -85,8 +113,7 @@ container.addEventListener('wheel', function(e) {
     }
     e.preventDefault();
 
-    zoom += (e.deltaY < 0) ? 0.1 : -0.1;
+    setZoom(e.deltaY < 0 ? 0.1 : -0.1);
     mapZoom(zoom);
     return;
 });
-

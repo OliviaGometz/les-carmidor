@@ -4,17 +4,19 @@ $gradient: 8vw;
     position: fixed;
     left: 0;
     bottom: 0;
-    display: flex;
     align-items: center;
     background-color: transparentize($white00, 0.1);
     padding: $spaceXXS;
 
     @media #{$maxMD} {
+        display: grid;
+        grid-template-areas: "title scale" "zoom zoom";
         justify-content: space-between;
         width: 100%;
     }
 
     @media #{$minMD} {
+        display: flex;
         max-width: 100%;
         padding-right: $gradient;
         mask-image: linear-gradient(to left, transparent, black #{$gradient});
@@ -26,8 +28,65 @@ $gradient: 8vw;
         line-height: normal;
 
         @media #{$minMD} {
-            margin-right: $spaceXXL;
             font-size: $titleSizeMD;
+        }
+    }
+}
+
+.zoom {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0% $buttonHeight/2,
+        $primary $buttonHeight/2 ($buttonHeight/2 + $line),
+        transparent ($buttonHeight/2 + 1) 100%
+    );
+
+    @media #{$maxMD} {
+        grid-area: zoom;
+        margin: 0 auto;
+        margin-top: $spaceXS;
+    }
+
+    @media #{$minMD} {
+        margin: 0 $spaceXXL;
+    }
+
+    button {
+        height: $buttonHeight;
+        width: $buttonHeight;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        line-height: $lineHeightXS;
+        font-size: $titleSizeMD;
+        font-weight: $normal;
+        background-color: $white00;
+        border: $line solid $primary;
+        color: $primary;
+        transition: all $durationSM;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+
+        &:not(:disabled) {
+            &:hover,
+            &:focus {
+                @media #{$minMD} {
+                    background-color: $primaryUltraLight;
+                }
+            }
+
+            &:active {
+                background-color: $primary;
+                color: $white00;
+            }
         }
     }
 }
@@ -41,7 +100,7 @@ $gradient: 8vw;
         color: $primary;
         text-align: center;
         font-size: $fontSizeXXS;
-        line-height: 1;
+        line-height: $lineHeightXS;
         transition: all $durationXS linear;
     }
 
