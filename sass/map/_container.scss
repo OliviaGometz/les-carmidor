@@ -1,7 +1,6 @@
 .map {
     height: 100vh;
     overflow-x: auto;
-    scroll-behavior: initial;
     user-select: none;
     cursor: grab;
     background-color: $primaryDark;
@@ -11,6 +10,7 @@
     font-family: $fontMain, serif;
 
     &.js-grabbing {
+        scroll-behavior: initial;
         cursor: grabbing;
 
         * {
