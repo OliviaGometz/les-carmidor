@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor - Page introuvable</title>
+{% endblock %}
+
+{% block content %}
+    {% import 'macros/nav.njk' as nav %}
+    {{nav.active('')}}
+
+    <main>
+        <h1>Oups</h1>
+
+        <p>404</p>
+    </main>
+{% endblock %}
