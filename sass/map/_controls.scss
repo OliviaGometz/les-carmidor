@@ -1,74 +1,52 @@
-$gradient: 8vw;
-
 .map-legend {
     position: fixed;
     left: 0;
     bottom: 0;
+    display: flex;
     align-items: center;
-    background-color: transparentize($white00, 0.2);
-    padding: $spaceXXS;
 
     @media #{$maxMD} {
-        display: grid;
-        grid-template-areas: "title scale" "zoom zoom";
-        justify-content: space-between;
         width: 100%;
+        padding: $spaceXS $spaceSM;
+        justify-content: space-between;
     }
 
     @media #{$minMD} {
-        display: flex;
         max-width: 100%;
-        padding-right: $gradient;
-        mask-image: linear-gradient(to left, transparent, black #{$gradient});
-    }
-
-    h1 {
-        margin: 0;
-        font-size: $titleSizeXS;
-        line-height: normal;
-
-        @media #{$minMD} {
-            font-size: $titleSizeMD;
-        }
+        padding: $spaceSM;
+        gap: $spaceLG;
     }
 }
 
 .zoom {
-    width: 120px;
+    $zoomButtonSize: 30px;
+
+    width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(
         to bottom,
-        transparent 0% $buttonHeight/2,
-        $primary $buttonHeight/2 ($buttonHeight/2 + $line),
-        transparent ($buttonHeight/2 + 1) 100%
+        transparent 0% $zoomButtonSize/2,
+        $white00 $zoomButtonSize/2 ($zoomButtonSize/2 + $line),
+        transparent ($zoomButtonSize/2 + 1) 100%
     );
 
-    @media #{$maxMD} {
-        grid-area: zoom;
-        margin: 0 auto;
-        margin-top: $spaceXS;
-    }
-
-    @media #{$minMD} {
-        margin: 0 $spaceXXL;
-    }
-
     button {
-        height: $buttonHeight;
-        width: $buttonHeight;
+        height: $zoomButtonSize;
+        width: $zoomButtonSize;
         padding: 0;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         line-height: $lineHeightXS;
-        font-size: $titleSizeMD;
+        font-size: $titleSizeSM;
         font-weight: $normal;
+        border: none;
+        box-shadow: $blackShadowMD;
         background-color: $white00;
-        border: $line solid $primary;
-        color: $primary;
+        color: $black00;
         transition: all $durationSM;
 
         &:disabled {
@@ -85,7 +63,7 @@ $gradient: 8vw;
 
             &:active {
                 background-color: $primary;
-                color: $white00;
+                color: $primaryUltraLight;
             }
         }
     }
@@ -95,9 +73,10 @@ $gradient: 8vw;
     span {
         display: none;
         box-sizing: border-box;
-        border: $line solid $primary;
+        border: $line solid $white00;
         border-top: none;
-        color: $primary;
+        color: $white00;
+        text-shadow: 0 0 4px $black00;
         text-align: center;
         font-size: $fontSizeXXS;
         line-height: $lineHeightXS;

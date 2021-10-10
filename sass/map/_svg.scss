@@ -3,6 +3,10 @@
         transition: opacity $durationSM, stroke-opacity $durationSM;
     }
 
+    h1 {
+        display: none;
+    }
+
     svg {
         width: 100%;
         transition: width $durationXS linear;
@@ -11,6 +15,19 @@
     text {
         path {
             fill: none;
+        }
+    }
+
+    .map-title {
+        fill: $white00;
+        opacity: 0.5;
+        pointer-events: none;
+        font-size: 28px;
+
+        text {
+            &:first-of-type {
+                font-size: 18px;
+            }
         }
     }
 
