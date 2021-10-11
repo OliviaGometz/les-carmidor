@@ -1,13 +1,12 @@
 {% extends "layout.njk" %}
-{% set path = "../" %}
 
 {% block head %}
-    <title>Les Carmidor - Carte</title>
+    <title>Les Carmidor - Carte des terres émergées</title>
 {% endblock %}
 
 {% block content %}
     {% import 'macros/nav.njk' as nav %}
-    {{nav.active('world')}}
+    {{nav.active('map')}}
 
     <main class="map">
         <h1>Les terres émergées</h1>
@@ -29,5 +28,5 @@
         </div>
     </aside>
 
-    <script src="../js/map.js"></script>
+    <script src="js/map.js"></script>
 {% endblock %}

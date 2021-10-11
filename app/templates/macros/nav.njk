@@ -1,5 +1,5 @@
 {% macro active(activePage='') %}
-<nav class="{%if activePage == 'world' %}not-fixed-on-desktop{% endif %}">
+<nav class="{%if activePage == 'map' %}not-fixed-on-desktop{% endif %}">
     <button type="button" class="hamburger" data-js="click" data-click="menu">
         <span></span>
         <span></span>
@@ -18,8 +18,14 @@
         </li>
         
         <li>
-            <a href="/univers" class="link{%if activePage == 'lore' %} active{% endif %}">
-                Univers
+            <a href="/carte" class="link{%if activePage == 'map' %} active{% endif %}">
+                Carte
+            </a>
+        </li>
+
+        <li>
+            <a href="/familles" class="link{%if activePage == 'characters' %} active{% endif %}">
+                Familles
             </a>
         </li>
         
@@ -36,8 +42,8 @@
         </li>
 
         <li>
-            <a href="/fans" class="link{%if activePage == 'fans' %} active{% endif %}">
-                Coin des fans
+            <a href="/bonus" class="link{%if activePage == 'bonus' %} active{% endif %}">
+                Bonus
             </a>
         </li>
     </ul>
