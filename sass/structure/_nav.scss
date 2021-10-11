@@ -18,7 +18,7 @@ nav {
     }
 
     @media #{$menuDesktop} {
-        padding-right: $spaceMD;
+        padding: $spaceXS $spaceMD;
     }
 
     .hamburger {
@@ -45,7 +45,7 @@ nav {
             }
         }
 
-        &.js-active { // à remplacer
+        &.js-active {
             span {
                 &:first-of-type,
                 &:last-of-type {
@@ -79,9 +79,9 @@ nav {
         }
 
         @media #{$menuDesktop} {
-            margin: 0 $spaceSM;
+            margin: 0 $spaceMD;
+            flex: 1;
             display: flex;
-            justify-content: center;
             align-items: center;
         }
 
@@ -99,6 +99,10 @@ nav {
 
             @media #{$menuDesktop} {
                 padding: 0 $spaceSM;
+            }
+
+            a {
+                display: block;
             }
         }
 

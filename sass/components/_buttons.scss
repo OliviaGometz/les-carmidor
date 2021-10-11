@@ -6,10 +6,10 @@
     display: flex;
     align-items: center;
     font-family: $fontMain, serif;
-    font-size: $fontSizeSM;
+    font-size: $fontSizeLG;
     font-weight: $bold;
-    text-transform: uppercase;
-    letter-spacing: $spacingLG;
+    font-variant: small-caps;
+    letter-spacing: $spacingSM;
     border: $line solid $black00;
     color: $black00;
     transition: color $durationSM;
