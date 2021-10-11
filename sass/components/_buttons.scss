@@ -10,9 +10,32 @@
     font-weight: $bold;
     text-transform: uppercase;
     letter-spacing: $spacingLG;
-    border: $line solid $primary;
-    color: $primary;
+    border: $line solid $black00;
+    color: $black00;
     transition: color $durationSM;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: $z-index-bg-link;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: $black00;
+        transition: all $durationSM;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        color: $white00;
+
+        &::before {
+            height: 100%;
+        }
+    }
 
     &.icon-mobile {
         @media #{$maxMD} {
@@ -24,7 +47,7 @@
             display: none;
             height: 100%;
             fill: none;
-            stroke: $primary;
+            stroke: $black00;
             stroke-width: 10;
             transition: all $durationSM;
 
@@ -43,26 +66,20 @@
         }
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: $z-index-bg-link;
-        left: 0;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        background-color: $primary;
-        transition: all $durationSM;
-    }
+    @each $colorName, $color in $mainColors {
+        &--#{$colorName} {
+            border-color: $color;
+            color: $color;
 
-    &:hover,
-    &:active,
-    &:focus,
-    &.active {
-        color: $white00;
+            &::before {
+                background-color: $color;
+            }
 
-        &::before {
-            height: 100%;
+            &.icon-mobile {
+                svg {
+                    stroke: $color;
+                }
+            }
         }
     }
 }
