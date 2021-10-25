@@ -5,8 +5,8 @@
     cursor: grab;
     background-color: $primaryDark;
     background-image: url('../img/map-bg.png');
-    background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     font-family: $fontMain, serif;
 
     &.js-grabbing {
