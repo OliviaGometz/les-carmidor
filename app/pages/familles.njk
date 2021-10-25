@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'macros/nav.njk' as nav %}
+    {% import 'nav.njk' as nav %}
     {{nav.active('characters')}}
 
     <main>
@@ -21,4 +21,6 @@
             {% endfor %}
         </div>
     </main>
+
+    {% include 'footer.njk' %}
 {% endblock %}

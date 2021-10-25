@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'macros/nav.njk' as nav %}
+    {% import 'nav.njk' as nav %}
     {{nav.active('home')}}
 
     <main>
@@ -13,4 +13,6 @@
 
         <p>Les Carmidor sont en train de <strong>dev leur site</strong> (oui oui ils sont dev aussi des fois).</p>
     </main>
+
+    {% include 'footer.njk' %}
 {% endblock %}

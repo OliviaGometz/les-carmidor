@@ -1,0 +1,12 @@
+footer {
+    background-color: $black00;
+    text-align: center;
+
+    small {
+        color: $grey30;
+    }
+
+    .wave {
+        transform: rotate(180deg);
+    }
+}

@@ -13,14 +13,16 @@
 @import "base/general";
 @import "base/helpers";
 
-// Structure
-@import "structure/nav";
-@import "structure/main";
-
 // Components
 @import "components/logo";
 @import "components/buttons";
 @import "components/links";
+@import "components/wave";
+
+// Structure
+@import "structure/main";
+@import "structure/nav";
+@import "structure/footer";
 
 // Carte
 @import "map/container";

@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'macros/nav.njk' as nav %}
+    {% import 'nav.njk' as nav %}
     {{nav.active('bonus')}}
 
     <main>
@@ -14,4 +14,6 @@
 
         <p>À venir</p>
     </main>
+
+    {% include 'footer.njk' %}
 {% endblock %}
