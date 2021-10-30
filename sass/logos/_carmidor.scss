@@ -1,0 +1,33 @@
+.logo--carmidor {
+    $strokeOffset: 5000;
+
+    svg {
+        stroke: $black00;
+        stroke-width: 4px;
+        stroke-dasharray: $strokeOffset;
+        stroke-dashoffset: $strokeOffset;
+        fill: transparent;
+
+        @include animation(5s linear forwards) {
+            from {
+                stroke-dashoffset: $strokeOffset;
+            }
+
+            80% {
+                stroke-dashoffset: 0;
+            }
+
+            90% {
+                stroke-dashoffset: 0;
+                stroke: $black00;
+                fill: transparent;
+            }
+
+            to {
+                stroke-dashoffset: 0;
+                stroke: transparent;
+                fill: $black00;
+            }
+        }
+    }
+}

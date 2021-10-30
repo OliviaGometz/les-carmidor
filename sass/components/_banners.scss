@@ -1,0 +1,19 @@
+.top-banner {
+    background-color: $black00;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    article {
+        background-color: transparentize($black00, 0.5);
+        padding: $spaceMD;
+
+        @media #{$minSM} {
+            padding: $spaceLG;
+        }
+
+        @media #{$minMD} {
+            padding: $spaceXL;
+        }
+    }
+}

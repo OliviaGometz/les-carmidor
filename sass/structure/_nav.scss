@@ -59,6 +59,25 @@ nav {
         }
     }
 
+    .home {
+        display: block;
+        height: 100%;
+        padding: $spaceXXS 0;
+
+        svg {
+            height: 100%;
+            transition: all $durationSM;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            svg {
+                fill: $primary;
+            }
+        }
+    }
+
     ul {
         box-sizing: border-box;
         list-style-type: none;

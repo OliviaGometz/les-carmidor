@@ -14,10 +14,14 @@
 @import "base/helpers";
 
 // Components
-@import "components/logo";
+@import "components/banners";
 @import "components/buttons";
 @import "components/links";
 @import "components/wave";
+
+// Logos
+@import "logos/beta-publisher";
+@import "logos/carmidor";
 
 // Structure
 @import "structure/main";
@@ -29,3 +33,6 @@
 @import "map/svg";
 @import "map/controls";
 @import "map/zoom";
+
+// Pages
+@import "pages/home";

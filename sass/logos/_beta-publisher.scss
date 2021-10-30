@@ -1,0 +1,36 @@
+.logo--bp {
+    svg {
+        height: 0;
+        transition: all $durationSM;
+
+        circle {
+            transform-origin: center;
+            transform: scale(0);
+            transition: all $durationSM;
+        }
+
+        path {
+            transform-origin: center;
+            transform: scale(0) rotate(90deg);
+            transition: all $durationSM;
+        }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        svg {
+            height: 100%;
+
+            circle {
+                transform: scale(1);
+                transition-delay: $durationSM;
+            }
+
+            path {
+                transform: scale(1) rotate(0);
+                transition-delay: $durationSM*2;
+            }
+        }
+    }
+}
