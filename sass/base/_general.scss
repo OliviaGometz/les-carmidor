@@ -29,6 +29,11 @@ h2,
 h3 {
     font-family: $fontMain, serif;
     font-weight: $normal;
+    line-height: $lineHeightXS;
+}
+
+h2 {
+    font-size: $titleSizeLG;
 }
 
 a,

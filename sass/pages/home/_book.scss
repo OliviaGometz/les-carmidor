@@ -1,0 +1,54 @@
+.home-book {
+    background-color: $primary;
+    background-image: linear-gradient(
+        to bottom,
+        $primary,
+        $primaryDark
+    );
+
+    .wave:first-child {
+        transform: scaleY(-1) translateY(1px);
+    }
+
+    .content {
+        padding: $spaceMD;
+
+        @media #{$minMD} {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+    }
+
+    img {
+        display: block;
+        width: 50%;
+        max-width: 300px;
+
+        @media #{$maxMD} {
+            margin: 0 auto;
+        }
+
+        @media #{$minMD} {
+            margin-left: $spaceXXL;
+        }
+    }
+
+    article {
+        max-width: 500px;
+
+        @media #{$maxMD} {
+            margin: 0 auto;
+        }
+    }
+
+    h2 {
+        color: $white00;
+    }
+
+    p {
+        color: $primaryUltraLight;
+        font-size: $fontSizeSM;
+        margin: $spaceSM 0;
+    }
+}
