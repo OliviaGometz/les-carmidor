@@ -47,4 +47,32 @@ button {
 
 p {
     margin: 0;
+
+    a {
+        font-weight: $bold;
+        color: $secondary;
+        transition: all $durationSM;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $primary;
+            background-color: $primaryUltraLight;
+        }
+    }
+
+    em {
+        font-style: italic;
+        font-family: $fontMain, serif;
+        font-size: 1.3em;
+        margin: 0 0.1em;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }

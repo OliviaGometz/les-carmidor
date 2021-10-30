@@ -1,0 +1,15 @@
+.home-intro {
+    @media #{$maxMD} {
+        padding: $spaceMD;
+    }
+
+    svg {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    p {
+        max-width: 750px;
+        margin: $spaceMD auto;
+    }
+}
