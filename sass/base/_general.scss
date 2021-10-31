@@ -30,6 +30,10 @@ h3 {
     font-family: $fontMain, serif;
     font-weight: $normal;
     line-height: $lineHeightXS;
+
+    span {
+        font-size: 1.3em;
+    }
 }
 
 h2 {

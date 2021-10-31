@@ -30,6 +30,7 @@
     &:active,
     &:focus,
     &.active {
+        text-shadow: none;
         color: $white00;
 
         &::before {
@@ -80,6 +81,31 @@
                     stroke: $color;
                 }
             }
+
+            @if $colorName == white {
+                &:hover,
+                &:active,
+                &:focus,
+                &.active {
+                    color: $primaryDark;
+
+                    svg {
+                        stroke: $primaryDark;
+                    }
+                }
+            }
         }
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .link,
+    .button {
+        margin: $spaceSM;
     }
 }
