@@ -81,21 +81,23 @@
                     stroke: $color;
                 }
             }
+        }
+    }
 
-            @if $colorName == white {
-                &:hover,
-                &:active,
-                &:focus,
-                &.active {
-                    color: $primaryDark;
+    @each $colorName, $color in $colors {
+        &--active-#{$colorName} {
+            &:hover,
+            &:active,
+            &:focus,
+            &.active {
+                color: map-get($color, "dark");
 
-                    svg {
-                        stroke: $primaryDark;
-                    }
+                svg {
+                    stroke: map-get($color, "dark");
                 }
             }
         }
-    }
+    } 
 }
 
 .buttons {
