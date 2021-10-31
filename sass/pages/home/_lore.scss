@@ -12,7 +12,7 @@
         }
 
         &:last-child {
-            transform: scaleX(-1);
+            transform: scaleX(-1) translateY(1px);
         }
     }
 
