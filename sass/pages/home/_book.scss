@@ -11,39 +11,30 @@
     }
 
     .content {
-        padding: $spaceMD;
-
-        @media #{$minMD} {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-        }
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        padding: $spaceMD 0;
     }
 
     img {
         display: block;
-        width: 50%;
+        width: 30%;
+        min-width: 180px;
         max-width: 300px;
-
-        @media #{$maxMD} {
-            margin: 0 auto;
-        }
-
-        @media #{$minMD} {
-            margin-left: $spaceXXL;
-        }
+        padding: 0 $spaceMD;
     }
 
     article {
         max-width: 500px;
-
-        @media #{$maxMD} {
-            margin: 0 auto;
-        }
+        padding: $spaceMD;
     }
 
     h2 {
         color: $white00;
+        margin: 0;
+        margin-bottom: $spaceMD;
     }
 
     p {
