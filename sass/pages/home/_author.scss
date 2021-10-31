@@ -1,0 +1,41 @@
+.home-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    article {
+        max-width: 380px;
+        padding: $spaceMD;
+
+        h2 {
+            margin: 0;
+            margin-top: $spaceSM;
+            margin-bottom: $spaceMD;
+        }
+
+        p {
+            font-size: $fontSizeSM;
+        }
+
+        .buttons {
+            margin-top: $spaceSM;
+        }
+    }
+
+    .networks {
+        a {
+            svg {
+                fill: $secondary;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                svg {
+                    fill: $black00;
+                }
+            }
+        }
+    }
+}

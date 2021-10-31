@@ -1,0 +1,13 @@
+.networks {
+    display: flex;
+    justify-content: center;
+
+    a {
+        margin: $spaceSM;
+    }
+
+    svg {
+        width: 30px;
+        transition: all $durationSM;
+    }
+}

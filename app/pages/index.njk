@@ -37,8 +37,6 @@
             {% include 'svg/wave.svg' %}
 
             <div class="content">
-                <img src="./img/medias/book.png" alt="Tome 1 : Trahir et Survivre (format broché)" />
-
                 <article>
                     <h2>
                         Tome <span>1</span> – Trahir et Survivre
@@ -64,6 +62,8 @@
                         Elles seront de terreur et de sang.
                     </p>
                 </article>
+
+                <img src="./img/medias/book.png" alt="Tome 1 : Trahir et Survivre (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}
@@ -166,6 +166,28 @@
             </div>
 
             {% include 'svg/wave.svg' %}
+        </section>
+
+        <section class="home-author">
+            <article>
+                <h2>L'autrice&nbsp;: Olivia Gometz</h2>
+
+                <p>
+                    Ce que j'écris d'autre, mon parcours, des infos perso&hellip; tout ce qu'il y a à savoir sur moi, dans une page où je me fais mousser (et bourrée de redirections) (la page, pas moi).
+                </p>
+
+                <div class="buttons">
+                    <a href="/autrice" class="button button--primary">
+                        En savoir plus
+                    </a>
+                </div>
+            </article>
+
+            <aside class="person">
+                <img src="./img/medias/me.png" alt="L'autrice des Carmidor, Olivia Gometz" />
+
+                {% include 'block-networks.njk' %}
+            </aside>
         </section>
     </main>
 
