@@ -1,0 +1,44 @@
+blockquote {
+    position: relative;
+    margin: 0;
+    padding: 0 $spaceXL;
+
+    @media #{$maxSM} {
+        padding: 0 $spaceLG;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        color: $primary;
+        line-height: $lineHeightXS;
+        font-size: $fontSizeLG;
+    }
+
+    &::before {
+        content: '«';
+        left: 0;
+        top: 0;
+    }
+
+    &::after {
+        content: '»';
+        right: 0;
+        bottom: 0;
+    }
+
+    p {
+        font-size: $fontSizeSM;
+    }
+}
+
+figure {
+    figcaption {
+        margin-top: $spaceXS;
+        text-align: center;
+        font-family: $fontMain, serif;
+        font-style: italic;
+        font-size: $fontSizeLG;
+        color: $grey50;
+    }
+}

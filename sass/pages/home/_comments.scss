@@ -1,0 +1,16 @@
+.home-comments {
+    h2 {
+        text-align: center;
+        margin: $spaceMD;
+        margin-bottom: $spaceXXL;
+    }
+
+    figure {
+        margin: $spaceMD;
+
+        blockquote {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+}
