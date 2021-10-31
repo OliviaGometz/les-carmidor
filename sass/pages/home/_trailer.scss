@@ -1,0 +1,16 @@
+.home-trailer {
+    text-align: center;
+    padding-bottom: $spaceLG;
+
+    h2 {
+        margin: $spaceMD;
+    }
+
+    small {
+        max-width: 630px;
+        margin: $spaceMD auto;
+        padding: 0 $spaceMD;
+        font-size: $fontSizeXXS;
+        color: $grey40;
+    }
+}
