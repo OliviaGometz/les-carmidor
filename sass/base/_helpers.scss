@@ -1,7 +1,14 @@
-.hidden {
-    display: none !important;
-    visibility: hidden !important;
-}
+$widths: (
+    xs: 400px,
+    sm: 500px,
+    md: 600px,
+    lg: 750px,
+);
 
-@include spacesClasses(padding);
-@include spacesClasses(margin);
+.maxwidth {
+    @each $name, $size in $widths {
+        &--#{$name} {
+            max-width: $size;
+        }
+    }
+}

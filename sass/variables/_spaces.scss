@@ -7,27 +7,3 @@ $spaceMD: $spaceBase * 6;
 $spaceLG: $spaceBase * 8;
 $spaceXL: $spaceBase * 10;
 $spaceXXL: $spaceBase * 15;
-
-$spaces: (
-    xxs: $spaceXXS,
-    xs: $spaceXS,
-    sm: $spaceSM,
-    md: $spaceMD,
-    lg: $spaceLG,
-    xl: $spaceXL,
-    xxl: $spaceXXL
-);
-
-@mixin spacesClasses($type) {
-    .#{$type} {
-        @each $direction in (top, bottom, left, right) {
-            &-#{$direction} {
-                @each $spaceName, $space in $spaces {
-                    &--#{$spaceName} {
-                        #{$type}-#{$direction}: $space;
-                    }
-                }
-            }
-        }
-    }
-}

@@ -23,6 +23,8 @@
     padding-top: $spaceMD;
 
     .content {
+        max-width: 750px;
+        margin: 0 auto;
         padding: $spaceMD;
         text-align: center;
 

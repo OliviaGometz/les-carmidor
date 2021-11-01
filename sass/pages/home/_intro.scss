@@ -1,6 +1,9 @@
 .home-intro {
-    @media #{$maxMD} {
-        padding: $spaceMD;
+    margin: 0 auto;
+    padding: $spaceMD;
+
+    @media #{$minMD} {
+        padding: 0 $spaceMD;
     }
 
     svg {
@@ -9,7 +12,6 @@
     }
 
     p {
-        max-width: 750px;
-        margin: $spaceMD auto;
+        margin: $spaceMD 0;
     }
 }
