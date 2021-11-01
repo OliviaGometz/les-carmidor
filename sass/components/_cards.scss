@@ -13,6 +13,17 @@
             background-color: map-get($color, "ultraLight");
             color: map-get($color, "dark");
             outline-color: map-get($color, "ultraLight");
+
+            a {
+                color: map-get($color, "ultraDark");
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: map-get($color, "ultraDark");
+                    background-color: map-get($color, "light");
+                }
+            }
         }
     } 
 }
