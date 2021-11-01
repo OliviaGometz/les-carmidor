@@ -16,23 +16,12 @@
         }
     }
 
-    .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
     article {
-        padding: $spaceMD;
-
         @media #{$minMD} {
             margin: 0 $spaceXL;
         }
 
         h2 {
-            margin-top: $spaceXL;
-            margin-bottom: $spaceMD;
             text-align: center;
             color: $secondaryUltraLight;
         }
