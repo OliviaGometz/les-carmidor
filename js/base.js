@@ -20,18 +20,20 @@ const touch = {
     end: 0
 };
 
-menuContainer.addEventListener('touchstart', function(e) {
-    touch.start = e.changedTouches[0].screenY;
-}, false);
+if (menuContainer) {
+    menuContainer.addEventListener('touchstart', function(e) {
+        touch.start = e.changedTouches[0].screenY;
+    }, false);
 
-menuContainer.addEventListener('touchend', function(e) {
-    touch.end = e.changedTouches[0].screenY;
-    handleGesture();
-}, false);
+    menuContainer.addEventListener('touchend', function(e) {
+        touch.end = e.changedTouches[0].screenY;
+        handleGesture();
+    }, false);
 
-const handleGesture = function() {
-    if (touch.end < touch.start) {
-        menuContainer.querySelector('[data-click="menu"]').classList.remove(activeCss);
-        menuContainer.querySelector('[data-id="menu"]').classList.remove(activeCss);
+    const handleGesture = function() {
+        if (touch.end < touch.start) {
+            menuContainer.querySelector('[data-click="menu"]').classList.remove(activeCss);
+            menuContainer.querySelector('[data-id="menu"]').classList.remove(activeCss);
+        }
     }
 }
