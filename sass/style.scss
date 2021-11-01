@@ -16,6 +16,7 @@
 // Components
 @import "components/banners";
 @import "components/buttons";
+@import "components/cards";
 @import "components/links";
 @import "components/networks";
 @import "components/person";
@@ -47,3 +48,6 @@
 @import "pages/home/comments";
 @import "pages/home/lore";
 @import "pages/home/author";
+
+@import "pages/insta/top";
+@import "pages/insta/content";

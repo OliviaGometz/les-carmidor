@@ -1,0 +1,18 @@
+.card {
+    margin: $spaceMD;
+    padding: $spaceMD;
+    border: $line*4 solid $white00;
+    outline: $line solid;
+
+    p {
+        font-size: $fontSizeSM;
+    }
+
+    @each $colorName, $color in $colors {
+        &--#{$colorName} {
+            background-color: map-get($color, "ultraLight");
+            color: map-get($color, "dark");
+            outline-color: map-get($color, "ultraLight");
+        }
+    } 
+}

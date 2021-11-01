@@ -1,13 +1,72 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-    <title>Les Carmidor - Liens</title>
+    <title>Olivia Gometz - Liens utiles</title>
+    <meta name="description" content="Liens utiles pour Olivia Gometz : le site web des Carmidor, les plateformes d'achat du tome 1, les conseils décalés dans Écrire de la fantasy, et mon rantbook." />
 {% endblock %}
 
 {% block content %}
-    <main>
-        <h1>Liens Insta</h1>
+    <header class="banner-gradient banner-gradient--primary insta-top">
+        <div class="content">
+            <img src="./img/medias/me-circle.png" alt="Photo de profil de Olivia Gometz" />
 
-        <p>Description</p>
-    </main>
+            <h1>@oliviagometz</h1>
+
+            {% include 'block-networks.njk' %}
+        </div>
+
+        {% include 'svg/wave.svg' %}
+    </header>
+
+    <section class="insta-content">
+        {# <aside class="card card--secondary">
+            <a href="#" class="button" rel="external" target="_blank">
+                Lien du moment
+            </a>
+
+            <small>Petite description du lien (ex&nbsp;: live du 06/05/2022 sur Google Meet)</small>
+        </aside> #}
+
+        <div>
+            <a href="/" class="button">
+                Site des Carmidor
+            </a>
+
+            <small>Booktrailer, carte interactive, arbres et bannières des familles&hellip;</small>
+        </div>
+
+        <div>
+            <a href="/acheter" class="button">
+                Acheter le tome 1
+            </a>
+
+            <small>En broché ou en ebook (toutes liseuses)</small>
+        </div>
+
+        <div>
+            <a href="https://www.wattpad.com/655892420-les-carmidor-t1-trahir-et-survivre" class="button" rel="external" target="_blank">
+                Lire le début
+            </a>
+
+            <small>Lisez gratuitement les premiers chapires du tome&nbsp;1 sur Wattpad</small>
+        </div>
+
+        <div>
+            <a href="https://www.wattpad.com/666768516-%C3%A9crire-de-la-fantasy-comme-g-r-r-martin" class="button" rel="external" target="_blank">
+                Écrire de la fantasy
+            </a>
+
+            <small>Plein de conseils décalés à découvrir sur Wattpad</small>
+        </div>
+
+        <div>
+            <a href="https://www.wattpad.com/678351969-rantbook" class="button" rel="external" target="_blank">
+                Mon rantbook
+            </a>
+
+            <small>Du blabla et des avis très très personnels (encore sur Wattpad)</small>
+        </div>
+    </section>
+
+    {% include 'footer.njk' %}
 {% endblock %}
