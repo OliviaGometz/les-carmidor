@@ -3,25 +3,14 @@
     article {
         margin: 0 auto;
         padding: $spaceMD;
-        text-align: center;
 
         h2 {
+            text-align: center;
             margin-top: $spaceSM;
-            margin-bottom: $spaceLG;
         }
     }
 
     article {
-        p,
-        small {
-            text-align: left;
-        }
-
-        p {
-            margin: $spaceSM 0;
-            font-size: $fontSizeSM;
-        }
-
         small {
             font-size: $fontSizeXXS;
             color: $grey40;

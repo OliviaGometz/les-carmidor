@@ -6,6 +6,15 @@
 
     p {
         font-size: $fontSizeSM;
+        margin: $spaceSM 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     @each $colorName, $color in $colors {
