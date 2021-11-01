@@ -11,12 +11,6 @@
     }
 
     h2 {
-        text-align: center;
-        color: $white00;
-        text-transform: uppercase;
-        letter-spacing: $spacingLG;
-        margin: $spaceMD;
-
         @media #{$maxMD} {
             margin-top: $spaceXXL;
         }

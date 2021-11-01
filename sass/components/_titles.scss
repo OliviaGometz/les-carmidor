@@ -1,0 +1,10 @@
+.title {
+    &--header {
+        text-align: center;
+        color: $white00;
+        text-transform: uppercase;
+        letter-spacing: $spacingLG;
+        margin: $spaceMD;
+        margin-bottom: $spaceXL;
+    }
+}

@@ -1,0 +1,32 @@
+.legal {
+    aside,
+    article {
+        margin: 0 auto;
+        padding: $spaceMD;
+        text-align: center;
+
+        h2 {
+            margin-top: $spaceSM;
+            margin-bottom: $spaceLG;
+        }
+    }
+
+    article {
+        max-width: 680px;
+
+        p,
+        small {
+            text-align: left;
+        }
+
+        p {
+            margin: $spaceSM 0;
+            font-size: $fontSizeSM;
+        }
+
+        small {
+            font-size: $fontSizeXXS;
+            color: $grey40;
+        }
+    }
+}
