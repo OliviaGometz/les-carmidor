@@ -3,7 +3,7 @@
     z-index: $z-index-content;
     height: $buttonHeight;
     padding: 0 ($spaceSM - 2) 0 $spaceSM;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-family: $fontMain, serif;
     font-size: $fontSizeLG;
