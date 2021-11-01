@@ -9,9 +9,47 @@
     {{nav.active('')}}
 
     <main>
-        <h1>Trigger warnings</h1>
+        <section class="banner-gradient banner-gradient--primary">
+            <div class="content">
+                <h1 class="title--header">Trigger warnings</h1>
 
-        <p>Texte</p>
+                <p><em>Les Carmidor</em> aborde de nombreux sujets qui pourraient réveiller des traumatismes chez certains lecteurs. Si vous en ressentez le besoin, consultez la liste des avertissements ci-dessous&nbsp;: mieux vaut connaître à l'avance certains thèmes difficiles plutôt que de les laisser nous atteindre à un moment où l'on n'y est pas préparé.</p>
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section class="container">
+            <article class="text--center text--margin-sm">
+                <h2>Thèmes difficiles abordés</h2>
+
+                <p>Meurtre, suicide</p>
+
+                <p>Viol, violence physique</p>
+
+                <p>Mutilation, amputation</p>
+
+                <p>Décès infantile</p>
+
+                <p>Misogynie, racisme</p>
+
+                <p>Emprise psychologique</p>
+            </article>
+
+            <aside class="card card--secondary maxwidth--xs">
+                <p>
+                    Un thème, une scène, un personnage de <em>Les Carmidor</em> vous a choqué(e)&nbsp;?
+                </p>
+
+                <p>
+                    Discutons-en&nbsp;: n'hésitez pas à m'envoyer un message sur <a href="https://www.instagram.com/oliviagometz/" rel="external" target="_blank">Instagram</a> ou sur <a href="https://www.wattpad.com/user/OliviaGometz" rel="external" target="_blank">Wattpad</a>.
+                </p>
+
+                <p>
+                    La narration ne condamne pas forcément les actes les plus méprisables de mes personnages&nbsp;: mais moi, si on me demande mon avis, je le fais sans hésiter.
+                </p>
+            </aside>
+        </section>
     </main>
 
     {% include 'footer.njk' %}
