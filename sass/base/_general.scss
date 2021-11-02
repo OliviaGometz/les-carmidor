@@ -16,6 +16,10 @@ svg,
     display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $white00;
     font-family: $fontDefault, serif;
@@ -80,4 +84,9 @@ small {
         line-height: $lineHeightXS;
         margin: 0 0.1em;
     }
+}
+
+::selection {
+    background-color: $primary;
+    color: $white00;
 }
