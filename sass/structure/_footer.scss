@@ -52,12 +52,16 @@ footer {
             }
 
             a {
-                display: block;
+                display: inline-block;
                 font-size: 0.8em;
                 text-transform: uppercase;
                 letter-spacing: $spacingLG;
                 color: $secondaryUltraLight;
                 transition: all $durationSM;
+
+                @media #{$maxSM} {
+                    padding: $spaceXS 0;
+                }
 
                 &:hover,
                 &:active,
