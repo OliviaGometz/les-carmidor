@@ -4,6 +4,7 @@
     height: $buttonHeight;
     padding: 0 ($spaceSM - 2) 0 $spaceSM;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     font-family: $fontMain, serif;
     font-size: $fontSizeLG;
@@ -35,6 +36,27 @@
 
         &::before {
             height: 100%;
+        }
+    }
+
+    &.logo {
+        &--top {
+            flex-direction: column;
+            height: $buttonHeight*2;
+            padding-top: $spaceXS;
+        }
+
+        svg {
+            transition: all $durationSM;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+            svg {
+                fill: $white00;
+            }
         }
     }
 
@@ -76,6 +98,12 @@
                 background-color: $color;
             }
 
+            &.logo {
+                svg {
+                    fill: $color;
+                }
+            }
+
             &.icon-mobile {
                 svg {
                     stroke: $color;
@@ -92,8 +120,16 @@
             &.active {
                 color: map-get($color, "dark");
 
-                svg {
-                    stroke: map-get($color, "dark");
+                &.logo {
+                    svg {
+                        fill: map-get($color, "dark");
+                    }
+                }
+
+                &.icon-mobile {
+                    svg {
+                        stroke: map-get($color, "dark");
+                    }
                 }
             }
         }
