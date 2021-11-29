@@ -34,7 +34,9 @@ function html() {
     .src("app/pages/**/*.njk")
     .pipe(
       data(function () {
-        return require("./app/content/characters.json");
+        const characters = require("./app/content/characters.json");
+        const websites = require("./app/content/websites.json");
+        return { characters, websites };
       })
     )
     .pipe(

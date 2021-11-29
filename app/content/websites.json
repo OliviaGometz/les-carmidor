@@ -1,0 +1,30 @@
+{
+  "amazon": {
+    "desc": "amazon prime",
+    "link": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz/dp/2490163698/"
+  },
+    "fnac": {
+    "desc": "fnac.com",
+    "link": "https://livre.fnac.com/a16444863/Olivia-Gometz-Les-Carmidor"
+  },
+    "cultura": {
+    "desc": "cultura.com",
+    "link": "https://www.cultura.com/les-carmidor-trahir-et-survivre-9782490163694.html"
+  },
+    "decitre": {
+    "desc": "decitre.fr",
+    "link": "https://www.decitre.fr/livre-pod/les-carmidor-9782490163694.html"
+  },
+    "bod": {
+    "desc": "book on demand",
+    "link": "https://www.bod.fr/librairie/les-carmidor-olivia-gometz-9782490163694"
+  },
+    "chapitre": {
+    "desc": "chapitre.com",
+    "link": "https://www.chapitre.com/BOOK/gometz-olivia/les-carmidor-trahir-et-survivre,83087757.aspx"
+  },
+    "lireka": {
+    "desc": "librairie fr",
+    "link": "https://www.lireka.com/fr/pp/9782490163694-les-carmidor"
+  }
+}
