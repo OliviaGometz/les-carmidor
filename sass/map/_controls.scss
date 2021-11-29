@@ -73,6 +73,7 @@
     span {
         display: none;
         box-sizing: border-box;
+        user-select: none;
         border: $line solid $white00;
         border-top: none;
         color: $white00;
