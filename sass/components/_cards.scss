@@ -1,20 +1,20 @@
 .card {
     margin: $spaceMD;
-    padding: $spaceMD;
+    padding: $spaceLG $spaceMD;
     border: $line*4 solid $white00;
     outline: $line solid;
+
+    :first-child {
+        margin-top: 0;
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
 
     p {
         font-size: $fontSizeSM;
         margin: $spaceSM 0;
-
-        &:first-child {
-            margin-top: 0;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 
     @each $colorName, $color in $colors {
@@ -23,14 +23,16 @@
             color: map-get($color, "dark");
             outline-color: map-get($color, "ultraLight");
 
-            a {
-                color: map-get($color, "ultraDark");
-
-                &:hover,
-                &:active,
-                &:focus {
+            p {
+                a {
                     color: map-get($color, "ultraDark");
-                    background-color: map-get($color, "light");
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: map-get($color, "ultraDark");
+                        background-color: map-get($color, "light");
+                    }
                 }
             }
         }
