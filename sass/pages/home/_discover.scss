@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    text-shadow: 0 0 16px $black00;
+    text-shadow: $textShadowMD;
 
     .wave:first-child {
         transform: rotate(180deg) translateY(1px);
