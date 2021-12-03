@@ -6,19 +6,25 @@
 {% endblock %}
 
 {% block content %}
-    <header class="banner-gradient banner-gradient--primary insta-top">
+    <header class="banner-gradient banner-gradient--primary links-top">
         <div class="content">
             <img src="./img/medias/me-circle.png" alt="Photo de profil de Olivia Gometz" />
 
-            <h1>@oliviagometz</h1>
+            <h1>Olivia Gometz</h1>
 
-            {% include 'block-networks.njk' %}
+            <div class="container">
+                {% for name, website in websites.network %}
+                    <a href="{{website.link}}" class="logo logo--sm logo--white" rel="external" target="_blank" aria-label="{{website.desc}}">
+                        {% include "svg/logos/networks/" + name + ".svg" %}
+                    </a>
+                {% endfor %}
+            </div>
         </div>
 
         {% include 'svg/wave.svg' %}
     </header>
 
-    <section class="insta-content">
+    <section class="links-content">
         {# <aside class="card card--secondary">
             <a href="#" class="button" rel="external" target="_blank">
                 Lien du moment

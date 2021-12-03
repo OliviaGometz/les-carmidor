@@ -14,12 +14,14 @@
 @import "base/helpers";
 
 // Components
+@import "components/badges";
 @import "components/banners";
 @import "components/buttons";
 @import "components/cards";
 @import "components/chapter";
+@import "components/images";
 @import "components/links";
-@import "components/networks";
+@import "components/logos";
 @import "components/person";
 @import "components/quotes";
 @import "components/texts";
@@ -52,7 +54,12 @@
 @import "pages/home/lore";
 @import "pages/home/author";
 
-@import "pages/insta/top";
-@import "pages/insta/content";
+@import "pages/links/top";
+@import "pages/links/content";
 
 @import "pages/legal";
+
+@import "pages/buy/top";
+@import "pages/buy/book";
+@import "pages/buy/booknook";
+@import "pages/buy/ebook";

@@ -1,0 +1,46 @@
+.logo {
+    margin: $spaceSM;
+
+    svg {
+        transition: all $durationSM;
+    }
+
+    &--sm {
+        svg {
+            height: 30px;
+            max-width: 120px;
+        }
+    }
+
+    &--white {
+        svg {
+            fill: $white00;
+            opacity: 0.6;
+        }
+
+
+        &:hover,
+        &:active,
+        &:focus {
+            svg {
+                opacity: 1;
+            }
+        }
+    }
+
+    @each $colorName, $color in $colors {
+        &--#{$colorName} {
+            svg {
+                fill: map-get($color, "main");
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                svg {
+                    fill: $black00;
+                }
+            }
+        }
+    }
+}

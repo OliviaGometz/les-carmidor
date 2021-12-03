@@ -15,20 +15,4 @@
             margin-top: $spaceSM;
         }
     }
-
-    .networks {
-        a {
-            svg {
-                fill: $secondary;
-            }
-
-            &:hover,
-            &:active,
-            &:focus {
-                svg {
-                    fill: $black00;
-                }
-            }
-        }
-    }
 }

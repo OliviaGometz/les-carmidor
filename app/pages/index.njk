@@ -187,7 +187,13 @@
             <aside class="person">
                 <img src="./img/medias/me.png" alt="L'autrice des Carmidor, Olivia Gometz" />
 
-                {% include 'block-networks.njk' %}
+                <div class="container">
+                    {% for name, website in websites.network %}
+                        <a href="{{website.link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{website.desc}}">
+                            {% include "svg/logos/networks/" + name + ".svg" %}
+                        </a>
+                    {% endfor %}
+                </div>
             </aside>
         </section>
     </main>
