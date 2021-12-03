@@ -1,6 +1,4 @@
 .button {
-    position: relative;
-    z-index: $z-index-content;
     height: $buttonHeight;
     padding: 0 ($spaceSM - 2) 0 $spaceSM;
     display: inline-flex;
@@ -13,30 +11,17 @@
     letter-spacing: $spacingSM;
     border: $line solid $black00;
     color: $black00;
-    transition: color $durationSM;
-
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: $z-index-bg-link;
-        left: 0;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        background-color: $black00;
-        transition: all $durationSM;
-    }
+    background-image: linear-gradient(transparent 50%, $black00 50%);
+    background-size: auto 202%;
+    transition: all $durationSM;
 
     &:hover,
     &:active,
     &:focus,
     &.active {
-        text-shadow: none;
+        text-shadow: none; // reset for buttons inside div with background-image and text-shadow
         color: $white00;
-
-        &::before {
-            height: 100%;
-        }
+        background-position-y: 99%;
     }
 
     &.logo {
@@ -93,10 +78,7 @@
         &--#{$colorName} {
             border-color: $color;
             color: $color;
-
-            &::before {
-                background-color: $color;
-            }
+            background-image: linear-gradient(transparent 50%, $color 50%);
 
             &.logo {
                 svg {
@@ -145,5 +127,14 @@
     .link,
     .button {
         margin: $spaceSM;
+    }
+
+    span {
+        text-align: center;
+
+        small {
+            margin: $spaceSM;
+            margin-top: 0;
+        }
     }
 }
