@@ -5,6 +5,14 @@
         transition: all $durationSM;
     }
 
+    &:hover,
+    &:active,
+    &:focus {
+        svg {
+            transform: scale(1.05);
+        }
+    }
+
     &--sm {
         svg {
             height: 30px;
