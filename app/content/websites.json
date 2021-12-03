@@ -1,30 +1,52 @@
 {
-  "amazon": {
-    "desc": "amazon prime",
-    "link": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz/dp/2490163698/"
+  "network": {
+    "instagram": {
+      "desc": "Mon compte Instagram",
+      "link": "https://www.instagram.com/oliviagometz/"
+    },
+    "facebook": {
+      "desc": "Ma page Facebook",
+      "link": "https://www.facebook.com/OliviaGometzAutrice/"
+    },
+    "wattpad": {
+      "desc": "Mon profil Wattpad",
+      "link": "https://www.wattpad.com/user/OliviaGometz"
+    }
   },
+  "book": {
+    "amazon": {
+      "desc": "amazon prime",
+      "link": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz/dp/2490163698/"
+    },
     "fnac": {
-    "desc": "fnac.com",
-    "link": "https://livre.fnac.com/a16444863/Olivia-Gometz-Les-Carmidor"
-  },
+      "desc": "fnac.com",
+      "link": "https://livre.fnac.com/a16444863/Olivia-Gometz-Les-Carmidor"
+    },
     "cultura": {
-    "desc": "cultura.com",
-    "link": "https://www.cultura.com/les-carmidor-trahir-et-survivre-9782490163694.html"
-  },
+      "desc": "cultura.com",
+      "link": "https://www.cultura.com/les-carmidor-trahir-et-survivre-9782490163694.html"
+    },
     "decitre": {
-    "desc": "decitre.fr",
-    "link": "https://www.decitre.fr/livre-pod/les-carmidor-9782490163694.html"
-  },
+      "desc": "decitre.fr",
+      "link": "https://www.decitre.fr/livre-pod/les-carmidor-9782490163694.html"
+    },
     "bod": {
-    "desc": "book on demand",
-    "link": "https://www.bod.fr/librairie/les-carmidor-olivia-gometz-9782490163694"
-  },
+      "desc": "book on demand",
+      "link": "https://www.bod.fr/librairie/les-carmidor-olivia-gometz-9782490163694"
+    },
     "chapitre": {
-    "desc": "chapitre.com",
-    "link": "https://www.chapitre.com/BOOK/gometz-olivia/les-carmidor-trahir-et-survivre,83087757.aspx"
-  },
+      "desc": "chapitre.com",
+      "link": "https://www.chapitre.com/BOOK/gometz-olivia/les-carmidor-trahir-et-survivre,83087757.aspx"
+    },
     "lireka": {
-    "desc": "librairie fr",
-    "link": "https://www.lireka.com/fr/pp/9782490163694-les-carmidor"
+      "desc": "librairie fr",
+      "link": "https://www.lireka.com/fr/pp/9782490163694-les-carmidor"
+    }
+  },
+  "ebook": {
+    "amazon": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz-ebook/dp/B09J3C58XN/",
+    "fnac": "https://livre.fnac.com/a16444863/Olivia-Gometz-Les-Carmidor?NUMERICAL=Y",
+    "vivlio": "https://shop.vivlio.com/product/9782490163700_9782490163700_10007",
+    "rakuten": "https://www.kobo.com/fr/fr/ebook/les-carmidor"
   }
 }
