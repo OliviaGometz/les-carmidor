@@ -13,6 +13,19 @@
       "link": "https://www.wattpad.com/user/OliviaGometz"
     }
   },
+  "wattpad": {
+    "tome1": {
+      "start": "https://www.wattpad.com/655892420-les-carmidor-t1-trahir-et-survivre",
+      "chapter1": "https://www.wattpad.com/663681962-les-carmidor-t1-trahir-et-survivre-%C3%A9dit%C3%A9-chapitre"
+    },
+    "edlf": "https://www.wattpad.com/666768516-%C3%A9crire-de-la-fantasy-comme-g-r-r-martin",
+    "rantbook": "https://www.wattpad.com/678351969-rantbook"
+  },
+  "bp": {
+    "tome1": "https://www.betapublisher.com/roman/trahir-%26-survivre",
+    "epub": "https://www.betapublisher.com/product-page/les-carmidor-tome-1-trahir-survivre-epub",
+    "mobi": "https://www.betapublisher.com/product-page/les-carmidor-tome-1-trahir-survivre-mobi"
+  },
   "book": {
     "amazon": {
       "desc": "amazon prime",
