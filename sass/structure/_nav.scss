@@ -11,51 +11,13 @@ nav {
     align-items: center;
     padding: $spaceXS;
 
-    &.not-fixed-on-desktop {
-        @media #{$minMD} {
-            position: relative;
-        }
-    }
-
     @media #{$menuDesktop} {
         padding: $spaceXS $spaceMD;
     }
 
-    .hamburger {
-        font-size: 0;
-        position: relative;
-        width: 36px;
-        height: 24px;
-        padding: 0;
-        border: none;
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        span {
-            height: 3px;
-            width: 100%;
-            background-color: $primary;
-            transition: all $durationSM;
-
-            &:last-of-type {
-                align-self: flex-end;
-            }
-        }
-
-        &.js-active {
-            span {
-                &:first-of-type,
-                &:last-of-type {
-                    width: 0;
-                }
-            }
-        }
-
+    &.not-fixed-on-desktop {
         @media #{$menuDesktop} {
-            display: none;
+            position: relative;
         }
     }
 
@@ -76,6 +38,10 @@ nav {
                 fill: $primary;
             }
         }
+    }
+
+    .overlay {
+        top: $navHeight;
     }
 
     ul {
@@ -104,12 +70,6 @@ nav {
             align-items: center;
         }
 
-        &.js-active {
-            @media #{$menuMobile} {
-                transform: scale(1);
-            }
-        }
-
         li {
             @media #{$menuMobile} {
                 text-align: center;
@@ -124,6 +84,27 @@ nav {
         .link {
             @media #{$menuMobile} {
                 font-size: $fontSizeXL;
+            }
+        }
+    }
+}
+
+.js-active {
+    @media #{$menuMobile} {
+        overflow: hidden;
+    }
+
+    nav {
+        .overlay {
+            @media #{$menuMobile} {
+                pointer-events: all;
+                opacity: 1;
+            }
+        }
+
+        ul {
+            @media #{$menuMobile} {
+                transform: scale(1);
             }
         }
     }
