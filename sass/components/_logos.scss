@@ -1,6 +1,4 @@
 .logo {
-    margin: $spaceSM;
-
     svg {
         transition: all $durationXS, fill $durationSM;
     }
@@ -14,8 +12,19 @@
     }
 
     &--sm {
+        margin: $spaceSM;
+
         svg {
             height: 30px;
+            max-width: 120px;
+        }
+    }
+
+    &--md {
+        margin: $spaceLG;
+
+        svg {
+            height: 60px;
             max-width: 120px;
         }
     }
@@ -23,6 +32,18 @@
     &--white {
         svg {
             fill: $white00;
+        }
+    }
+
+    &--black {
+        svg {
+            fill: $black00;
+        }
+    }
+
+    &--white,
+    &--black {
+        svg {
             opacity: 0.6;
         }
 

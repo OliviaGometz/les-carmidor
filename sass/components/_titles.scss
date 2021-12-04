@@ -7,4 +7,10 @@
         margin: $spaceMD;
         margin-bottom: $spaceXL;
     }
+
+    &--normal {
+        text-align: center;
+        margin-left: $spaceMD;
+        margin-right: $spaceMD;
+    }
 }

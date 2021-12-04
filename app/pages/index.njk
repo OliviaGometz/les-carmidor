@@ -105,7 +105,7 @@
         </section>
 
         <section class="home-comments">
-            <h2>
+            <h2 class="title--normal">
                 Ce que les lecteurs en disent
             </h2>
 
@@ -169,32 +169,18 @@
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="home-author">
-            <article class="maxwidth--xs text--sm">
-                <h2>L'autrice&nbsp;: Olivia Gometz</h2>
+        <section>
+            <h2 class="title--normal">
+                Les médias en parlent
+            </h2>
 
-                <p>
-                    Ce que j'écris d'autre, mon parcours, des infos perso&hellip; tout ce qu'il y a à savoir sur moi, dans une page où je me fais mousser (et bourrée de redirections) (la page, pas moi).
-                </p>
-
-                <div class="buttons">
-                    <a href="/autrice" class="button button--primary">
-                        En savoir plus
+            <div class="buttons">
+                {% for id, media in websites.media %}
+                    <a href="{{media.link}}" class="logo logo--md logo--black" rel="external" target="_blank" aria-label="{{media.name}}">
+                        {% include "svg/logos/medias/" + id + ".svg" %}
                     </a>
-                </div>
-            </article>
-
-            <aside class="person">
-                <img src="./img/medias/me.png" alt="L'autrice des Carmidor, Olivia Gometz" />
-
-                <div class="container">
-                    {% for name, website in websites.network %}
-                        <a href="{{website.link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{website.desc}}">
-                            {% include "svg/logos/networks/" + name + ".svg" %}
-                        </a>
-                    {% endfor %}
-                </div>
-            </aside>
+                {% endfor %}
+            </div>
         </section>
     </main>
 
