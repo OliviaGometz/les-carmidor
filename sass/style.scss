@@ -28,6 +28,7 @@
 @import "components/person";
 @import "components/quotes";
 @import "components/texts";
+@import "components/timeline";
 @import "components/titles";
 @import "components/videos";
 @import "components/wave";
@@ -55,7 +56,6 @@
 @import "pages/home/discover";
 @import "pages/home/comments";
 @import "pages/home/lore";
-@import "pages/home/author";
 
 @import "pages/links/top";
 @import "pages/links/content";
@@ -67,3 +67,6 @@
 @import "pages/buy/booknook";
 @import "pages/buy/ebook";
 @import "pages/buy/details";
+
+@import "pages/author/top";
+@import "pages/author/timeline";
