@@ -26,6 +26,12 @@
     img {
         width: 70%;
     }
+
+    article {
+        @media #{$minMD} {
+            padding-bottom: 0;
+        }
+    }
 }
 
 .banner-gradient {
