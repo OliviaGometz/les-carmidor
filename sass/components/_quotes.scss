@@ -1,3 +1,9 @@
+figure {
+    max-width: map-get($widths, "lg");
+    margin: $spaceMD 0;
+    color: $black00;
+}
+
 blockquote {
     position: relative;
     margin: 0;
@@ -10,7 +16,7 @@ blockquote {
     &::before,
     &::after {
         position: absolute;
-        color: $primary;
+        opacity: 0.5;
         line-height: $lineHeightXS;
         font-size: $fontSizeLG;
     }
@@ -29,16 +35,27 @@ blockquote {
 
     p {
         font-size: $fontSizeSM;
+        margin: $spaceXS 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
-figure {
-    figcaption {
-        margin-top: $spaceXS;
-        text-align: center;
-        font-family: $fontMain, serif;
-        font-style: italic;
-        font-size: $fontSizeLG;
-        color: $grey50;
+figcaption {
+    margin-top: $spaceSM;
+    text-align: center;
+    font-family: $fontMain, serif;
+    font-style: normal;
+    font-size: $fontSizeLG;
+    opacity: 0.8;
+
+    cite {
+        font-style: normal;
     }
 }
