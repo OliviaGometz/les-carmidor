@@ -4,12 +4,19 @@
     border: $line*4 solid $white00;
     outline: $line solid;
 
-    :first-child {
+    & > :first-child,
+    h2 {
         margin-top: 0;
     }
 
-    :last-child {
+    & > :last-child {
         margin-bottom: 0;
+    }
+
+    .buttons:last-child {
+        a {
+            margin-bottom: 0;
+        }
     }
 
     p {
@@ -35,6 +42,34 @@
                     }
                 }
             }
+
+            figure {
+                color: map-get($color, "dark");
+            }
         }
-    } 
+
+        &--gradient-#{$colorName} {
+            background-color: map-get($color, "main");
+            background-image: linear-gradient(map-get($color, "main"), map-get($color, "dark"));
+            color: $white00;
+            outline-color: map-get($color, "main");
+
+            p {
+                a {
+                    color: $white00;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: $white00;
+                        background-color: map-get($color, "dark");
+                    }
+                }
+            }
+
+            figure {
+                color: $white00;
+            }
+        }
+    }
 }
