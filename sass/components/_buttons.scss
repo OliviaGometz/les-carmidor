@@ -31,6 +31,13 @@
             padding-top: $spaceXS;
         }
 
+        &--left {
+            svg {
+                height: 60%;
+                margin-right: $spaceSM;
+            }
+        }
+
         svg {
             transition: all $durationSM;
         }
@@ -95,6 +102,24 @@
     }
 
     @each $colorName, $color in $colors {
+        &--#{$colorName}-dark {
+            border-color: map-get($color, "dark");;
+            color: map-get($color, "dark");;
+            background-image: linear-gradient(transparent 50%, map-get($color, "dark") 50%);
+
+            &.logo {
+                svg {
+                    fill: map-get($color, "dark");
+                }
+            }
+
+            &.icon-mobile {
+                svg {
+                    stroke: map-get($color, "dark");
+                }
+            }
+        }
+
         &--active-#{$colorName} {
             &:hover,
             &:active,
