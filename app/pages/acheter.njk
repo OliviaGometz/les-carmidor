@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('buy')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('buy')}}
 
     <main>
         <section class="buy-banner">

@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('map')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('map')}}
 
     <main class="map">
         <h1>Les terres émergées</h1>

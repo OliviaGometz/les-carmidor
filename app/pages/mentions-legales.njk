@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('')}}
+    {% from 'nav.njk' import nav %}
+    {{nav()}}
 
     <main class="legal">
         <section class="banner-gradient banner-gradient--secondary">

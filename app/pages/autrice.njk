@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('author')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('author')}}
 
     <main>
         <section class="banner author-banner">

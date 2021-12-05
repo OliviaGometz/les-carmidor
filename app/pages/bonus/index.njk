@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('bonus')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('bonus')}}
 
     <main>
         <h1>Bonus</h1>

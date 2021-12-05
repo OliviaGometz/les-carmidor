@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('characters')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('characters')}}
 
     <main>
         <h1>Les personnages</h1>
