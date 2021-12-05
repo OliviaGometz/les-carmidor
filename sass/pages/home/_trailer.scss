@@ -12,4 +12,11 @@
         font-size: $fontSizeXXS;
         color: $grey40;
     }
+
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $spaceXXL;
+        padding: 0 $spaceMD;
+    }
 }
