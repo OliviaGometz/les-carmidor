@@ -1,4 +1,8 @@
 .title {
+    &--center {
+        text-align: center;
+    }
+
     &--header {
         text-align: center;
         color: $white00;
@@ -12,5 +16,19 @@
         text-align: center;
         margin-left: $spaceMD;
         margin-right: $spaceMD;
+    }
+
+    &--underline {
+        text-align: center;
+        margin-left: $spaceMD;
+        margin-right: $spaceMD;
+
+        &::after {
+            content: '';
+            width: $underline;
+            height: $line;
+            background-color: $secondaryLight;
+            margin: $spaceMD auto $spaceXL auto;
+        }
     }
 }
