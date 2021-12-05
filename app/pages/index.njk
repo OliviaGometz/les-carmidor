@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'nav.njk' as nav %}
-    {{nav.active('home')}}
+    {% from 'nav.njk' import nav %}
+    {{nav('home')}}
 
     <main>
         <section class="banner home-banner">
@@ -109,18 +109,8 @@
                 Ce que les lecteurs en disent
             </h2>
 
-            <figure>
-                <blockquote cite="https://www.instagram.com/p/CVazzEqKqIB/">
-                    <p>
-                        Ce roman est incroyable&nbsp;! Je l'appréhendais un peu, il est vrai, mais c'est purement et simplement un coup de cœur&nbsp;! On se retrouve dans un univers complexe et terriblement bien construit&nbsp;[...] Une véritable montagne russe.
-                    </p>
-                </blockquote>
-
-                <figcaption>
-                    <cite>Ma bouquinerie</cite>
-                    –&nbsp;Partenaire Beta Publisher
-                </figcaption>
-            </figure>
+            {% from 'quote.njk' import quote %}
+            {{quote(comments.anouklangel, hasButton=false)}}
 
             <div class="buttons">
                 <a href="/avis" class="button button--primary">
