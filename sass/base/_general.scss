@@ -18,6 +18,8 @@ svg,
 
 html {
     scroll-behavior: smooth;
+    min-height: 100vh;
+    background-color: $black00;
 }
 
 body {
