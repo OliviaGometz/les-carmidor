@@ -12,45 +12,42 @@
 
     <div class="overlay" data-js="close"></div>
 
+    {%
+        set links = {
+            home: {
+                name: 'Accueil',
+                url: ''
+            },
+            map: {
+                name: 'Carte',
+                url: 'carte'
+            },
+            characters: {
+                name: 'Familles',
+                url: 'familles'
+            },
+            comments: {
+                name: 'Avis',
+                url: 'avis'
+            },
+            author: {
+                name: 'Autrice',
+                url: 'autrice'
+            }
+        }
+    %}
+
     <ul>
-        <li>
-            <a href="/" class="link{%if activePage == 'home' %} active{% endif %}">
-                Accueil
-            </a>
-        </li>
-        
-        <li>
-            <a href="/carte" class="link{%if activePage == 'map' %} active{% endif %}">
-                Carte
-            </a>
-        </li>
-
-        <li>
-            <a href="/familles" class="link{%if activePage == 'characters' %} active{% endif %}">
-                Familles
-            </a>
-        </li>
-        
-        <li>
-            <a href="/avis" class="link{%if activePage == 'comments' %} active{% endif %}">
-                Avis
-            </a>
-        </li>
-        
-        <li>
-            <a href="/autrice" class="link{%if activePage == 'author' %} active{% endif %}">
-                Autrice
-            </a>
-        </li>
-
-        {# <li>
-            <a href="/bonus" class="link{%if activePage == 'bonus' %} active{% endif %}">
-                Bonus
-            </a>
-        </li> #}
+        {% for id, link in links %}
+            <li>
+                <a href="/{{ link.url }}" class="link link--white{%if activePage == id %} active{% endif %}">
+                    {{ link.name }}
+                </a>
+            </li>
+        {% endfor %}
     </ul>
 
-    <a href="/acheter" class="button button--primary icon-mobile{%if activePage == 'buy' %} active{% endif %}">
+    <a href="/acheter" class="button button--white button--active-primary icon-mobile{%if activePage == 'buy' %} active{% endif %}">
         {% include 'svg/icons/cart.svg' %}
         Acheter
     </a>

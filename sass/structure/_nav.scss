@@ -5,7 +5,7 @@ nav {
     top: 0;
     left: 0;
     height: $navHeight;
-    background-color: $white20;
+    background-color: $black00;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,7 @@ nav {
 
         svg {
             height: 100%;
+            fill: $white00;
             transition: all $durationSM;
         }
 
@@ -57,7 +58,7 @@ nav {
             left: 0;
             width: 100%;
             padding: $spaceSM;
-            background-color: $white20;
+            background-color: $black00;
             transform-origin: top center;
             transform: scaleY(0);
             transition: all $durationSM;
