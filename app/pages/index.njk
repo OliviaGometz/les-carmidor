@@ -172,7 +172,7 @@
                 Les médias en parlent
             </h2>
 
-            <div class="buttons">
+            <div class="container">
                 {% for id, media in websites.media %}
                     <a href="{{media.link}}" class="logo logo--md logo--black" rel="external" target="_blank" aria-label="{{media.name}}">
                         {% include "svg/logos/medias/" + id + ".svg" %}

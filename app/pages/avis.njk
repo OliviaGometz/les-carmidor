@@ -52,7 +52,7 @@
 
                 <p>Vous avez lu <em>Les Carmidor</em>&nbsp;? N'hésitez pas à donner votre avis sur les sites ci-dessous&nbsp;: cela permet au roman d'être suggéré à d'autres lecteurs et ça fait très plaisir à l'autrice&nbsp;!</p>
 
-                <div class="buttons">
+                <div class="container">
                     {% for name, link in websites.comment %}
                         <a href="{{link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{name}}">
                             {% include "svg/logos/websites/" + name + "-mini.svg" %}
