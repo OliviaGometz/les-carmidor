@@ -18,6 +18,11 @@
 
         p {
             color: $grey10;
+
+            small {
+                color: $grey30;
+                font-size: 0.7em;
+            }
         }
     }
 }
