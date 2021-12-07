@@ -21,16 +21,18 @@
         }
     }
 
-    &.js-active {
+    @media #{$menuDesktop} {
+        display: none;
+    }
+}
+
+.js-active {
+    .hamburger {
         span {
             &:first-of-type,
             &:last-of-type {
                 width: 0;
             }
         }
-    }
-
-    @media #{$menuDesktop} {
-        display: none;
     }
 }

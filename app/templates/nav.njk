@@ -1,6 +1,6 @@
 {% macro nav(activePage='') %}
 <nav>
-    <button type="button" class="hamburger" data-js="click" data-click="menu">
+    <button type="button" class="hamburger">
         <span></span>
         <span></span>
         <span></span>
@@ -10,7 +10,7 @@
         {% include 'svg/logos/carmidor.svg' %}
     </a>
 
-    <div class="overlay" data-js="close"></div>
+    <div class="overlay"></div>
 
     {%
         set links = {
