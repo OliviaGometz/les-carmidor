@@ -18,11 +18,8 @@ svg,
 
 html {
     min-height: 100vh;
+    scroll-behavior: smooth;
     background-color: $black00;
-
-    &:not(.map-container) {
-        scroll-behavior: smooth;
-    }
 }
 
 body {

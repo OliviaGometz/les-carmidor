@@ -1,3 +1,16 @@
+.map-container {
+    scroll-behavior: auto;
+    background-color: $primaryDark;
+    background-image: url('../img/bg/map.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    body {
+        background-color: transparent;
+    }
+}
+
 .map {
     font-family: $fontMain, serif;
     user-select: none;
@@ -14,13 +27,5 @@
 
     h1 {
         display: none;
-    }
-
-    svg {
-        background-color: $primaryDark;
-        background-image: url('../img/bg/map.png');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
     }
 }
