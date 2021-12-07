@@ -1,6 +1,5 @@
-const body = document.getElementsByTagName('body')[0];
+const html = document.getElementsByTagName('html')[0];
 const container = document.getElementsByClassName('map')[0];
-const map = container.getElementsByTagName('svg')[0];
 const zoomButtons = {
     minus: document.getElementById('zoomMinus'),
     plus: document.getElementById('zoomPlus'),
@@ -23,8 +22,8 @@ const mouseMoveHandler = function(e) {
     const dy = e.clientY - pos.y;
 
     // Scroll the element
-    container.scrollLeft = pos.left - dx;
-    container.scrollTop = pos.top - dy;
+    html.scrollLeft = pos.left - dx;
+    html.scrollTop = pos.top - dy;
 };
 
 const mouseUpHandler = function() {
@@ -39,8 +38,8 @@ const mouseDownHandler = function(e) {
 
     pos = {
         // The current scroll 
-        left: container.scrollLeft,
-        top: container.scrollTop,
+        left: html.scrollLeft,
+        top: html.scrollTop,
         // The current mouse position
         x: e.clientX,
         y: e.clientY,
@@ -85,8 +84,8 @@ const scaleWidth = {
 };
 
 const mapZoom = function() {
-    body.setAttribute('data-zoom', Math.round(zoom * 2) / 2);
-    map.style.width = zoom * 100 + '%';
+    html.setAttribute('data-zoom', Math.round(zoom * 2) / 2);
+    container.style.width = zoom * 100 + '%';
 
     for (const [key, value] of Object.entries(scaleWidth)) {
         scaleElement[key].style.width = (zoom * value) + 'vw';

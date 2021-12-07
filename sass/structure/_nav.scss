@@ -15,12 +15,6 @@ nav {
         padding: $spaceXS $spaceMD;
     }
 
-    &.not-fixed-on-desktop {
-        @media #{$menuDesktop} {
-            position: relative;
-        }
-    }
-
     .home {
         display: block;
         height: 100%;

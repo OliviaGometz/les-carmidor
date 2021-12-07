@@ -1,16 +1,10 @@
 .map {
-    height: 100vh;
-    overflow-x: auto;
+    font-family: $fontMain, serif;
     user-select: none;
     cursor: grab;
-    background-color: $primaryDark;
-    background-image: url('../img/bg/map.png');
-    background-position: center;
-    background-size: cover;
-    font-family: $fontMain, serif;
+    transition: width $durationXS linear;
 
     &.js-grabbing {
-        scroll-behavior: initial;
         cursor: grabbing;
 
         * {
@@ -18,9 +12,15 @@
         }
     }
 
-    @media #{$minMD} {
-        height: calc(100vh - #{$navHeight});
-        padding-top: 0;
-        overflow-x: hidden;
+    h1 {
+        display: none;
+    }
+
+    svg {
+        background-color: $primaryDark;
+        background-image: url('../img/bg/map.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
