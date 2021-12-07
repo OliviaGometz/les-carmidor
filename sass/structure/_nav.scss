@@ -1,19 +1,15 @@
 nav {
     position: fixed;
     z-index: $z-index-topbar;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     height: $navHeight;
-    background-color: $black00;
+    padding: $spaceXS;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $spaceXS;
-
-    @media #{$menuDesktop} {
-        padding: $spaceXS $spaceMD;
-    }
+    background-color: $black00;
 
     .home {
         display: block;
