@@ -50,24 +50,10 @@
             }
         }
 
-        @mixin illuAnimation($size) {
+        &:not(:hover) {
             svg {
-                stroke-dasharray: $size;
+                stroke-dashoffset: 0;
             }
-
-            &:hover {
-                svg {
-                    stroke-dashoffset: $size;
-                }
-            }
-        }
-
-        &:first-of-type {
-            @include illuAnimation(910);
-        }
-
-        &:last-of-type {
-            @include illuAnimation(1920);
         }
     }
 }
