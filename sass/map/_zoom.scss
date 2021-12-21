@@ -15,6 +15,10 @@
                 }
             }
 
+            .region-zone {
+                display: none;
+            }
+
             .grid-b,
             .grid-c,
             .ville,
@@ -24,17 +28,12 @@
         }
     } @else if $level == b {
         .map {
-            .region {
+            .region-zone {
                 cursor: pointer;
-
-                .region-zone {
-                    stroke-width: 0.5px;
-                }
+                stroke-width: 0.5px;
 
                 &:hover {
-                    .region-zone {
-                        stroke-opacity: 1;
-                    }
+                    stroke-opacity: 1;
                 }
             }
 

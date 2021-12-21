@@ -1,0 +1,32 @@
+{
+    "rubisie": {
+        "title": "Rubisie",
+        "details": [
+            "Le royaume de Rubisie est une terre tempérée au carrefour de plusieurs civilisations.",
+            "S'il tire son nom de sa première richesse, les mines de rubis, il est avant tout porté sur le commerce, notamment fluvial et maritime.",
+            "Divisée en quatre larges duchés, la Rubisie est dirigée par un roi pour qui l'enjeu est de composer avec ses puissants vassaux directs&nbsp;: les ducs de <strong data-js='popin' data-popin='region-goragna'>Goragna</strong>, <strong data-js='popin' data-popin='region-sorgone'>Sorgone</strong>, <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong> et <strong data-js='popin' data-popin='region-corance'>Corance</strong>.",
+            "Sa capitale est <strong data-js='popin' data-popin='virda'>Virda</strong>."
+        ],
+        "family": "arvagna",
+        "picture": true
+    },
+    "region-corance": {
+        "title": "Duché de Corance",
+        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Le duché de Corance est la seule île de Rubisie&nbsp;: son climat privilégié et sa position géographique en ont fait la terre la plus riche du royaume.",
+            "La majorité des échanges commerciaux entre la Rubisie et le Sarouha passe par ses ports, et notamment celui du chef-lieu éponyme, la <strong data-js='popin' data-popin='corance'>cité de Corance</strong>. En effet, les voies maritimes entre Corance et le nord du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> sont peu exposées aux aléas des tempêtes, ce qui permet à de nombreux types de navires d'effectuer la traversée sans encombres.",
+            "Autrefois, Corance était une principauté indépendante. Mais en 987, alors que l'île souffrait de famines et d'épidémies, elle fut annexée de force par la Rubisie continentale."
+        ],
+        "family": "carmidor"
+    },
+    "corance": {
+        "title": "Corance",
+        "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-corance'>duché de Corance</strong>",
+        "details": [
+            "La cité de Corance est le plus grand port du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>.",
+            "La plupart des navires marchands qui relient la Rubisie et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> transitent par Corance&nbsp;: pour ce faire, ils doivent s'acquitter de la taxe corancienne, dont le bénéfice revient au duc. Avec le développement du commerce maritime, la taxe corancienne a ainsi considérablement enrichi les Carmidor."
+        ],
+        "family": "carmidor"
+    }
+}

@@ -39,7 +39,8 @@ function html() {
         const comments = require("./app/content/comments.json");
         const logos = require("./app/content/logos.json");
         const websites = require("./app/content/websites.json");
-        return { author, characters, comments, logos, websites };
+        const world = require("./app/content/world.json");
+        return { author, characters, comments, logos, websites, world };
       })
     )
     .pipe(

@@ -13,8 +13,41 @@
     <main class="map">
         <h1>Les terres émergées</h1>
 
-        {% include 'svg/map.svg' %}
+        {% include 'svg/world/map.svg' %}
     </main>
+
+    <section>
+        {% for id, place in world %}
+            <article class="popin" data-popin="{{id}}">
+                <div class="popin__header{% if not place.picture %} popin__header--border{% endif %}">
+                    <h2>{{place.title}}</h2>
+
+                    <button type="button">{% include 'svg/icons/cross.svg' %}</button>
+                </div>
+
+                <div class="popin__content">
+                    {% if place.picture %}
+                        <img src="./img/world/pictures/{{id}}.png" class="popin__content__banner" />
+                    {% endif %}
+
+                    <div class="popin__content__text">
+                        {% if place.subtitle|length %}<p class="emphasis">{{place.subtitle | safe}}</p>{% endif %}
+
+                        {% include 'svg/world/zones/' + id + '.svg' ignore missing %}
+
+                        {% for paragraph in place.details %}
+                            <p>{{paragraph | safe}}</p>
+                        {% endfor %}
+                    </div>
+
+                    <div class="popin__footer popin__footer--{{place.family}}">
+                        <span>Dirigeants</span>
+                        {{place.family}}
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
 
     <aside class="map-legend">
         <div class="zoom">
@@ -31,4 +64,5 @@
     </aside>
 
     <script src="js/map.js?v={{version}}"></script>
+    <script src="js/popin.js?v={{version}}"></script>
 {% endblock %}
