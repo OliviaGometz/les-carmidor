@@ -134,6 +134,51 @@
     }
 
     &__footer {
-        padding: $spaceMD;
+        display: grid;
+        grid-template-areas:
+            "title banner"
+            "name banner";
+        padding: $spaceXS $spaceMD;
+        background-image:
+            linear-gradient(to right, #{$white20} 30%, transparent 70%),
+            url(../img/banners/bg.png);
+        background-blend-mode: normal, overlay;
+        background-size: cover;
+
+        span {
+            margin-top: $spaceSM;
+            text-transform: uppercase;
+            letter-spacing: $spacingXL;
+            font-weight: $bold;
+            font-size: $fontSizeXXS;
+            color: $grey40;
+        }
+
+        p {
+            margin-bottom: $spaceXXS;
+            font-family: $fontMain, serif;
+            font-size: $titleSizeMD;
+        }
+
+        &::after {
+            content: '';
+            grid-area: banner;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        @each $family, $color in $families {
+            &--#{$family} {
+                background-image:
+                    linear-gradient(to right, #{$white20} 30%, transparent 70%),
+                    url(../img/banners/bg.png),
+                    radial-gradient(map-get($color, "main"), map-get($color, "dark"));
+                
+                &::after {
+                    background-image: url(../img/banners/#{$family}.svg);
+                }
+            }
+        }
     }
 }

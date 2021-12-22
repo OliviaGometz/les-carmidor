@@ -27,7 +27,7 @@
 
                 <div class="popin__content">
                     {% if place.picture %}
-                        <img src="./img/world/pictures/{{id}}.png" class="popin__content__banner" />
+                        <img src="./img/world/{{id}}.png" class="popin__content__banner" />
                     {% endif %}
 
                     <div class="popin__content__text">
@@ -42,7 +42,7 @@
 
                     <div class="popin__footer popin__footer--{{place.family}}">
                         <span>Dirigeants</span>
-                        {{place.family}}
+                        <p>Les {{families[place.family]}}</p>
                     </div>
                 </div>
             </article>
