@@ -13,9 +13,8 @@
     "arcavie": {
         "title": "Arcavie",
         "details": [
-            "L'Arcavie est un royaume divisé en comtés, eux-mêmes subdiviés en vicomtés.",
-            "Le large territoire est tenu d'une main de fer par le roi, qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
-            "L'Arcavie a pour particularité d'être coupée en deux par une chaîne de montagnes, ce qui rend son administration particulièrement délicate.",
+            "L'Arcavie est un royaume divisé en comtés, eux-mêmes subdivisés en vicomtés, sous l'autorité d'un roi qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
+            "Le large territoire a pour particularité d'être coupé en deux par une chaîne de montagnes, ce qui rend son administration particulièrement délicate.",
             "Des dissenssions naissent régulièrement à l'est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>le port de Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis."
         ],
         "family": "tordheon",
@@ -24,7 +23,7 @@
     "scorvege": {
         "title": "Scorvège",
         "details": [
-            "La Scorvège est une immense étendue d'herbe et de glace, aride et inhospitalière, bordée de glaciers et de banquises.",
+            "La Scorvège est une immense étendue aride et inhospitalière, bordée de glaciers et de banquises.",
             "Elle se divise en plusieurs territoires aux mains d'une cinquantaine de clans dirigés par des jarls.",
             "Le développement de l'exploration maritime ayant augmenté les risques d'incursions ennemies, les clans se sont alliés pour préserver l'intégrité de leurs terres, là où il leur suffisait autrefois de protéger l'isthme d'Osund qui les relie à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
             "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en things à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
