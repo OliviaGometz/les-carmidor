@@ -103,6 +103,25 @@
         ],
         "family": "moronard"
     },
+    "bogdar": {
+        "title": "Bogdar",
+        "subtitle": "Capitale du <strong data-js='popin' data-popin='sarouha'>sultanat du Sarouha</strong>",
+        "details": [
+            "Siège du pouvoir sultanesque, Bogdar est aussi le plus grand port du Sarouha.",
+            "Sa situation géographique lui offre en effet un accès privilégié à <strong data-js='popin' data-popin='region-corance'>l'île de Corance</strong>, qui l'ouvre au commerce avec toute la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
+            "Bogdar est une ville morcelée par les nombreux affluents du Tenzith, le fleuve qui la traverse pour se jeter dans l'océan Priadique."
+        ],
+        "family": "al-beymir"
+    },
+    "caradesse": {
+        "title": "Caradesse",
+        "details": [
+            "Caradesse est le plus grand port d'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>, et sa plus grande cité estalienne.",
+            "Chef-lieu du comté éponyme, elle est commerce avec la du <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et notamment avec le <strong data-js='popin' data-popin='naudele'>port de Naudèle</strong>.",
+            "Elle dispose de la seule arène semi-circulaire du monde&nbsp;: le théâtre de Népéidon, à flanc d'océan, dans lequel des jeux mortels se déroulaient plusieurs siècles auparavant."
+        ],
+        "family": "jostiral"
+    },
     "corance": {
         "title": "Corance",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-corance'>duché de Corance</strong>",
@@ -111,5 +130,58 @@
             "La plupart des navires marchands qui relient la Rubisie et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> transitent par Corance&nbsp;: pour ce faire, ils doivent s'acquitter de la taxe corancienne, dont le bénéfice revient au duc. Avec le développement du commerce maritime, la taxe corancienne a ainsi considérablement enrichi les Carmidor."
         ],
         "family": "carmidor"
+    },
+    "diveniam": {
+        "title": "Diveniam",
+        "subtitle": "Capitale de l'<strong data-js='popin' data-popin='kavong'>empire du Kavong</strong>",
+        "details": [
+            "Diveniam est le siège du pouvoir de l'empereur.",
+            "Son port est l'un des plus grand de l'empire, et celui qui accueille le plus d'étrangers, notamment en provenance de <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
+        ],
+        "family": "qan"
+    },
+    "erinthe": {
+        "title": "Érinthe",
+        "subtitle": "Capitale du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong>",
+        "details": [
+            "Siège du pouvoir royal, Érinthe est également le siège de la Chambre des Comtes, assemblée qui seconde le roi dans l'administration des comtés et vicomtés.",
+            "Érinthe est également un joyau architectural&nbsp;: au fil des décennies, les souverains de la dynastie des Tordhéon n'ont eu de cesse de l'embellir.",
+            "La cité est notamment connue pour la qualité de ses vitraux et ses verriers sont renommés dans le monde entier."
+        ],
+        "family": "tordheon"
+    },
+    "fahirah": {
+        "title": "Fahirah",
+        "details": [
+            "Entre montagnes et désert, Fahirah est une petite ville qui n'aurait jamais prospéré sans ses mines d'or toutes proches.",
+            "Renommé dans tout le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>, son précieux métal en fait la cible d'attaques régulières.",
+            "Pour éviter que la ville soit mise à sac et son or dérobé, des troupes armées y séjournent à titre permanent."
+        ]
+    },
+    "honterra": {
+        "title": "Honterra",
+        "details": [
+            "Idéalement placée sur la route de <strong data-js='popin' data-popin='goragna'>Goragna</strong>, Honterra est le chef-lieu du vicomté du même nom, au sud-ouest du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong>.",
+            "La petite ville frontalière vit uniquement du commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
+            "En effet, située sur les contreforts des Apondrées Ouestarines, elle est entourée de terres impropres aux usages agricoles."
+        ],
+        "family": "urchain"
+    },
+    "mavas": {
+        "title": "Mavas",
+        "details": [
+            "Chef-lieu de l'émirat du même nom, Mavas est le deuxième plus grand port du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>.",
+            "Elle est connue dans toutes les terres émergées pour ses armes en acier mavassais, notamment ses épées, dagues et sabres, ce qui lui vaut le surnom de <i>reine des lames</i>."
+        ],
+        "family": "al-mehet"
+    },
+    "thordovat": {
+        "title": "Thordovat",
+        "subtitle": "Capitale de la <strong data-js='popin' data-popin='scorvege'>Scorvège</strong>",
+        "details": [
+            "Thordovat est le coeur politique de la Scorvège. C'est là que le grand jarl réunit les jarls de tous les clans scorvégiens lorsqu'une grande décision doit être prise.",
+            "Loin des côtes, Thordovat vit du commerce agricole, de l'élevage et de la chasse au renne."
+        ],
+        "family": "obrok"
     }
 }
