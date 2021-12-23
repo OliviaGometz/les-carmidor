@@ -1,15 +1,4 @@
 {
-    "rubisie": {
-        "title": "Rubisie",
-        "details": [
-            "Le royaume de Rubisie est une terre tempérée au carrefour de plusieurs civilisations.",
-            "S'il tire son nom de sa première richesse, les mines de rubis, il est avant tout porté sur le commerce, notamment fluvial et maritime.",
-            "Divisée en quatre larges duchés, la Rubisie est dirigée par un roi pour qui l'enjeu est de composer avec ses puissants vassaux directs&nbsp;: les ducs de <strong data-js='popin' data-popin='region-goragna'>Goragna</strong>, <strong data-js='popin' data-popin='region-sorgone'>Sorgone</strong>, <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong> et <strong data-js='popin' data-popin='region-corance'>Corance</strong>.",
-            "Sa capitale est <strong data-js='popin' data-popin='virda'>Virda</strong>."
-        ],
-        "family": "arvagna",
-        "picture": true
-    },
     "arcavie": {
         "title": "Arcavie",
         "details": [
@@ -18,17 +7,6 @@
             "Des dissenssions naissent régulièrement à l'est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>le port de Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis."
         ],
         "family": "tordheon",
-        "picture": true
-    },
-    "scorvege": {
-        "title": "Scorvège",
-        "details": [
-            "La Scorvège est une immense étendue aride et inhospitalière, bordée de glaciers et de banquises.",
-            "Elle se divise en plusieurs territoires aux mains d'une cinquantaine de clans dirigés par des jarls.",
-            "Le développement de l'exploration maritime ayant augmenté les risques d'incursions ennemies, les clans se sont alliés pour préserver l'intégrité de leurs terres, là où il leur suffisait autrefois de protéger l'isthme d'Osund qui les relie à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
-            "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en things à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
-        ],
-        "family": "obrok",
         "picture": true
     },
     "kavong": {
@@ -42,6 +20,17 @@
         "family": "qan",
         "picture": true
     },
+    "rubisie": {
+        "title": "Rubisie",
+        "details": [
+            "Le royaume de Rubisie est une terre tempérée au carrefour de plusieurs civilisations.",
+            "S'il tire son nom de sa première richesse, les mines de rubis, il est avant tout porté sur le commerce, notamment fluvial et maritime.",
+            "Divisée en quatre larges duchés, la Rubisie est dirigée par un roi pour qui l'enjeu est de composer avec ses puissants vassaux directs&nbsp;: les ducs de <strong data-js='popin' data-popin='region-goragna'>Goragna</strong>, <strong data-js='popin' data-popin='region-sorgone'>Sorgone</strong>, <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong> et <strong data-js='popin' data-popin='region-corance'>Corance</strong>.",
+            "Sa capitale est <strong data-js='popin' data-popin='virda'>Virda</strong>."
+        ],
+        "family": "arvagna",
+        "picture": true
+    },
     "sarouha": {
         "title": "Sarouha",
         "details": [
@@ -51,6 +40,17 @@
             "Il est dirigé depuis la capitale, <strong data-js='popin' data-popin='bogdar'>Bogdar</strong>, par un sultan secondé par un vizir."
         ],
         "family": "al-beymir",
+        "picture": true
+    },
+    "scorvege": {
+        "title": "Scorvège",
+        "details": [
+            "La Scorvège est une immense étendue aride et inhospitalière, bordée de glaciers et de banquises.",
+            "Elle se divise en plusieurs territoires aux mains d'une cinquantaine de clans dirigés par des jarls.",
+            "Le développement de l'exploration maritime ayant augmenté les risques d'incursions ennemies, les clans se sont alliés pour préserver l'intégrité de leurs terres, là où il leur suffisait autrefois de protéger l'isthme d'Osund qui les relie à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
+            "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en things à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
+        ],
+        "family": "obrok",
         "picture": true
     },
     "inconnu": {
@@ -72,16 +72,6 @@
         ],
         "family": "carmidor"
     },
-    "region-lorsis": {
-        "title": "Duché de Lorsis",
-        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
-        "details": [
-            "Le duché de Lorsis est une riche terre continentale, fort du rayonnement culturel de <strong data-js='popin' data-popin='lorsis'>son chef-lieu</strong>.",
-            "Idéalement situé entre la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>, et l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, il est l'intermédiaire des échanges entre l'est et l'ouest du royaume.",
-            "Autrefois, il englobait même la capitale, avant que <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> ne l'obtienne."
-        ],
-        "family": "virdemis"
-    },
     "region-goragna": {
         "title": "Duché de Goragna",
         "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
@@ -91,6 +81,16 @@
             "Pour autant, son chef-lieu administratif demeure la <strong data-js='popin' data-popin='goragna'>cité de Goragna</strong>."
         ],
         "family": "arvagna"
+    },
+    "region-lorsis": {
+        "title": "Duché de Lorsis",
+        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Le duché de Lorsis est une riche terre continentale, fort du rayonnement culturel de <strong data-js='popin' data-popin='lorsis'>son chef-lieu</strong>.",
+            "Idéalement situé entre la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>, et l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, il est l'intermédiaire des échanges entre l'est et l'ouest du royaume.",
+            "Autrefois, il englobait même la capitale, avant que <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> ne l'obtienne."
+        ],
+        "family": "virdemis"
     },
     "region-sorgone": {
         "title": "Duché de Sorgone",
