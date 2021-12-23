@@ -141,7 +141,7 @@
         padding: $spaceXS $spaceMD;
         background-image:
             linear-gradient(to right, #{$white20} 30%, transparent 70%),
-            url(../img/banners/bg.png);
+            url($toile);
         background-blend-mode: normal, overlay;
         background-size: cover;
 
@@ -172,7 +172,7 @@
             &--#{$family} {
                 background-image:
                     linear-gradient(to right, #{$white20} 30%, transparent 70%),
-                    url(../img/banners/bg.png),
+                    url($toile),
                     radial-gradient(map-get($color, "main"), map-get($color, "dark"));
                 
                 &::after {

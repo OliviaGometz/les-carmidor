@@ -3,7 +3,6 @@ const gulp = require("gulp"),
   postcss = require("gulp-postcss"),
   autoprefixer = require("autoprefixer"),
   cssnano = require("cssnano"),
-  sourcemaps = require("gulp-sourcemaps"),
   nunjucksRender = require("gulp-nunjucks-render"),
   data = require("gulp-data");
 
@@ -21,11 +20,9 @@ const paths = {
 function style() {
   return gulp
     .src(paths.styles.src)
-    .pipe(sourcemaps.init())
     .pipe(sass())
     .on("error", sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.styles.dest));
 }
 
