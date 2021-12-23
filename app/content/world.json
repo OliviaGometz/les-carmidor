@@ -10,6 +10,59 @@
         "family": "arvagna",
         "picture": true
     },
+    "arcavie": {
+        "title": "Arcavie",
+        "details": [
+            "L'Arcavie est un royaume divisé en comtés, eux-mêmes subdiviés en vicomtés.",
+            "Le large territoire est tenu d'une main de fer par le roi, qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
+            "L'Arcavie a pour particularité d'être coupée en deux par une chaîne de montagnes, ce qui rend son administration particulièrement délicate.",
+            "Des dissenssions naissent régulièrement à l'est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>le port de Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis."
+        ],
+        "family": "tordheon",
+        "picture": true
+    },
+    "scorvege": {
+        "title": "Scorvège",
+        "details": [
+            "La Scorvège est une immense étendue d'herbe et de glace, aride et inhospitalière, bordée de glaciers et de banquises.",
+            "Elle se divise en plusieurs territoires aux mains d'une cinquantaine de clans dirigés par des jarls.",
+            "Le développement de l'exploration maritime ayant augmenté les risques d'incursions ennemies, les clans se sont alliés pour préserver l'intégrité de leurs terres, là où il leur suffisait autrefois de protéger l'isthme d'Osund qui les relie à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
+            "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en things à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
+        ],
+        "family": "obrok",
+        "picture": true
+    },
+    "kavong": {
+        "title": "Kavong",
+        "details": [
+            "L'empire du Kavong, surnommé l'empire du soleil couchant, est un archipel isolé du reste du monde par une mer indomptable, la mer Mongaise.",
+            "De nombreuses tornades s'y déchaînent&nbsp;; pour commercer avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, les navires kavongans préfèrent généralement longer les côtes et traverser plus au sud jusqu'à <strong data-js='popin' data-popin='sorgone'>Sorgone</strong>.",
+            "L'empire est divisé en provinces dirigées par des seigneurs appelés shogun. Leurs vassaux sont les daïmio.",
+            "Sa capitale est <strong data-js='popin' data-popin='diveniam'>Diveniam</strong>."
+        ],
+        "family": "qan",
+        "picture": true
+    },
+    "sarouha": {
+        "title": "Sarouha",
+        "details": [
+            "Riche sultanat du sud des terres émergées, le Sarouha est une terre au climat chaud voire désertique.",
+            "S'il commerce largement avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et particulièrement <strong data-js='popin' data-popin='corance'>Corance</strong>, qui sont friands de son acier et de ses armes légères mais solides, le Sarouha s'illustre également dans le commerce d'opium, fort de ses cultures de pavot.",
+            "Mais en dépit de ses richesses minières, le Sarouha connaît une criante pauvreté.",
+            "Il est dirigé depuis la capitale, <strong data-js='popin' data-popin='bogdar'>Bogdar</strong>, par un sultan secondé par un vizir."
+        ],
+        "family": "al-beymir",
+        "picture": true
+    },
+    "inconnu": {
+        "title": "Terres inconnues",
+        "details": [
+            "Situé loin au sud-ouest des terres émergées, dans l'océan Priadique, là où l'on croit que les dieux naviguent avec l'esprit des défunts, un continent tout entier sommeille, absent des cartes.",
+            "De mémoire d'homme, nul n'en a jamais foulé le sol et n'en est revenu pour en témoigner.",
+            "Pourtant, de vieilles légendes sarouhannes racontent qu'une immense terre a émergé aux confins du monde des vivants&hellip;"
+        ],
+        "picture": true
+    },
     "region-corance": {
         "title": "Duché de Corance",
         "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
@@ -19,6 +72,37 @@
             "Autrefois, Corance était une principauté indépendante. Mais en 987, alors que l'île souffrait de famines et d'épidémies, elle fut annexée de force par la Rubisie continentale."
         ],
         "family": "carmidor"
+    },
+    "region-lorsis": {
+        "title": "Duché de Lorsis",
+        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Le duché de Lorsis est une riche terre continentale, fort du rayonnement culturel de <strong data-js='popin' data-popin='lorsis'>son chef-lieu</strong>.",
+            "Idéalement situé entre la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>, et l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, il est l'intermédiaire des échanges entre l'est et l'ouest du royaume.",
+            "Autrefois, il englobait même la capitale, avant que <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> ne l'obtienne."
+        ],
+        "family": "virdemis"
+    },
+    "region-goragna": {
+        "title": "Duché de Goragna",
+        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Le duché de Goragna était autrefois le coeur du royaume, au carrefour entre le sud du continent et l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>. Hélas, sa puissance agricole a décru au fil des sécheresses, ce qui l'a considéralement appauvri.",
+            "Il est traditionnellement le duché des rois de Rubisie, et en contient la capitale, <strong data-js='popin' data-popin='virda'>Virda</strong>.",
+            "Pour autant, son chef-lieu administratif demeure la <strong data-js='popin' data-popin='goragna'>cité de Goragna</strong>."
+        ],
+        "family": "arvagna"
+    },
+    "region-sorgone": {
+        "title": "Duché de Sorgone",
+        "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Forte de ses mines de rubis qui ont donné son nom au royaume, le duché de Sorgone dispose également de nombreux ports.",
+            "Mais aucun d'entre eux n'atteint le prestige et la richesse des ports de <strong data-js='popin' data-popin='region-corance'>Corance</strong> ou de <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong>.",
+            "L'exploitation de ses mines se déroule sous le contrôle des intendants du roi, ce qui explique en partie les nombreux liens entre le duché de Sorgone et celui de <strong data-js='popin' data-popin='region-goragna'>Goragna</strong>, historiquement le fief des dynasties rubisiennes.",
+            "Son chef-lieu est le <strong data-js='popin' data-popin='sorgone'>port de Sorgone</strong>."
+        ],
+        "family": "moronard"
     },
     "corance": {
         "title": "Corance",

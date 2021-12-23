@@ -40,10 +40,12 @@
                         {% endfor %}
                     </div>
 
-                    <div class="popin__footer popin__footer--{{place.family}}">
-                        <span>Dirigeants</span>
-                        <p>Les {{families[place.family]}}</p>
-                    </div>
+                    {% if place.family %}
+                        <div class="popin__footer popin__footer--{{place.family}}">
+                            <span>Dirigeants</span>
+                            <p>Les {{families[place.family]}}</p>
+                        </div>
+                    {% endif %}
                 </div>
             </article>
         {% endfor %}
