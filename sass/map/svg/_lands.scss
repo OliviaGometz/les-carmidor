@@ -5,7 +5,7 @@
     font-weight: $bold;
     text-shadow: 0 0 8px $secondary, 0 0 2px $secondaryLight;
 
-    $strokeOffset: 50;
+    $strokeOffset: 13;
 
     circle {
         stroke: $black00;
@@ -13,7 +13,7 @@
         stroke-dasharray: $strokeOffset;
         stroke-dashoffset: $strokeOffset;
         filter: drop-shadow($secondaryLight 0 0 1px);
-        transition: all $durationSM, stroke-dashoffset 3s linear;
+        transition: all $durationSM linear $durationLG, stroke-dashoffset $durationLG linear 0s;
     }
 
     &:hover,
@@ -22,6 +22,7 @@
         circle {
             fill: $secondary;
             stroke-dashoffset: 0;
+            transition-delay: 0s;
         }
     }
 }
