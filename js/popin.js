@@ -1,16 +1,18 @@
 const popin = '.popin';
 
 const clickHandler = function(e) {
-    const elementStyle = getComputedStyle(this);
+    if (!isDragging) {
+        const elementStyle = getComputedStyle(this);
 
-    if (elementStyle.opacity > 0 && elementStyle.cursor == 'pointer') {
-        closeHandler();
+        if (elementStyle.opacity > 0 && elementStyle.cursor == 'pointer') {
+            closeHandler();
 
-        document.querySelectorAll(popin + '[data-popin="' + this.dataset.popin + '"]').forEach((target) => {
-            target.classList.add(activeCss);
-        });
+            document.querySelectorAll(popin + '[data-popin="' + this.dataset.popin + '"]').forEach((target) => {
+                target.classList.add(activeCss);
+            });
 
-        e.stopPropagation();
+            e.stopPropagation();
+        }
     }
 };
 

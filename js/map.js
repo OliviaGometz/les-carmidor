@@ -12,11 +12,17 @@ const scaleElement = {};
 
 const grabbingCss = 'js-grabbing';
 
+// Is dragging var
+
+var isDragging = false;
+
 // Moove with grab
 
 let pos = { top: 0, left: 0, x: 0, y: 0 };
 
 const mouseMoveHandler = function(e) {
+    isDragging = true;
+
     // How far the mouse has been moved
     const dx = e.clientX - pos.x;
     const dy = e.clientY - pos.y;
@@ -34,6 +40,7 @@ const mouseUpHandler = function() {
 };
 
 const mouseDownHandler = function(e) {
+    isDragging = false;
     container.classList.add(grabbingCss);
 
     pos = {
