@@ -76,7 +76,7 @@
         "title": "Duché de Goragna",
         "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
         "details": [
-            "Le duché de Goragna était autrefois le coeur du royaume, au carrefour entre le sud du continent et l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>. Hélas, sa puissance agricole a décru au fil des sécheresses, ce qui l'a considéralement appauvri.",
+            "Le duché de Goragna était autrefois le cœur du royaume, au carrefour entre le sud du continent et l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>. Hélas, sa puissance agricole a décru au fil des sécheresses, ce qui l'a considéralement appauvri.",
             "Il est traditionnellement le duché des rois de Rubisie, et en contient la capitale, <strong data-js='popin' data-popin='virda'>Virda</strong>.",
             "Pour autant, son chef-lieu administratif demeure la <strong data-js='popin' data-popin='goragna'>cité de Goragna</strong>."
         ],
@@ -109,18 +109,39 @@
         "details": [
             "Siège du pouvoir sultanesque, Bogdar est aussi le plus grand port du Sarouha.",
             "Sa situation géographique lui offre en effet un accès privilégié à <strong data-js='popin' data-popin='region-corance'>l'île de Corance</strong>, qui l'ouvre au commerce avec toute la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
-            "Bogdar est une ville morcelée par les nombreux affluents du Tenzith, le fleuve qui la traverse pour se jeter dans l'océan Priadique."
+            "Bogdar est une ville morcelée par les nombreux bras du Tenzith, le fleuve qui la traverse pour se jeter dans l'océan Priadique."
         ],
         "family": "al-beymir"
     },
     "caradesse": {
         "title": "Caradesse",
+        "subtitle": "Chef-lieu du comté de Caradesse",
         "details": [
             "Caradesse est le plus grand port d'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>, et sa plus grande cité estalienne.",
-            "Chef-lieu du comté éponyme, elle est commerce avec la du <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et notamment avec le <strong data-js='popin' data-popin='naudele'>port de Naudèle</strong>.",
+            "Elle commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et notamment avec le <strong data-js='popin' data-popin='naudele'>port de Naudèle</strong>.",
             "Elle dispose de la seule arène semi-circulaire du monde&nbsp;: le théâtre de Népéidon, à flanc d'océan, dans lequel des jeux mortels se déroulaient plusieurs siècles auparavant."
         ],
         "family": "jostiral"
+    },
+    "carlate": {
+        "title": "Carlate",
+        "subtitle": "Chef-lieu de la baronnie de Carlate",
+        "details": [
+            "À l'est du <strong data-js='popin' data-popin='region-goragna'>duché de Goragna</strong>, Carlate est une petite ville bâtie sur les premiers contreforts des Petites Apondrées.",
+            "Elle vit de l'agriculture et de l'élevage."
+        ],
+        "family": "rhodives"
+    },
+    "cavar": {
+        "title": "Cavar",
+        "subtitle": "Chef-lieu de la baronnie de Cavar",
+        "details": [
+            "Au nord-est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, la petite ville de Cavar se trouve au creux d'un canyon, non loin des premiers massifs des Apondrées Estaliennes.",
+            "Sur la route menant à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>, Cavar est un haut lieu de pélerinage de la déesse Virvina, dont le temple y est accroché à flanc de falaise.",
+            "Un orphelinat pour filles le jouxte&nbsp;: une fois adolescentes, les enfants abandonnées parfois par de nobles familles, qui y laissent leurs bâtardes, deviennent prêtresses.",
+            "La citadelle sacrée suspendue au-dessus de la ville de Cavar est réputée imprenable."
+        ],
+        "family": "sirgion"
     },
     "corance": {
         "title": "Corance",
@@ -158,30 +179,131 @@
             "Pour éviter que la ville soit mise à sac et son or dérobé, des troupes armées y séjournent à titre permanent."
         ]
     },
+    "goragna": {
+        "title": "Goragna",
+        "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-goragna'>duché de Goragna</strong>",
+        "details": [
+            "Petite ville fortifiée bâtie sur les contreforts des Apondrées Ouestarines, elle était autrefois la plaque tournante du commerce agricole.",
+            "En effet, son emplacement stratégique en faisait le passage obligé de la plupart des échanges avec l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
+            "Hélas, le développement du commerce maritime a porté un coup dur à l'économie du duché, au détriment de son chef-lieu."
+        ],
+        "family": "arvagna"
+    },
     "honterra": {
         "title": "Honterra",
+        "subtitle": "Chef-lieu du vicomté de Honterra",
         "details": [
-            "Idéalement placée sur la route de <strong data-js='popin' data-popin='goragna'>Goragna</strong>, Honterra est le chef-lieu du vicomté du même nom, au sud-ouest du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong>.",
-            "La petite ville frontalière vit uniquement du commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
-            "En effet, située sur les contreforts des Apondrées Ouestarines, elle est entourée de terres impropres aux usages agricoles."
+            "Idéalement placée sur la route de <strong data-js='popin' data-popin='goragna'>Goragna</strong>, la petite ville frontalière vit uniquement du commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
+            "En effet, située sur les contreforts des Apondrées Ouestarines, Honterra est entourée de terres impropres aux usages agricoles."
         ],
         "family": "urchain"
     },
+    "jaramis": {
+        "title": "Jaramis",
+        "subtitle": "Chef-lieu de la baronnie de Jaramis",
+        "details": [
+            "Port de l'est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, Jaramis commerce avec le nord de <strong data-js='popin' data-popin='region-corance'>Corance</strong>."
+        ],
+        "family": "achard"
+    },
+    "lorsis": {
+        "title": "Lorsis",
+        "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
+        "details": [
+            "À l'embouchure de la Dramonne, Lorsis est le deuxième plus grand port de la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, juste après sa voisine <strong data-js='popin' data-popin='corance'>Corance</strong>.",
+            "Elle s'illustre comme la capitale culturelle du royaume&nbsp;: elle dispose de la plus grande bibliothèque du monde, qui réunit des dizaines de milliers d'ouvrages provenant de tous les États.",
+            "De nombreux penseurs et intellectuels y vivent et y sont entretenus par les ducs de Lorsis, leurs mécènes."
+        ],
+        "family": "virdemis"
+    },
     "mavas": {
         "title": "Mavas",
+        "subtitle": "Chef-lieu de l'émirat de Mavas",
         "details": [
-            "Chef-lieu de l'émirat du même nom, Mavas est le deuxième plus grand port du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>.",
+            "Mavas est le deuxième plus grand port du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>.",
             "Elle est connue dans toutes les terres émergées pour ses armes en acier mavassais, notamment ses épées, dagues et sabres, ce qui lui vaut le surnom de <i>reine des lames</i>."
         ],
         "family": "al-mehet"
+    },
+    "naudele": {
+        "title": "Naudèle",
+        "subtitle": "Chef-lieu de la baronnie de Naudèle",
+        "details": [
+            "Dernier port au nord de l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Naudèle est l'intermédiaire des échanges entre l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong> et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
+        ],
+        "family": "pondarque"
+    },
+    "ravene": {
+        "title": "Ravène",
+        "subtitle": "Chef-lieu de la baronnie de Ravène",
+        "details": [
+            "Petit port à l'est de l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Ravène n'accueille que peu de navires étrangers.",
+            "Moins bien située que les cités de <strong data-js='popin' data-popin='corance'>Corance</strong> ou d'<strong data-js='popin' data-popin='ultimance'>Ultimance</strong>, elle est en effet trop loin des routes maritimes par rapport à ses consœurs."
+        ],
+        "family": "sirgion"
+    },
+    "riveline": {
+        "title": "Riveline",
+        "subtitle": "Chef-lieu de la baronnie de Riveline",
+        "details": [
+            "Riveline est un port de l'ouest du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>.",
+            "Si certaines navires du <strong data-js='popin' data-popin='kavong'>Kavong</strong> y accostent parfois, ce sont surtout les navires rubisiens qui y jettent l'ancre."
+        ],
+        "family": "firmis"
+    },
+    "sorgone": {
+        "title": "Sorgone",
+        "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>",
+        "details": [
+            "Troisième port du royaume, Sorgone est cité antique entourée par les marécages du delta du Bispao.",
+            "Elle domine une baie où se jette l'un des bras du fleuve.",
+            "Son architecture très ancienne et ses nombreux temples en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
+        ],
+        "family": "moronard"
+    },
+    "tervelie": {
+        "title": "Tervélie",
+        "subtitle": "Chef-lieu de la baronnie de Tervélie",
+        "details": [
+            "À l'ouest du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>, Tervélie est une ville fortifiée, au sommet de falaises face à la mer Mongaise.",
+            "Elle dispose d'un petit port qui peut accueillir les plus hardis des navires originaires du <strong data-js='popin' data-popin='kavong'>Kavong</strong>."
+        ],
+        "family": "vanderic"
     },
     "thordovat": {
         "title": "Thordovat",
         "subtitle": "Capitale de la <strong data-js='popin' data-popin='scorvege'>Scorvège</strong>",
         "details": [
-            "Thordovat est le coeur politique de la Scorvège. C'est là que le grand jarl réunit les jarls de tous les clans scorvégiens lorsqu'une grande décision doit être prise.",
+            "Thordovat est le cœur politique de la Scorvège. C'est là que le grand jarl réunit les jarls de tous les clans scorvégiens lorsqu'une grande décision doit être prise.",
             "Loin des côtes, Thordovat vit du commerce agricole, de l'élevage et de la chasse au renne."
         ],
         "family": "obrok"
+    },
+    "ultimance": {
+        "title": "Ultimance",
+        "subtitle": "Chef-lieu de la baronnie d'Ultimance",
+        "details": [
+            "Grand port du sud de l'<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Ultimance est le dernier arrêt des navires rubisiens faisant voile pour le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
+        ],
+        "family": "erevord"
+    },
+    "vassilis": {
+        "title": "Vassilis",
+        "subtitle": "Chef-lieu de la baronnie de Vassilis",
+        "details": [
+            "À l'ouest du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, traversée par la Dramonne, Vassilis est sur la route entre le <strong data-js='popin' data-popin='lorsis'>chef-lieu du duché</strong> et la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>.",
+            "Elle profite ainsi de tous les échanges commerciaux entre ces deux cités, et tout particulièrement du commerce fluvial."
+        ],
+        "family": "depinant"
+    },
+    "virda": {
+        "title": "Virda",
+        "subtitle": "Capitale du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
+        "details": [
+            "Traversée à la fois par le Bispao et la Dramonne, Virda est au carrefour de toutes les grandes routes terrestres et fluviales du royaume.",
+            "Au centre d'une région très fertile, la Virdanie, la capitale demeure au fil des siècles une cité riche et prospère.",
+            "Elle compte de nombreux bijoux d'architecture, forte d'un millénaire d'occupation par la noblesse rubisienne."
+        ],
+        "family": "arvagna"
     }
 }
