@@ -1363,7 +1363,7 @@
 
         <g class="ville" data-js="popin" data-popin="naudele">
             <circle cx="576" cy="479" r="2" />
-            <text transform="matrix(1 0 0 1 561 476)">Naudèle</text>
+            <text transform="matrix(1 0 0 1 564 476)">Naudèle</text>
         </g>
         
         <g class="ville" data-js="popin" data-popin="ravene">
