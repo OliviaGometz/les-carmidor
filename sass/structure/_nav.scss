@@ -52,7 +52,7 @@ nav {
 
         @media #{$menuMobile} {
             position: fixed;
-            z-index: $z-index-menu;
+            z-index: $z-index-topbar;
             top: $navHeight;
             left: 0;
             width: 100%;

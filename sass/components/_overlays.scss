@@ -2,7 +2,7 @@
     @media #{$menuMobile} {
         pointer-events: none;
         position: fixed;
-        z-index: $z-index-menu;
+        z-index: $z-index-overlay;
         top: 0;
         left: 0;
         height: 100%;
