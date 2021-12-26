@@ -52,35 +52,6 @@
         }
     }
 
-    &.icon-mobile {
-        @media #{$maxMD} {
-            font-size: 0;
-            padding: $spaceXS;
-        }
-
-        svg {
-            display: none;
-            height: 100%;
-            fill: none;
-            stroke: $black00;
-            stroke-width: 10;
-            transition: all $durationSM;
-
-            @media #{$maxMD} {
-                display: block;
-            }
-        }
-
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-            svg {
-                stroke: $white00;
-            }
-        }
-    }
-
     @each $colorName, $color in $mainColors {
         &--#{$colorName} {
             border-color: $color;
@@ -90,12 +61,6 @@
             &.logo {
                 svg {
                     fill: $color;
-                }
-            }
-
-            &.icon-mobile {
-                svg {
-                    stroke: $color;
                 }
             }
         }
@@ -112,12 +77,6 @@
                     fill: map-get($color, "dark");
                 }
             }
-
-            &.icon-mobile {
-                svg {
-                    stroke: map-get($color, "dark");
-                }
-            }
         }
 
         &--active-#{$colorName} {
@@ -130,12 +89,6 @@
                 &.logo {
                     svg {
                         fill: map-get($color, "dark");
-                    }
-                }
-
-                &.icon-mobile {
-                    svg {
-                        stroke: map-get($color, "dark");
                     }
                 }
             }

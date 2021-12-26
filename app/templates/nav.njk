@@ -33,6 +33,11 @@
             author: {
                 name: 'Autrice',
                 url: 'autrice'
+            },
+            buy: {
+                name: 'Acheter',
+                url: 'acheter',
+                button: true
             }
         }
     %}
@@ -40,16 +45,14 @@
     <ul>
         {% for id, link in links %}
             <li>
-                <a href="/{{ link.url }}" class="link link--white{%if activePage == id %} active{% endif %}">
+                <a
+                    href="/{{ link.url }}"
+                    class="{% if link.button %}button--active-primary button button{% else %}link link{% endif %}--white{%if activePage == id %} active{% endif %}"
+                >
                     {{ link.name }}
                 </a>
             </li>
         {% endfor %}
     </ul>
-
-    <a href="/acheter" class="button button--white button--active-primary icon-mobile{%if activePage == 'buy' %} active{% endif %}">
-        {% include 'svg/icons/cart.svg' %}
-        Acheter
-    </a>
 </nav>
 {% endmacro %}
