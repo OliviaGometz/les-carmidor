@@ -4,36 +4,6 @@ $bold: 700;
 $fontDefault: 'Martel';
 $fontMain: 'Cormorant';
 
-@font-face {
-    font-family: $fontDefault;
-    src: url('../fonts/#{$fontDefault}-Regular.woff2') format('woff2'),
-        url('../fonts/#{$fontDefault}-Regular.woff') format('woff'),
-        url('../fonts/#{$fontDefault}-Regular.ttf') format('truetype');
-    font-weight: $normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: $fontDefault;
-    src: url('../fonts/#{$fontDefault}-ExtraBold.woff2') format('woff2'),
-        url('../fonts/#{$fontDefault}-ExtraBold.woff') format('woff'),
-        url('../fonts/#{$fontDefault}-ExtraBold.ttf') format('truetype');
-    font-weight: $bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: $fontMain;
-    src: url('../fonts/#{$fontMain}-Regular.woff2') format('woff2'),
-        url('../fonts/#{$fontMain}-Regular.woff') format('woff'),
-        url('../fonts/#{$fontMain}-Regular.ttf') format('truetype');
-    font-weight: $normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 $spacingXS: 0.1em;
 $spacingSM: 0.2em;
 $spacingLG: 0.3em;
