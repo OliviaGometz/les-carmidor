@@ -26,6 +26,7 @@
 
     &.logo {
         &--top {
+            max-width: 230px; // temp fix for firefox bug with svg inside display flex
             flex-direction: column;
             height: $buttonHeight*2;
             padding-top: $spaceXS;
