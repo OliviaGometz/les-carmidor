@@ -29,7 +29,7 @@
             &__content {
                 &__text {
                     svg {
-                        transition: all 3s linear;
+                        transition: all 3s linear $durationSM;
                         stroke-dashoffset: 0;
                     }
                 }
