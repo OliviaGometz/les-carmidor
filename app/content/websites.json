@@ -29,7 +29,7 @@
   "book": {
     "amazon": {
       "desc": "amazon prime",
-      "link": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz/dp/2490163698/"
+      "link": "https://amzn.to/3sFEplw"
     },
     "fnac": {
       "desc": "fnac.com",
@@ -57,7 +57,7 @@
     }
   },
   "ebook": {
-    "amazon": "https://www.amazon.fr/Carmidor-Trahir-Survivre-Olivia-Gometz-ebook/dp/B09J3C58XN/",
+    "amazon": "https://amzn.to/3eFldvQ",
     "fnac": "https://livre.fnac.com/a16444863/Olivia-Gometz-Les-Carmidor?NUMERICAL=Y",
     "vivlio": "https://shop.vivlio.com/product/9782490163700_9782490163700_10007",
     "rakuten": "https://www.kobo.com/fr/fr/ebook/les-carmidor"
