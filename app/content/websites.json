@@ -11,6 +11,10 @@
     "wattpad": {
       "desc": "Mon profil Wattpad",
       "link": "https://www.wattpad.com/user/OliviaGometz"
+    },
+    "goodreads": {
+      "desc": "Mon compte auteur Goodreads",
+      "link": "https://www.goodreads.com/olivia-gometz"
     }
   },
   "wattpad": {
