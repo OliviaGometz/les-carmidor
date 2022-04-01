@@ -79,6 +79,14 @@
             "Que vous soyez fan ou non de la fantasy de mœurs, je ne puis que vous conseiller cette lecture. C'est du <em>Game of Thrones</em>, mais sans magie et sans Marcheurs Blancs, et c'est tout juste excellent&nbsp;!"
         ]
     },
+    "lafilledulivre": {
+        "name": "La fille du livre",
+        "details": "Booktubeuse",
+        "link": "https://www.youtube.com/watch?v=Ty1GlLj6ol0&t=645s",
+        "comment": [
+            "Un <em>Game of Thrones</em> plus abordable et avec beaucoup plus de perspectives féminines."
+        ]
+    },
     "adrawingsandthings": {
         "name": "Amandine B.",
         "details": "Partenaire Beta Publisher",
@@ -115,6 +123,22 @@
         "comment": [
             "Je n'ai pas su lâcher le livre de la journée [&hellip;] L'univers fait très fort penser à celui de <em>Game of Thrones</em>. [&hellip;] Je peux vous dire qu'il est au même niveau, sauf que je n'ai pas réussi à lire GoT&hellip; et ici ça se lit tout seul. [&hellip;]",
             "On ne s'ennuie pas un instant. [&hellip;] Un chouette coup de cœur inattendu&nbsp;!"
+        ]
+    },
+    "mademoiselle.auteure": {
+        "name": "Théoxane",
+        "details": "Bookstagrammeuse",
+        "link": "https://www.instagram.com/p/CY7H-10qlW1/",
+        "comment": [
+            "Cette lecture est un coup de cœur pour moi. Je suis passée par tellement d'émotions différentes dans cette lecture que j'en ai eu mal au ventre."
+        ]
+    },
+    "hal_aux_livres": {
+        "name": "Alizée",
+        "details": "Bookstagrammeuse",
+        "link": "https://www.instagram.com/p/CajXvvBq0DE/",
+        "comment": [
+            "C'est LE livre que j'attendais depuis que j'ai vu la série <em>Game of Thrones</em> et que je veux retrouver ces histoires de pouvoir, de grandes familles, de trahison, toutes ces histoires de cour et de politique&hellip; J'avais beaucoup d'attentes avant d'entamer ma lecture et je n'ai absolument pas été déçue&nbsp;!"
         ]
     },
     "clairequilien": {
