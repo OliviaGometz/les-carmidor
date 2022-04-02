@@ -2,7 +2,8 @@
     pointer-events: none;
     filter: drop-shadow(0 0 12px #{$secondaryUltraDark});
 
-    path {
+    path,
+    use {
         fill: $secondaryDark;
     }
 }
