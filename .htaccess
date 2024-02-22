@@ -21,4 +21,4 @@ RewriteRule ^([^\.]+)$ $1.html [NC, L]
     ExpiresDefault "access plus 7 days"
 </IfModule>
 
-RedirectPermanent /liens.html https://oliviagometz.fr/liens
+RedirectPermanent /liens https://oliviagometz.fr/liens
