@@ -29,10 +29,8 @@
     "edlf": "https://www.wattpad.com/666768516-%C3%A9crire-de-la-fantasy-comme-g-r-r-martin",
     "rantbook": "https://www.wattpad.com/678351969-rantbook"
   },
-  "bp": {
-    "tome1": "https://www.betapublisher.com/roman/trahir-%26-survivre",
-    "epub": "https://www.betapublisher.com/product-page/les-carmidor-tome-1-trahir-survivre-epub",
-    "mobi": "https://www.betapublisher.com/product-page/les-carmidor-tome-1-trahir-survivre-mobi"
+  "publisher": {
+    "main": "https://plumeblanche-editions.fr/"
   },
   "book": {
     "amazon": {
