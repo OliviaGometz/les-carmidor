@@ -16,27 +16,28 @@
         set links = {
             home: {
                 name: 'Accueil',
-                url: ''
+                url: '/'
             },
             map: {
                 name: 'Carte',
-                url: 'carte'
+                url: '/carte'
             },
             characters: {
                 name: 'Familles',
-                url: 'familles'
+                url: '/familles'
             },
             comments: {
                 name: 'Avis',
-                url: 'avis'
+                url: '/avis'
             },
             author: {
                 name: 'Autrice',
-                url: 'autrice'
+                url: 'https://oliviagometz.fr/',
+                external: true
             },
             buy: {
                 name: 'Acheter',
-                url: 'acheter',
+                url: '/acheter',
                 button: true
             }
         }
@@ -46,8 +47,9 @@
         {% for id, link in links %}
             <li>
                 <a
-                    href="/{{ link.url }}"
+                    href="{{ link.url }}"
                     class="{% if link.button %}button--active-primary button button{% else %}link link{% endif %}--white{%if activePage == id %} active{% endif %}"
+                    {% if link.external %}rel="external" target="_blank"{% endif %}
                 >
                     {{ link.name }}
                 </a>
