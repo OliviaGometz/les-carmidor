@@ -1,42 +1,42 @@
 [
   {
     "url": "https://www.amazon.fr/",
-    "icon": "websites/amazon-mini"
+    "icon": "amazon-mini"
   },
   {
     "url": "https://www.babelio.com/",
-    "icon": "websites/babelio-mini"
+    "icon": "babelio-mini"
   },
   {
     "url": "https://booknode.com/",
-    "icon": "websites/booknode-mini"
+    "icon": "booknode-mini"
   },
   {
     "url": "https://www.chapitre.com/",
-    "icon": "websites/chapitre-mini"
+    "icon": "chapitre-mini"
   },
   {
     "url": "https://www.decitre.fr/",
-    "icon": "websites/decitre-mini"
+    "icon": "decitre-mini"
   },
   {
     "url": "https://livre.fnac.com/",
-    "icon": "websites/fnac-mini"
+    "icon": "fnac-mini"
   },
   {
     "url": "https://www.goodreads.com/",
-    "icon": "websites/goodreads-mini"
+    "icon": "goodreads-mini"
   },
   {
     "url": "https://www.livraddict.com/",
-    "icon": "websites/livraddict-mini"
+    "icon": "livraddict-mini"
   },
   {
     "url": "https://www.youtube.com/",
-    "icon": "websites/youtube-mini"
+    "icon": "youtube-mini"
   },
   {
     "url": "https://www.instagram.com/",
-    "icon": "networks/instagram"
+    "icon": "instagram-mini"
   }
 ]

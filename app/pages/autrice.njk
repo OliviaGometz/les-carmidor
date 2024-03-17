@@ -14,14 +14,6 @@
             <div class="container">
                 <aside class="person">
                     <img src="./img/medias/me.png" alt="L'autrice des Carmidor, Olivia Gometz" />
-
-                    <div class="container">
-                        {% for name, website in websites.network %}
-                            <a href="{{website.link}}" class="logo logo--sm logo--white" rel="external" target="_blank" aria-label="{{website.desc}}">
-                                {% include "svg/logos/networks/" + name + ".svg" %}
-                            </a>
-                        {% endfor %}
-                    </div>
                 </aside>
 
                 <article class="maxwidth--lg text--margin-sm">
@@ -94,14 +86,6 @@
                 <p>
                     Toujours là&nbsp;? Pour suivre toutes mes actualités (et celles des Carmidor, notamment la progression du tome 2), suivez-moi sur mes réseaux&nbsp;:
                 </p>
-
-                <div class="container">
-                    {% for name, website in websites.network %}
-                        <a href="{{website.link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{website.desc}}">
-                            {% include "svg/logos/networks/" + name + ".svg" %}
-                        </a>
-                    {% endfor %}
-                </div>
             </article>
         </section>
     </main>
