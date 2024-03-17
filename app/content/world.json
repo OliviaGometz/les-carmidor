@@ -35,8 +35,7 @@
         "title": "Sarouha",
         "details": [
             "Riche sultanat du sud des terres émergées, le Sarouha est une terre au climat chaud voire désertique.",
-            "S'il commerce largement avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et particulièrement <strong data-js='popin' data-popin='corance'>Corance</strong>, qui sont friands de son acier et de ses armes légères mais solides, le Sarouha s'illustre également dans le commerce d'opium, fort de ses cultures de pavot.",
-            "Mais en dépit de ses richesses minières, le Sarouha connaît une criante pauvreté.",
+            "S'il commerce largement avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et particulièrement <strong data-js='popin' data-popin='corance'>Corance</strong>, qui sont friands de son acier, le Sarouha s'illustre également dans le commerce d'opium, fort de ses cultures de pavot.",
             "Il est dirigé depuis la capitale, <strong data-js='popin' data-popin='bogdar'>Bogdar</strong>, par un sultan secondé par un vizir."
         ],
         "family": "al-beymir",
