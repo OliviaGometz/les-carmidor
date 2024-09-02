@@ -3,7 +3,7 @@
         "title": "Arcavie",
         "details": [
             "L'Arcavie est un royaume divisé en comtés, eux-mêmes subdivisés en vicomtés, sous l'autorité d'un roi qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
-            "Le large territoire a pour particularité d'être coupé en deux par une chaîne de montagnes, ce qui rend son administration particulièrement délicate.",
+            "Le large territoire a pour particularité d'être coupé en deux par une chaîne montagneuse, les Vardes, ce qui rend son administration particulièrement délicate.",
             "Des dissenssions naissent régulièrement à l'est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>le port de Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis."
         ],
         "family": "tordheon",
@@ -102,6 +102,15 @@
         ],
         "family": "moronard"
     },
+    "angeve": {
+        "title": "Angève",
+        "subtitle": "Chef-lieu du comté d'Angève",
+        "details": [
+            "Port du nord-ouest du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong> à l'embouchure du Garron, Angève bénéficie grâce à la mer Mongaise d'un accès prilégié à l'ouest du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong> et à <strong data-js='popin' data-popin='kavong'>l'empire du Kavong</strong>.",
+            "Toutefois, sous l'inflence du Népéisme, le commerce maritime y demeure limité. La pêche constitue l'une de ses plus grandes richesses."
+        ],
+        "family": "valbriquin"
+    },
     "bogdar": {
         "title": "Bogdar",
         "subtitle": "Capitale du <strong data-js='popin' data-popin='sarouha'>sultanat du Sarouha</strong>",
@@ -111,6 +120,15 @@
             "Bogdar est une ville morcelée par les nombreux bras du Tenzith, le fleuve qui la traverse pour se jeter dans l'océan Priadique."
         ],
         "family": "al-beymir"
+    },
+    "brivage": {
+        "title": "Brivage",
+        "subtitle": "Chef-lieu du comté de Brivage",
+        "details": [
+            "Bâtie sur les rives d'un lac dans les terres de l'est du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong>, Brivage a la particularité d'avoir des canaux navigables au lieu de rues.",
+            "Les Brivageais s'y déplacent en gondoles."
+        ],
+        "family": "hosbourg"
     },
     "caradesse": {
         "title": "Caradesse",
@@ -135,12 +153,12 @@
         "title": "Cavar",
         "subtitle": "Chef-lieu de la baronnie de Cavar",
         "details": [
-            "Au nord-est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, la petite ville de Cavar se trouve au creux d'un canyon, non loin des premiers massifs des Apondrées Estaliennes.",
+            "Au nord-est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, la petite ville de Cavar se trouve au creux d'un canyon, dans les massifs des Apondrées Estaliennes.",
             "Sur la route menant à l'<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>, Cavar est un haut lieu de pélerinage de la déesse Virvina, dont le temple y est accroché à flanc de falaise.",
             "Un orphelinat pour filles le jouxte&nbsp;: une fois adolescentes, les enfants abandonnées parfois par de nobles familles, qui y laissent leurs bâtardes, deviennent prêtresses.",
-            "La citadelle sacrée suspendue au-dessus de la ville de Cavar est réputée imprenable."
+            "Le sanctuaire suspendu au-dessus de la ville de Cavar est réputé indéfendable en raison de ses remparts partiels au sommet de la falaise."
         ],
-        "family": "sirgion"
+        "family": "tasquin"
     },
     "corance": {
         "title": "Corance",
@@ -166,7 +184,8 @@
         "details": [
             "Siège du pouvoir royal, Érinthe est également le siège de la Chambre des Comtes, assemblée qui seconde le roi dans l'administration des comtés et vicomtés.",
             "Érinthe est également un joyau architectural&nbsp;: au fil des décennies, les souverains de la dynastie des Tordhéon n'ont eu de cesse de l'embellir.",
-            "La cité est notamment connue pour la qualité de ses vitraux et ses verriers sont renommés dans le monde entier."
+            "La cité est notamment connue pour la qualité de ses vitraux et ses verriers sont renommés dans le monde entier.",
+            "Elle est traversée par le Garron qui se jette à Angève dans la mer Mongaise. Entre deux bras du fleuve s'élève l'île palatine, où se dresse le palais royal."
         ],
         "family": "tordheon"
     },
@@ -177,6 +196,15 @@
             "Renommé dans tout le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>, son précieux métal en fait la cible d'attaques régulières.",
             "Pour éviter que la ville soit mise à sac et son or dérobé, des troupes armées y séjournent à titre permanent."
         ]
+    },
+    "fort-havel": {
+        "title": "Fort-Havel",
+        "subtitle": "Village du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
+        "details": [
+            "Au creux d'un canyon de la vallée de la Dramonne, le village de Fort-Havel s'étend à l'ombre du château de ses seigneurs.",
+            "Le bastion garde la frontière terrestre du domaine ducal de <strong data-js='popin' data-popin='lorsis'>Lorsis</strong>."
+        ],
+        "family": "arganza"
     },
     "goragna": {
         "title": "Goragna",
@@ -196,6 +224,14 @@
             "En effet, située sur les contreforts des Apondrées Ouestarines, Honterra est entourée de terres impropres aux usages agricoles."
         ],
         "family": "urchain"
+    },
+    "ispin": {
+        "title": "Col d'Ispin",
+        "subtitle": "Village de montagne dans les Vardes",
+        "details": [
+            "Ispin est le dernier village estalien sur la route qui relie l'est à l'ouest du <strong data-js='popin' data-popin='arcavie'>royaume d'Arcavie</strong>.",
+            "Niché sous le col du même nom, il est le passage quasi-obligé des voyageurs qui veulent rallier <strong data-js='popin' data-popin='erinthe'>Érinthe</strong> depuis <strong data-js='popin' data-popin='caradesse'>Caradesse</strong>."
+        ]
     },
     "jaramis": {
         "title": "Jaramis",
@@ -256,7 +292,7 @@
         "details": [
             "Troisième port du royaume, Sorgone est cité antique entourée par les marécages du delta du Bispao.",
             "Elle domine une baie où se jette l'un des bras du fleuve.",
-            "Son architecture très ancienne et ses nombreux temples en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
+            "Son architecture très ancienne et ses nombreux temples, notamment celui de Catovis, en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
         ],
         "family": "moronard"
     },
@@ -277,6 +313,15 @@
             "Loin des côtes, Thordovat vit du commerce agricole, de l'élevage et de la chasse au renne."
         ],
         "family": "obrok"
+    },
+    "tourege": {
+        "title": "Tourège",
+        "subtitle": "Chef-lieu de la baronnie de Tourège",
+        "details": [
+            "Cité fortifiée bâtie au sommet d'une colline, Tourège est le dernier bastion sorgonète à la frontière entre les trois duchés rubisiens continentaux&nbsp;: <strong data-js='popin' data-popin='region-sorgone'>Sorgone</strong> auquel elle appartient, <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> au nord et <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong> à l'est.",
+            "Elle domine le pont fortifié, qui enjambe le Bispao pour relier Sorgone à la route gorandine qui mène à Lorsis. Proche de la capitale, <strong data-js='popin' data-popin='virda'>Virda</strong>, et au carrefour des trois duchés continentaux, Tourège occupe donc un emplacement stratégique au sein du royaume."
+        ],
+        "family": "girenord"
     },
     "ultimance": {
         "title": "Ultimance",
@@ -300,8 +345,10 @@
         "subtitle": "Capitale du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
         "details": [
             "Traversée à la fois par le Bispao et la Dramonne, Virda est au carrefour de toutes les grandes routes terrestres et fluviales du royaume.",
-            "Au centre d'une région très fertile, la Virdanie, la capitale demeure au fil des siècles une cité riche et prospère.",
-            "Elle compte de nombreux bijoux d'architecture, forte d'un millénaire d'occupation par la noblesse rubisienne."
+            "Au centre d'une région très fertile, la Virdanie, la capitale aux solides fortifications entourées de champs de blés demeure au fil des siècles une cité riche et prospère.",
+            "Outre le temple d'Ordéon, en surplomb des quartiers pauvres, et le palais royal, qui domine les quartiers riches, elle compte de nombreux bijoux d'architecture, forte d'un millénaire d'occupation par la noblesse rubisienne.",
+            "On y trouve notamment la crypte des Virdemis, sous le temple d'Ordéon, et le légendaire mausolée des Arvagna, sous les fondations du palais royal.",
+            "La cité s'illustre également par la couleur ocre-rouge très reconnaissable de ses pierres."
         ],
         "family": "arvagna"
     }
