@@ -4,8 +4,8 @@ $videoMaxWidth: 750px;
 
 .video {
     background-color: $black00;
-    height: $videoHeight / $videoWidth * 100vw;
-    max-height: $videoHeight / $videoWidth * $videoMaxWidth;
+    height: math.div($videoHeight, $videoWidth) * 100vw;
+    max-height: math.div($videoHeight, $videoWidth) * $videoMaxWidth;
     max-width: $videoMaxWidth;
     margin: 0 auto;
 

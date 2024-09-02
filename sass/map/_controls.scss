@@ -18,9 +18,9 @@
     align-items: center;
     background-image: linear-gradient(
         to bottom,
-        transparent 0% $zoomButtonSize/2,
-        $white00 $zoomButtonSize/2 ($zoomButtonSize/2 + $line),
-        transparent ($zoomButtonSize/2 + 1) 100%
+        transparent 0% math.div($zoomButtonSize, 2),
+        $white00 math.div($zoomButtonSize, 2) (math.div($zoomButtonSize, 2) + $line),
+        transparent (math.div($zoomButtonSize, 2) + 1) 100%
     );
 
     button {

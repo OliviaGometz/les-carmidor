@@ -5,10 +5,9 @@ $durationLG: 0.8s;
 
 @mixin animation($params) {
     $name: animation-#{unique-id()};
+    animation: $name $params;
 
     @keyframes #{$name} {
         @content;
     }
-
-    animation: $name $params;
 }
