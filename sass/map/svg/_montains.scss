@@ -9,11 +9,11 @@
 }
 
 .nom-montagne {
-    font-size: 8px;
+    font-size: 7.5px;
     font-weight: $bold;
     letter-spacing: $spacingXS;
     text-shadow: 0 0 6px $secondaryLight, 0 0 2px $secondaryUltraLight;
-    fill: $secondaryDark;
+    fill: $secondaryUltraDark;
 
     g {
         opacity: 0;

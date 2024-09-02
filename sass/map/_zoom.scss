@@ -62,9 +62,13 @@
             }
 
             .nom-montagne {
-                g:hover {
+                g {
                     opacity: 1;
                 }
+            }
+
+            .montagnes {
+                opacity: 0.8;
             }
 
             .nom-ocean {

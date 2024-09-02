@@ -42,6 +42,8 @@
 
         &:disabled {
             cursor: not-allowed;
+            background-color: $grey30;
+            color: $grey50;
         }
 
         &:not(:disabled) {
