@@ -54,9 +54,15 @@
 
                 <div class="container">
                     {% for name, link in websites.comment %}
-                        <a href="{{link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{name}}">
-                            {% include "svg/logos/websites/" + name + "-mini.svg" %}
-                        </a>
+                        {% if link %}
+                            <a href="{{link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{name}}" title="{{name}}">
+                                {% include "svg/logos/websites/" + name + "-mini.svg" %}
+                            </a>
+                        {% else %}
+                            <span class="logo logo--sm logo--secondary" title="{{name}}">
+                                {% include "svg/logos/websites/" + name + "-mini.svg" %}
+                            </span>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </article>
