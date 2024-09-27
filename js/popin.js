@@ -1,7 +1,7 @@
 const popin = '.popin';
 
 const clickHandler = function(e) {
-    if (!isDragging) {
+    if (typeof isDragging === "undefined" || !isDragging) {
         const elementStyle = getComputedStyle(this);
 
         if (elementStyle.opacity > 0 && elementStyle.cursor == 'pointer') {
