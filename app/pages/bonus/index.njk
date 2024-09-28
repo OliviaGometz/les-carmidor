@@ -3,6 +3,7 @@
 
 {% block head %}
     <title>Les Carmidor - Bonus</title>
+    <meta name="description" content="Les résumés des tomes des Carmidor, et d'autres contenus additionnels." />
 {% endblock %}
 
 {% block content %}
@@ -10,9 +11,54 @@
     {{nav('bonus')}}
 
     <main>
-        <h1>Bonus</h1>
+        <section class="banner bonus-banner">
+            <article class="maxwidth--md text--margin-sm">
+                <h1 class="title--header">Les bonus</h1>
 
-        <p>À venir</p>
+                <p>
+                    Le fourre-tout de tout ce que je n'ai pas réussi à caser ailleurs (oui, c'est clairement une page en construction).
+                </p>
+
+                <p>
+                    Vous y retrouverez notamment les résumés détaillés des tomes pour vous rafraîchir la mémoire.
+                </p>
+
+                <div class="buttons">
+                    <a href="#resumes" class="button button--white button--active-secondary">
+                        Résumés des tomes
+                    </a>
+                </div>
+            </article>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section id="resumes">
+            <div class="home-intro maxwidth--lg">
+                <h2 class="title--underline">Récapitulatifs des tomes</h2>
+
+                <p>Vous avez besoin de vous remémorer les événements d'un tome avant d'attaquer la lecture du suivant&nbsp;? Consultez les récapitulatifs exhaustifs ci-dessous.</p>
+
+                <p>Attention, ces pages <strong>spoilent tout le contenu des tomes concernés&nbsp;!</strong> À n'ouvrir que si vous avez lu ledit tome.</p>
+            </div>
+
+            <div class="container resumes-container">
+                {% for number, bookTitle in {
+                    "1": "Trahir et Survivre",
+                    "2": "Unir et Détruire"
+                } %}
+                    <article>
+                        <img src="{{ path }}img/medias/t{{ number }}-paperback.png" class="img--book" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
+
+                        <div class="buttons">
+                            <a href="/bonus/resumes/tome-{{ number }}" class="button button--secondary">
+                                Résumé du tome {{ number }}
+                            </a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
     </main>
 
     {% include 'footer.njk' %}
