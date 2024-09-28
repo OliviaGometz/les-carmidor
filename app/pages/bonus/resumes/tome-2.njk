@@ -1,0 +1,137 @@
+{% extends "layout.njk" %}
+{% set path = "../../" %}
+
+{% block head %}
+    <title>Les Carmidor - Résumé du tome 2</title>
+    <meta name="description" content="Besoin d'un rappel du tome 2, Unir et Détruire, avant d'entamer la lecture du tome 3 ? Consultez le résumé court ou le récapitulatif complet des événements du tome 2." />
+{% endblock %}
+
+{% block content %}
+    {% from 'nav.njk' import nav %}
+    {{nav()}}
+
+    <main>
+        <section class="home-book">
+            <div class="container">
+                <article class="maxwidth--md text--margin-sm">
+                    <h1 class="title--header">Résumé du tome&nbsp;2</h1>
+
+                    <p>
+                        Besoin de vous rafraîchir la mémoire avant de commencer la <strong>lecture du tome&nbsp;3&nbsp;?</strong> Consultez ci-dessous la quatrième de couverture et/ou les résumés du tome&nbsp;2, <em>Unir et Détruire</em>.
+                    </p>
+
+                    <p>
+                        Attention&nbsp;: à l'exception de la quatrième de couverture ci-dessous, ce qui suit contient des spoilers sur l'intégralité du tome&nbsp;2.
+                    </p>
+                </article>
+
+                <img src="{{ path }}img/medias/t2-paperback.png" class="maxwidth--xxs" />
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            <div class="container">
+                <img src="{{ path }}img/medias/t2-ebook.png" class="img--book" alt="Tome 1 : Trahir et Survivre (format broché)" />
+
+                <article class="maxwidth--sm text--sm text--margin-sm">
+                    <h2>
+                        Quatrième de couverture du tome 2
+                    </h2>
+
+                    <p>
+                        Des vagues de larmes et de sang ont beau avoir balayé le mariage de Giorda, elle n’en demeure pas moins prisonnière des ambitions d’un tyran.
+                    </p>
+
+                    <p>
+                        Alors que la dangereuse foi népéiste se répand au sein du peuple et de la noblesse, un autre mal se propage au sud&nbsp;: la peste noire, dont les premiers contaminés surgissent au cours d’une messe en l’honneur du dieu des océans.
+                    </p>
+
+                    <p>
+                        D’autres Carmidor, exilés sur des terres étrangères, luttent pour leur survie et leur vengeance.
+                    </p>
+
+                    <p>
+                        Hanté par ses cauchemars, le duc de Corance le redoute&nbsp;: bientôt les braises de la discorde enflammeront le royaume tout entier.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-lore">
+            {% include 'svg/wave.svg' %}
+            <aside class="home-intro maxwidth--lg text--margin-sm text--center">
+                <h2 class="title--header">
+                    Attention aux spoilers
+                </h2>
+
+                <p>
+                    Les récapitulatifs ci-dessous <strong>contiennent tous les spoilers du tome&nbsp;2</strong>. Ne descendez pas plus bas si vous n’avez pas encore fini la lecture du tome&nbsp;2 (et si besoin, pensez à consulter les <a href="/trigger-warnings" class="link--white">trigger warnings</a>).
+                </p>
+
+                <div class="buttons">
+                    <a href="#court" class="link link--white">
+                        Résumé rapide
+                    </a>
+
+                    <a href="#complet" class="button button--white button--active-secondary">
+                        Récapitulatif complet
+                    </a>
+                </div>
+            </aside>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section id="court">
+            <article class="chapter">
+                <h2>Résumé rapide</h2>
+
+                <small class="chapter-date">An 1311 après l’Engloutissement</small>
+
+                <p>À venir à l'approche de la sortie du tome&nbsp;3 (en 2026).</p>
+            </article>
+        </section>
+
+        <section class="home-discover" id="complet">
+            {% include 'svg/wave.svg' %}
+
+            <article class="chapter">
+                <h2>Récapitulatif complet</h2>
+
+                <small class="chapter-date">An 1311 après l’Engloutissement</small>
+
+                <p>À venir à l'approche de la sortie du tome&nbsp;3 (en 2026).</p>
+            </article>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            {% include 'lore-popins.njk' %}
+        </section>
+
+        <section class="home-intro maxwidth--lg">
+            <h2 class="title--normal">Toujours des trous de mémoire&nbsp;?</h2>
+
+            <p>
+                Consultez la carte interactive pour vous remémorer les lieux, ainsi que les arbres généalogiques des personnages pour vous rappeler qui a épousé, trahi ou tué vos chouchous.
+            </p>
+
+            <div class="buttons">
+                <a href="/carte" class="link link--primary">
+                    Carte du monde
+                </a>
+
+                <a href="/familles" class="button button--primary">
+                    Personnages
+                </a>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.njk' %}
+
+    <script src="{{ path }}js/popin.js?v={{version}}"></script>
+{% endblock %}
