@@ -1,15 +1,17 @@
 # Activer le moteur de réécriture
 RewriteEngine On
 
+# Définir la base de réécriture (à adapter si nécessaire)
+RewriteBase /
+
 # Rediriger les URL avec un / final vers l'URL sans /
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [R=301,L]
 
-# Supprimer l'extension .html des URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^/]+)/?$ $1.html [NC,L]
+# Supprimer l'extension .html des URL tout en gérant les sous-répertoires
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*[^/])$ $1.html [NC,L]
 
 # Redirections permanentes
 RedirectPermanent /liens https://oliviagometz.fr/liens
