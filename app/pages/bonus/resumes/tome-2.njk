@@ -1,5 +1,4 @@
 {% extends "layout.njk" %}
-{% set path = "../../" %}
 
 {% block head %}
     <title>Les Carmidor - Résumé du tome 2</title>
@@ -25,7 +24,7 @@
                     </p>
                 </article>
 
-                <img src="{{ path }}img/medias/t2-paperback.png" class="img--book" alt="Tome 2 : Unir et Détruire (format broché)" />
+                <img src="/img/medias/t2-paperback.png" class="img--book" alt="Tome 2 : Unir et Détruire (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}
@@ -33,7 +32,7 @@
 
         <section>
             <div class="container">
-                <img src="{{ path }}img/medias/t2-ebook.png" class="img--book" alt="Tome 2 : Unir et Détruire (format ebook)" />
+                <img src="/img/medias/t2-ebook.png" class="img--book" alt="Tome 2 : Unir et Détruire (format ebook)" />
 
                 <article class="maxwidth--sm text--sm text--margin-sm">
                     <h2>
@@ -133,5 +132,5 @@
 
     {% include 'footer.njk' %}
 
-    <script src="{{ path }}js/popin.js?v={{version}}"></script>
+    <script src="/js/popin.js?v={{version}}"></script>
 {% endblock %}

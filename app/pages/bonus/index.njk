@@ -1,5 +1,4 @@
 {% extends "layout.njk" %}
-{% set path = "../" %}
 
 {% block head %}
     <title>Les Carmidor - Bonus</title>
@@ -48,7 +47,7 @@
                     "2": "Unir et Détruire"
                 } %}
                     <article>
-                        <img src="{{ path }}img/medias/t{{ number }}-paperback.png" class="img--book" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
+                        <img src="/img/medias/t{{ number }}-paperback.png" class="img--book" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
 
                         <div class="buttons">
                             <a href="/bonus/resumes/tome-{{ number }}" class="button button--secondary">
