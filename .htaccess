@@ -1,17 +1,24 @@
 # Activer le moteur de réécriture
 RewriteEngine On
 
-# Supprimer l'extension .html des URL
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
 # Rediriger les URL avec un / final vers l'URL sans /
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [R=301,L]
 
-# Expires caching
+# Supprimer l'extension .html des URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ $1.html [NC,L]
+
+# Redirections permanentes
+RedirectPermanent /liens https://oliviagometz.fr/liens
+RedirectPermanent /autrice https://oliviagometz.fr/
+
+# Page d'erreur personnalisée
+ErrorDocument 404 /404.html
+
+# Cache-control pour les ressources statiques
 <IfModule mod_expires.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
@@ -27,8 +34,3 @@ RewriteRule ^ %1 [R=301,L]
     ExpiresByType text/html "access plus 0 seconds"
     ExpiresDefault "access plus 7 days"
 </IfModule>
-
-RedirectPermanent /liens https://oliviagometz.fr/liens
-RedirectPermanent /autrice https://oliviagometz.fr/
-
-ErrorDocument 404 /404.html
