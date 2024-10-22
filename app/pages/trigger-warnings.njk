@@ -2,7 +2,7 @@
 
 {% block head %}
     <title>Les Carmidor - Trigger warnings</title>
-    <meta name="description" content="La liste des trigger warnings ou avertissement de contenu dans Les Carmidor (tous tomes confondus)." />
+    <meta name="description" content="La liste des trigger warnings ou avertissements de contenu dans Les Carmidor (tous tomes confondus)." />
 {% endblock %}
 
 {% block content %}
@@ -10,11 +10,15 @@
     {{nav()}}
 
     <main>
-        <section class="banner-gradient banner-gradient--primary">
-            <div class="content">
-                <h1 class="title--header">Trigger warnings</h1>
+        <section class="banner-gradient banner-gradient--dark-secondary">
+            <div class="container container--wrap-reverse">
+                <article class="maxwidth--sm text--margin-sm">
+                    <h1 class="title--header">Trigger warnings</h1>
 
-                <p><em>Les Carmidor</em> aborde de nombreux sujets qui pourraient réveiller des traumatismes chez certains lecteurs. Si vous en ressentez le besoin, consultez la liste des avertissements ci-dessous&nbsp;: mieux vaut connaître à l'avance certains thèmes difficiles plutôt que de les laisser nous atteindre à un moment où l'on n'y est pas préparé.</p>
+                    <p><em>Les Carmidor</em> aborde de nombreux sujets qui pourraient réveiller des traumatismes chez certains lecteurs. Si vous en ressentez le besoin, consultez la liste des avertissements ci-dessous.</p>
+                </article>
+
+                <img src="/img/medias/all-paperback.png" class="img img--sm" alt="Les Carmidor, tous les tomes (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}

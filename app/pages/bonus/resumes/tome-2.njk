@@ -10,7 +10,7 @@
     {{nav()}}
 
     <main>
-        <section class="home-book">
+        <section class="banner-gradient banner-gradient--dark-secondary">
             <div class="container">
                 <article class="maxwidth--md text--margin-sm">
                     <h1 class="title--header">Résumé du tome <span>2</span></h1>
@@ -24,15 +24,15 @@
                     </p>
                 </article>
 
-                <img src="/img/medias/t2-paperback.png" class="img--book" alt="Tome 2 : Unir et Détruire (format broché)" />
+                <img src="/img/medias/t2-paperback.png" class="img img--sm" alt="Tome 2 : Unir et Détruire (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}
         </section>
 
         <section>
-            <div class="container">
-                <img src="/img/medias/t2-ebook.png" class="img--book" alt="Tome 2 : Unir et Détruire (format ebook)" />
+            <div class="container container--wrap-reverse">
+                <img src="/img/medias/t2-ebook.png" class="img img--md" alt="Tome 2 : Unir et Détruire (format ebook)" />
 
                 <article class="maxwidth--sm text--sm text--margin-sm">
                     <h2>
@@ -58,27 +58,30 @@
             </div>
         </section>
 
-        <section class="home-lore">
+        <section class="banner-gradient banner-gradient--secondary wave-bottom-reverse">
             {% include 'svg/wave.svg' %}
-            <aside class="home-intro maxwidth--lg text--margin-sm text--center">
-                <h2 class="title--header">
-                    Attention aux spoilers
-                </h2>
 
-                <p>
-                    Les récapitulatifs ci-dessous <strong>contiennent tous les spoilers du tome&nbsp;2</strong>. Ne descendez pas plus bas si vous n’avez pas encore fini la lecture du tome&nbsp;2 (et si besoin, pensez à consulter les <a href="/trigger-warnings" class="link--white">trigger warnings</a>).
-                </p>
+            <div class="container">
+                <aside class="maxwidth--lg text--margin-sm text--center">
+                    <h2 class="title--header">
+                        Attention aux spoilers
+                    </h2>
 
-                <div class="buttons">
-                    <a href="#court" class="link link--white">
-                        Résumé rapide
-                    </a>
+                    <p>
+                        Les récapitulatifs ci-dessous <strong>contiennent tous les spoilers du tome&nbsp;2</strong>. Ne descendez pas plus bas si vous n’avez pas encore fini la lecture du tome&nbsp;2 (et si besoin, pensez à consulter les <a href="/trigger-warnings" class="link--white">trigger warnings</a>).
+                    </p>
 
-                    <a href="#complet" class="button button--white button--active-secondary">
-                        Récapitulatif complet
-                    </a>
-                </div>
-            </aside>
+                    <div class="buttons">
+                        <a href="#court" class="link link--white">
+                            Résumé rapide
+                        </a>
+
+                        <a href="#complet" class="button button--white button--active-secondary">
+                            Récapitulatif complet
+                        </a>
+                    </div>
+                </aside>
+            </div>
 
             {% include 'svg/wave.svg' %}
         </section>
@@ -93,16 +96,18 @@
             </article>
         </section>
 
-        <section class="home-discover" id="complet">
+        <section class="banner-fixed-image banner-fixed-image--bloodsea wave-top-reverse" id="complet">
             {% include 'svg/wave.svg' %}
 
-            <article class="chapter">
-                <h2>Récapitulatif complet</h2>
+            <div class="container">
+                <article class="chapter">
+                    <h2>Récapitulatif complet</h2>
 
-                <small class="chapter-date">An 1311 après l’Engloutissement</small>
+                    <small class="chapter-date">An 1311 après l’Engloutissement</small>
 
-                <p>À venir à l'approche de la sortie du tome&nbsp;3 (en 2026).</p>
-            </article>
+                    <p>À venir à l'approche de la sortie du tome&nbsp;3 (en 2026).</p>
+                </article>
+            </div>
 
             {% include 'svg/wave.svg' %}
         </section>
@@ -111,21 +116,23 @@
             {% include 'lore-popins.njk' %}
         </section>
 
-        <section class="home-intro maxwidth--lg">
-            <h2 class="title--normal">Toujours des trous de mémoire&nbsp;?</h2>
+        <section class="container">
+            <div class="maxwidth--lg text--center">
+                <h2>Toujours des trous de mémoire&nbsp;?</h2>
 
-            <p>
-                Consultez la carte interactive pour vous remémorer les lieux, ainsi que les arbres généalogiques des personnages pour vous rappeler qui a épousé, trahi ou tué vos chouchous.
-            </p>
+                <p>
+                    Consultez la carte interactive pour vous remémorer les lieux, ainsi que les arbres généalogiques des personnages pour vous rappeler qui a épousé, trahi ou tué vos chouchous.
+                </p>
 
-            <div class="buttons">
-                <a href="/carte" class="link link--primary">
-                    Carte du monde
-                </a>
+                <div class="buttons">
+                    <a href="/carte" class="link link--primary">
+                        Carte du monde
+                    </a>
 
-                <a href="/familles" class="button button--primary">
-                    Personnages
-                </a>
+                    <a href="/familles" class="button button--primary">
+                        Personnages
+                    </a>
+                </div>
             </div>
         </section>
     </main>

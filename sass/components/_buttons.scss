@@ -95,6 +95,27 @@
             }
         }
     }
+
+    &--gold {
+        background-color: $secondary;
+        background-image: linear-gradient(
+            to bottom right,
+            $secondaryLight,
+            $secondary 20%,
+            $secondaryDark
+        );
+        background-size: 200%;
+        background-position-x: 100%;
+        color: $black00;
+        font-size: $fontSizeSM;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-position-x: 0%;
+            color: $black00;
+        }
+    }
 }
 
 .buttons {

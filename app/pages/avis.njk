@@ -10,27 +10,29 @@
     {{nav('comments')}}
 
     <main>
-        <section class="banner comments-banner">
-            <article class="maxwidth--md text--margin-sm">
-                <h1 class="title--header">Avis des lecteurs</h1>
+        <section class="banner-image banner-image--comments wave-bottom-reverse">
+            <div class="container">
+                <article class="maxwidth--md text--margin-sm text--center">
+                    <h1 class="title--header">Avis des lecteurs</h1>
 
-                <p>
-                    Quelques commentaires de chroniqueurs et de lecteurs, le tout garanti sans spoilers.
-                </p>
+                    <p>
+                        Quelques commentaires de chroniqueurs et de lecteurs, le tout garanti sans spoilers.
+                    </p>
 
-                <div class="buttons">
-                    <a href="#votre-avis" class="button button--white button--active-secondary">
-                        Laisser un avis
-                    </a>
-                </div>
-            </article>
+                    <div class="buttons">
+                        <a href="#votre-avis" class="button button--white button--active-secondary">
+                            Laisser un avis
+                        </a>
+                    </div>
+                </article>
+            </div>
 
             {% include 'svg/wave.svg' %}
         </section>
 
         <h2 class="title--underline">Tome <span>1</span> – Trahir et Survivre</h2>
 
-        <section class="comments-grid">
+        <section class="grid grid--2 centered margin-bottom--lg padding-left--md padding-right--md">
             {% from 'quote.njk' import quote with context %}
 
             {% for id, comment in comments %}
@@ -48,11 +50,11 @@
 
         <section class="container" id="votre-avis">
             <article class="maxwidth--lg text--margin-sm text--center">
-                <h2 class="title--normal">Votre avis</h2>
+                <h2>Votre avis</h2>
 
                 <p>Vous avez lu <em>Les Carmidor</em>&nbsp;? N'hésitez pas à donner votre avis sur les sites ci-dessous&nbsp;: cela permet au roman d'être suggéré à d'autres lecteurs et ça fait très plaisir à l'autrice&nbsp;!</p>
 
-                <div class="container">
+                <div class="buttons">
                     {% for name, link in websites.comment %}
                         {% if link %}
                             <a href="{{link}}" class="logo logo--sm logo--secondary" rel="external" target="_blank" aria-label="{{name}}" title="{{name}}">

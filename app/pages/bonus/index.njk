@@ -10,44 +10,48 @@
     {{nav('bonus')}}
 
     <main>
-        <section class="banner bonus-banner">
-            <article class="maxwidth--md text--margin-sm">
-                <h1 class="title--header">Les bonus</h1>
+        <section class="banner-image banner-image--bonus wave-bottom-reverse">
+            <div class="container">
+                <article class="maxwidth--md text--margin-sm text--center">
+                    <h1 class="title--header">Les bonus</h1>
 
-                <p>
-                    Le fourre-tout de tout ce que je n'ai pas réussi à caser ailleurs (oui, c'est clairement une page en construction).
-                </p>
+                    <p>
+                        Le fourre-tout de tout ce que je n'ai pas réussi à caser ailleurs (oui, c'est clairement une page en construction).
+                    </p>
 
-                <p>
-                    Vous y retrouverez notamment les résumés détaillés des tomes pour vous rafraîchir la mémoire.
-                </p>
+                    <p>
+                        Vous y retrouverez notamment les résumés détaillés des tomes pour vous rafraîchir la mémoire.
+                    </p>
 
-                <div class="buttons">
-                    <a href="#resumes" class="button button--white button--active-secondary">
-                        Résumés des tomes
-                    </a>
-                </div>
-            </article>
+                    <div class="buttons">
+                        <a href="#resumes" class="button button--white button--active-secondary">
+                            Résumés des tomes
+                        </a>
+                    </div>
+                </article>
+            </div>
 
             {% include 'svg/wave.svg' %}
         </section>
 
         <section id="resumes">
-            <div class="home-intro maxwidth--lg">
-                <h2 class="title--underline">Récapitulatifs des tomes</h2>
+            <div class="container">
+                <aside class="maxwidth--lg text--center text--margin-sm">
+                    <h2 class="title--underline">Récapitulatifs des tomes</h2>
 
-                <p>Vous avez besoin de vous remémorer les événements d'un tome avant d'attaquer la lecture du suivant&nbsp;? Consultez les récapitulatifs exhaustifs ci-dessous.</p>
+                    <p>Vous avez besoin de vous remémorer les événements d'un tome avant d'attaquer la lecture du suivant&nbsp;? Consultez les récapitulatifs exhaustifs ci-dessous.</p>
 
-                <p>Attention, ces pages <strong>spoilent tout le contenu des tomes concernés&nbsp;!</strong> À n'ouvrir que si vous avez lu ledit tome.</p>
+                    <p>Attention, ces pages <strong>spoilent tout le contenu des tomes concernés&nbsp;!</strong> À n'ouvrir que si vous avez terminé ledit tome.</p>
+                </aside>
             </div>
 
-            <div class="container resumes-container">
+            <div class="container">
                 {% for number, bookTitle in {
                     "1": "Trahir et Survivre",
                     "2": "Unir et Détruire"
                 } %}
-                    <article>
-                        <img src="/img/medias/t{{ number }}-paperback.png" class="img--book" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
+                    <article class="card card--white">
+                        <img src="/img/medias/t{{ number }}-paperback.png" class="img img--sm centered" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
 
                         <div class="buttons">
                             <a href="/bonus/resumes/tome-{{ number }}" class="button button--secondary">

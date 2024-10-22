@@ -10,60 +10,62 @@
     {{nav('buy')}}
 
     <main>
-        <section class="buy-banner">
-            <h1 class="title--header">
-                Acheter le tome&nbsp;<span>1</span>
-            </h1>
+        <section class="banner-fixed-image banner-fixed-image--bloodsea">
+            <div class="container">
+                <article class="maxwidth--md text--center">
+                    <h1 class="title--header">
+                        Acheter le tome&nbsp;<span>1</span>
+                    </h1>
 
-            {# <div class="buttons">
-                <a href="#ebook" class="link link--white">
-                    En ebook
-                </a>
+                    {# <div class="buttons">
+                        <a href="#ebook" class="link link--white">
+                            En ebook
+                        </a>
 
-                <a href="#papier" class="button button--white button--active-primary">
-                    En papier
-                </a>
-            </div> #}
-
-            {% include 'svg/wave.svg' %}
-        </section>
-
-        {# <section class="buy-book">
-            <div class="content" id="papier">
-                <article class="maxwidth--md text--sm text--margin-sm">
-                    <h2>
-                        Commander le tome&nbsp;<span>1</span> en broché <i class="badge badge--primary">20&nbsp;€</i>
-                    </h2>
-
-                    <p>
-                        Vous pouvez commander votre exemplaire du tome&nbsp;1 de <em>Les Carmidor</em> sur&nbsp;:
-                    </p>
-
-                    <div class="buttons">
-                        {% for name, website in websites.book %}
-                            <a href="{{website.link}}" class="button button--primary logo logo--top" rel="external" target="_blank">
-                                {% include "svg/logos/websites/" + name + ".svg" %}
-                                {{website.desc}}
-                            </a>
-                        {% endfor %}
-                    </div>
-
-                    <p>
-                        Ou dans <strong>toutes les librairies françaises</strong>.
-                    </p>
+                        <a href="#papier" class="button button--white button--active-primary">
+                            En papier
+                        </a>
+                    </div> #}
                 </article>
-
-                <img src="/img/medias/t1-paperback.png" class="img--book" alt="Tome 1 : Trahir et Survivre (format broché)" />
             </div>
+
+            {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="buy-ebook" id="ebook">
+        {# <section class="container" id="papier">
+            <article class="maxwidth--md text--sm text--margin-sm text--center">
+                <h2>
+                    Commander le tome&nbsp;<span>1</span> en broché <i class="badge badge--primary">20&nbsp;€</i>
+                </h2>
+
+                <p>
+                    Vous pouvez commander votre exemplaire du tome&nbsp;1 de <em>Les Carmidor</em> sur&nbsp;:
+                </p>
+
+                <div class="buttons">
+                    {% for name, website in websites.book %}
+                        <a href="{{website.link}}" class="button button--primary logo logo--top" rel="external" target="_blank">
+                            {% include "svg/logos/websites/" + name + ".svg" %}
+                            {{website.desc}}
+                        </a>
+                    {% endfor %}
+                </div>
+
+                <p>
+                    Ou dans <strong>toutes les librairies françaises</strong>.
+                </p>
+            </article>
+
+            <img src="/img/medias/t1-paperback.png" class="img img--sm" alt="Tome 1 : Trahir et Survivre (format broché)" />
+        </section>
+
+        <section class="banner-gradient banner-gradient--primary wave-top-reverse wave-bottom-reverse" id="ebook">
             {% include 'svg/wave.svg' %}
 
-            <div class="content">
-                <img src="/img/medias/t1-ebook.png" class="img--book" alt="Tome 1& : Trahir et Survivre (format ebook)" />
+            <div class="container container--wrap-reverse">
+                <img src="/img/medias/t1-ebook.png" class="img img--sm" alt="Tome 1 : Trahir et Survivre (format ebook)" />
 
-                <article class="maxwidth--md text--sm text--margin-sm">
+                <article class="maxwidth--md text--sm text--margin-sm text--center">
                     <h2>
                         Acheter le tome <span>1</span> en ebook <i class="badge badge--primary">9<small>,99</small>&nbsp;€</i>
                     </h2>
@@ -72,7 +74,7 @@
                         Disponible sur toutes les plateformes de vente, notamment&nbsp;:
                     </p>
 
-                    <div class="container">
+                    <div class="buttons">
                         {% for name, link in websites.ebook %}
                             <a href="{{link}}" class="logo logo--sm logo--white" rel="external" target="_blank" aria-label="{{name}}">
                                 {% include "svg/logos/websites/" + name + ".svg" %}
@@ -85,11 +87,11 @@
             {% include 'svg/wave.svg' %}
         </section> #}
 
-        <section class="container buy-details">
+        <section class="container">
             <article class="maxwidth--md text--margin-sm">
-                {# <h2>Que gagne l'autrice&nbsp;?</h2> #}
+                {# <h2>Que gagne l'autrice&nbsp;?</h2>
 
-                {# <ul class="list list--secondary">
+                <ul class="list list--secondary">
                     <li>Beta Publisher et moi touchons davantage sur les <strong>ebooks achetés sur le site de la maison</strong> (puisqu'il n'y a pas d'intermédiaire).</li>
 
                     <li>Libraire ou plateforme de vente, pour moi, c'est à peu près la même chose&nbsp;: n'hésitez donc pas à privilégier votre librairie&nbsp;!</li>
@@ -99,7 +101,7 @@
 
                 <p>Il n'est plus possible d'acheter l'ancienne version du tome 1 (celle qui avait été éditée par Beta Publisher), puisque l'autrice a récupéré ses droits sur la saga.</p>
 
-                <p>La nouvelle version du tome 1 ressort le 1er avril 2025, en broché et en ebook, aux éditions Plume Blanche (et le tome 2 suivra la même année). Restez à l'affût, ça va venir vite&nbsp;!</p>
+                <p>La nouvelle version du tome 1 ressort le 1er avril 2025, en broché et en ebook, aux éditions Plume Blanche (et le tome 2 paraîtra le même jour). Restez à l'affût, ça va venir vite&nbsp;!</p>
             </article>
         </section>
     </main>

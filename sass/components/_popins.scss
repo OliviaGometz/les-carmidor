@@ -14,7 +14,7 @@
     @media #{$minSM} {
         max-height: calc(100% - #{$navHeight + $spaceSM * 2});
         right: $spaceSM;
-        width: map-get($widths, "sm");
+        width: $widthSM;
     }
 
     &.js-active {
@@ -151,7 +151,7 @@
         span {
             margin-top: $spaceSM;
             text-transform: uppercase;
-            letter-spacing: $spacingXL;
+            letter-spacing: $spacingLG;
             font-weight: $bold;
             font-size: $fontSizeXXS;
             color: $grey40;

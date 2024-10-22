@@ -10,12 +10,19 @@
     {{nav('home')}}
 
     <main>
-        <section class="banner home-banner">
-            <article>
-                <h1>les <em>Carmidor</em></h1>
-                <strong>Saga Fantasy</strong>
+        <section class="banner-image banner-image--xl banner-image--home wave-bottom-reverse">
+            <article class="padding--lg">
+                <h1 class="hidden">Les Carmidor – Romans de Olivia Gometz</h1>
 
-                <a href="{{websites.publisher.main}}" rel="external" target="_blank" class="button--publisher">
+                <div class="carmidor-title margin-top--xl margin-bottom--lg">
+                    {% include 'svg/carmidor-title.svg' %}
+                </div>
+
+                <p>
+                    <strong class="subtitle subtitle--secondary">Saga Fantasy</strong>
+                </p>
+
+                <a href="{{websites.publisher.main}}" rel="external" target="_blank" class="button button--gold margin-top--md margin-bottom--sm">
                     Éditions Plume Blanche
                 </a>
             </article>
@@ -23,24 +30,26 @@
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="home-intro maxwidth--lg">
-            <div class="logo--carmidor">
-                {% include 'svg/logos/carmidor.svg' %}
+        <section class="container">
+            <div class="maxwidth--lg text--center text--margin-sm">
+                <div class="carmidor-embleme centered">
+                    {% include 'svg/carmidor-embleme.svg' %}
+                </div>
+
+                <p>
+                    <em>Les Carmidor</em> est une pentalogie (une saga en 5 tomes) de <strong>fantasy de mœurs</strong>. Le tome 1 avait été édité une première fois en octobre 2021 jusqu'en juin 2023, et il reparaîtra aux éditions Plume Blanche le <strong>1er avril 2025</strong>.
+                <p>
+
+                <p>
+                    Au programme&nbsp;: séduction, complots, manipulation, ambition, guerres et oppression. Ces thèmes sont abordés pour un <strong>lectorat adulte et averti&nbsp;:</strong> avant d'aller plus loin, pensez à consulter les <a href="/trigger-warnings">trigger warnings</a>.
+                </p>
             </div>
-
-            <p>
-                <em>Les Carmidor</em> est une pentalogie (une saga en 5 tomes) de <strong>fantasy de mœurs</strong>. Le tome 1 avait été édité une première fois en octobre 2021 jusqu'en juin 2023, et il reparaîtra aux éditions Plume Blanche le <strong>1er avril 2025</strong>.
-            <p>
-
-            <p>
-                Au programme&nbsp;: séduction, complots, manipulation, ambition, guerres et oppression. Ces thèmes sont abordés pour un <strong>lectorat adulte et averti&nbsp;:</strong> avant d'aller plus loin, pensez à consulter les <a href="/trigger-warnings">trigger warnings</a>.
-            </p>
         </section>
 
-        <section class="home-book">
+        <section class="banner-gradient banner-gradient--primary">
             {% include 'svg/wave.svg' %}
 
-            <div class="content">
+            <div class="container container--wrap-reverse">
                 <article class="maxwidth--sm text--sm text--margin-sm">
                     <h2>
                         Tome <span>1</span> – Trahir et Survivre
@@ -49,64 +58,72 @@
                     {% include 'quatrieme-t1.njk' %}
                 </article>
 
-                <img src="/img/medias/t1-paperback.png" class="img--book" alt="Tome 1 : Trahir et Survivre (format broché)" />
+                <img src="/img/medias/t1-paperback.png" class="img img--sm" alt="Tome 1 : Trahir et Survivre (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="home-intro maxwidth--lg">
-            <h2 class="title--normal">Et après le tome <span>1</span>&nbsp;?</h2>
+        <section class="container">
+            <article class="maxwidth--lg text--center">
+                <h2>Et après le tome <span>1</span>&nbsp;?</h2>
 
-            <p>
-                Le tome 2, <em>Unir et Détruire</em>, est actuellement en cours d'écriture. Comme le tome 1, sa sortie est prévue pour 2025&nbsp;!
-            </p>
+                <p>
+                    Le tome 2, <em>Unir et Détruire</em>, est actuellement en cours d'écriture. Comme le tome 1, sa sortie est prévue pour 2025&nbsp;!
+                </p>
 
-            <p>
-                Les 3 tomes suivants paraîtront au rythme de un par an&nbsp;: le tome 3 en 2026, le tome 4 en 2027 et le tome 5 (le final) en 2028.
-            </p>
+                <p>
+                    Les 3 tomes suivants paraîtront au rythme de un par an&nbsp;: le tome 3 en 2026, le tome 4 en 2027 et le tome 5 (le final) en 2028.
+                </p>
+            </article>
         </section>
 
-        <section class="home-discover">
+        <section class="banner-fixed-image banner-fixed-image--bloodsea wave-top-reverse">
             {% include 'svg/wave.svg' %}
 
-            <h2 class="title--header">
-                Découvrir le tome&nbsp;<span>1</span>
-            </h2>
+            <div class="container">
+                <article class="maxwidth--md text--center">
+                    <h2 class="title--header">
+                        Découvrir le tome&nbsp;<span>1</span>
+                    </h2>
 
-            <div class="buttons">
-                <a href="{{websites.wattpad.tome1.start}}" rel="external" target="_blank" class="link link--white">
-                    Lire le début sur Wattpad
-                </a>
+                    <div class="buttons">
+                        <a href="{{websites.wattpad.tome1.start}}" rel="external" target="_blank" class="link link--white">
+                            Lire le début
+                        </a>
 
-                <a href="/acheter" class="button button--white button--active-primary">
-                    Acheter
-                </a>
+                        <a href="/acheter" class="button button--white button--active-primary">
+                            Acheter
+                        </a>
+                    </div>
+                </article>
             </div>
 
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="home-comments">
-            <h2 class="title--normal">
-                Ce que les lecteurs en disent
-            </h2>
+        <section class="container">
+            <article class="text--center">
+                <h2>
+                    Ce que les lecteurs en disent
+                </h2>
 
-            {% from 'quote.njk' import quote %}
-            {{quote(comments.anouklangel, hasButton=false)}}
+                {% from 'quote.njk' import quote %}
+                {{ quote(comments.anouklangel, hasButton=false) }}
 
-            <div class="buttons">
-                <a href="/avis" class="button button--primary">
-                    Lire plus d'avis
-                </a>
-            </div>
+                <div class="buttons">
+                    <a href="/avis" class="button button--primary">
+                        Lire plus d'avis
+                    </a>
+                </div>
+            </article>
         </section>
 
-        <section class="home-lore">
+        <section class="banner-gradient banner-gradient--secondary wave-bottom-reverse">
             {% include 'svg/wave.svg' %}
 
-            <div class="container text--sm">
-                <article class="maxwidth--xs">
+            <div class="container text--sm text-margin--sm text--center">
+                <article class="maxwidth--xs margin--sm svg-lore">
                     {% include 'svg/illu/map.svg' %}
 
                     <h2>Royaumes et cités</h2>
@@ -115,14 +132,14 @@
                         Parcourez la carte interactive des terres émergées et explorez les lieux de l'histoire&nbsp;: ceux qu'on protège, ceux qu'on détruit et ceux où l'on périt&hellip;
                     </p>
 
-                    <div class="buttons">
+                    <div class="buttons margin-top--sm">
                         <a href="/carte" class="button button--white button--active-secondary">
                             Naviguer
                         </a>
                     </div>
                 </article>
 
-                <article class="maxwidth--xs">
+                <article class="maxwidth--xs margin--sm svg-lore">
                     {% include 'svg/illu/characters.svg' %}
 
                     <h2>Familles et personnages</h2>
@@ -131,7 +148,7 @@
                         Rois, dames, courtisanes et guerriers&nbsp;: découvrez les clans, les emblèmes et les visages de ceux qui écrivent l'histoire – avec leur sang ou celui de leurs ennemis.
                     </p>
 
-                    <div class="buttons">
+                    <div class="buttons margin-top--sm">
                         <a href="/familles" class="button button--white button--active-secondary">
                             Rencontrer
                         </a>
@@ -142,18 +159,20 @@
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section>
-            <h2 class="title--normal">
-                Les médias en parlent
-            </h2>
+        <section class="container">
+            <article class="text--center">
+                <h2>
+                    Les médias en parlent
+                </h2>
 
-            <div class="container">
-                {% for id, media in websites.media %}
-                    <a href="{{media.link}}" class="logo logo--md logo--black" rel="external" target="_blank" aria-label="{{media.name}}">
-                        {% include "svg/logos/medias/" + id + ".svg" %}
-                    </a>
-                {% endfor %}
-            </div>
+                <div class="buttons">
+                    {% for id, media in websites.media %}
+                        <a href="{{media.link}}" class="logo logo--md logo--black" rel="external" target="_blank" aria-label="{{media.name}}">
+                            {% include "svg/logos/medias/" + id + ".svg" %}
+                        </a>
+                    {% endfor %}
+                </div>
+            </article>
         </section>
     </main>
 

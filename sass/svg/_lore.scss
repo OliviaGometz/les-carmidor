@@ -1,0 +1,23 @@
+.svg-lore {
+    svg {
+        width: 60%;
+        margin: 0 auto;
+        fill: transparent;
+        stroke: $secondaryDark;
+        stroke-width: $line;
+        transition: stroke-dashoffset 3s linear, fill $durationMD linear;
+    }
+
+    &:hover {
+        svg {
+            fill: $secondary;
+            transition-delay: 0s, 2.5s;
+        }
+    }
+
+    &:not(:hover) {
+        svg {
+            stroke-dashoffset: 0;
+        }
+    }
+}

@@ -1,14 +1,11 @@
-.logo--carmidor {
+.carmidor-embleme {
     svg {
+        width: 120px;
         stroke: $black00;
         stroke-width: 4px;
         fill: transparent;
 
-        @include animation(5s linear forwards) {
-            80% {
-                stroke-dashoffset: 0;
-            }
-
+        @include animation(3s linear forwards 1s) {
             90% {
                 stroke-dashoffset: 0;
                 stroke: $black00;

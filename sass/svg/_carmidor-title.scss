@@ -1,0 +1,92 @@
+.carmidor-title {
+    svg {
+        width: 360px;
+        max-width: 100%;
+
+        $titleAnimationDuration: 3s;
+
+        .title {
+            &__big-letter {
+                stroke: $secondary;
+                stroke-width: 4px;
+                fill: transparent;
+
+                @include animation($titleAnimationDuration linear forwards) {
+                    80% {
+                        stroke-dashoffset: 0;
+                    }
+
+                    90% {
+                        stroke-dashoffset: 0;
+                        stroke: $secondary;
+                        fill: transparent;
+                    }
+
+                    to {
+                        stroke-dashoffset: 0;
+                        stroke: transparent;
+                        fill: $white00;
+                    }
+                }
+            }
+
+            &__small-letter {
+                fill: transparent;
+
+                @include animation(0.5s linear forwards $titleAnimationDuration) {
+                    from {
+                        fill: transparent;
+                    }
+
+                    to {
+                        fill: $white00;
+                    }
+                }
+            }
+
+            &__dot-letter {
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(90deg);
+                fill: transparent;
+
+                @include animation(0.5s linear forwards $titleAnimationDuration) {
+                    from {
+                        fill: transparent;
+                        transform: rotate(90deg);
+                    }
+
+                    to {
+                        fill: $white00;
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            &__dagger {
+                fill: $secondary;
+                transform: translateY(-100%);
+
+                @include animation($titleAnimationDuration ease-in forwards) {
+                    50% {
+                        transform: translateY(-100%);
+                    }
+
+                    70% {
+                        transform: translateY(0);
+                    }
+
+                    90% {
+                        transform: translateY(0);
+                        fill: $secondary;
+                    }
+
+                    to {
+                        transform: translateY(0);
+                        fill: $white00;
+                    }
+                }
+            }
+        }
+    }
+}

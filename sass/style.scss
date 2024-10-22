@@ -9,6 +9,7 @@
 @import "variables/shadows";
 @import "variables/spaces";
 @import "variables/sizes";
+@import "variables/widths";
 @import "variables/z-index";
 @import "variables/responsive";
 
@@ -16,10 +17,11 @@
 @import "base/normalize";
 @import "base/general";
 @import "base/helpers";
+@import "base/containers";
 
 // Components
-@import "components/badges";
 @import "components/banners";
+@import "components/badges";
 @import "components/buttons";
 @import "components/cards";
 @import "components/chapter";
@@ -35,9 +37,10 @@
 @import "components/titles";
 @import "components/wave";
 
-// Logos
-@import "logos/publisher";
-@import "logos/carmidor";
+// SVG (hors carte)
+@import "svg/carmidor-embleme";
+@import "svg/carmidor-title";
+@import "svg/lore";
 
 // Structure
 @import "structure/main";
@@ -49,26 +52,3 @@
 @import "map/controls";
 @import "map/svg";
 @import "map/zoom";
-
-// Pages
-@import "pages/home/banner";
-@import "pages/home/intro";
-@import "pages/home/book";
-@import "pages/home/discover";
-@import "pages/home/comments";
-@import "pages/home/lore";
-
-@import "pages/legal";
-
-@import "pages/buy/banner";
-@import "pages/buy/book";
-@import "pages/buy/ebook";
-@import "pages/buy/details";
-
-@import "pages/comments/banner";
-@import "pages/comments/grid";
-
-@import "pages/characters/banner";
-
-@import "pages/bonus/banner";
-@import "pages/bonus/resumes";

@@ -22,6 +22,10 @@
             color: map-get($color, "main");
             background-color: map-get($color, "ultraLight");
             box-shadow: $spaceXXS $spaceXXS 0 0 color.adjust(map-get($color, "ultraLight"), $alpha: -0.5);
+
+            small {
+                color: map-get($color, "main");
+            }
         }
     }
 }
