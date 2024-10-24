@@ -86,7 +86,7 @@
     background-position: center;
     background-attachment: fixed;
 
-    @each $theme in 'bloodsea' {
+    @each $theme in 'bloodsea', 't1', 't2' {
         &--#{$theme} {
             background-image: url('../img/bg/#{$theme}.png');
         }
