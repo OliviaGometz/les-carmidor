@@ -1,6 +1,7 @@
 .title {
     &--header {
         text-align: center;
+        word-break: break-word;
         text-transform: uppercase;
         letter-spacing: $spacingMD;
         margin: $spaceMD;
@@ -30,6 +31,7 @@
 }
 
 .subtitle {
+    word-break: break-word;
     text-transform: uppercase;
     letter-spacing: $spacingXL;
     font-size: $titleSizeXS;
