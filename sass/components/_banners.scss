@@ -1,6 +1,10 @@
 .banner-gradient {
     color: $white00;
 
+    a {
+        color: $white00;
+    }
+
     @each $colorName, $color in $colors {
         &--#{$colorName},
         &--dark-#{$colorName} {
@@ -42,6 +46,10 @@
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
+
+    a {
+        color: $white00;
+    }
 
     &--xl {
         @media #{$minMD} {
@@ -85,6 +93,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    a {
+        color: $white00;
+    }
 
     @each $theme in 'bloodsea', 't1', 't2' {
         &--#{$theme} {
