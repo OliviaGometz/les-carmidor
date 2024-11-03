@@ -106,7 +106,7 @@
         );
         background-size: 200%;
         background-position-x: 100%;
-        color: $black00;
+        color: $black00 !important; // override white color in banners
         font-size: $fontSizeSM;
 
         &:hover,
