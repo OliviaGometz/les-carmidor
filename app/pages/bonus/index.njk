@@ -46,12 +46,9 @@
             </div>
 
             <div class="container margin-bottom--md">
-                {% for number, bookTitle in {
-                    "1": "Trahir et Survivre",
-                    "2": "Unir et Détruire"
-                } %}
+                {% for number, book in books %}
                     <article class="card card--white">
-                        <img src="/img/medias/t{{ number }}-paperback.png" class="img img--sm centered" alt="Tome {{ number }} : {{ bookTitle }} (format broché)" />
+                        <img src="/img/medias/t{{ number }}-paperback.png" class="img img--sm centered" alt="Tome {{ number }} : {{ book.title }} (format broché)" />
 
                         <div class="buttons">
                             <a href="/bonus/resumes/tome-{{ number }}" class="button button--secondary">

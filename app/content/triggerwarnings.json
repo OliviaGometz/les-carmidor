@@ -1,0 +1,17 @@
+{
+    "Meurtre, assassinat": [1, 2],
+    "Suicide": [1, 2],
+    "Viol": [1],
+    "Amputation": [1, 2],
+    "Maladie, épidémie": [2],
+    "Noyade": [1],
+    "Empoisonnement": [2],
+    "Incendie meurtrier": [2],
+    "Violences physiques et psychologiques": [1, 2],
+    "Décès infantile": [1],
+    "Grossesse, accouchement": [1, 2],
+    "Misogynie, sexisme": [1, 2],
+    "Relations sexuelles explicites": [1, 2],
+    "Stress post-traumatique": [1, 2],
+    "Trichotillomanie": [2]
+}
