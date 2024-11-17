@@ -37,7 +37,7 @@
                 </div>
 
                 <p>
-                    <em>Les Carmidor</em> est une pentalogie (une saga en 5 tomes) de <strong>fantasy de mœurs</strong>. Le tome&nbsp;1 avait été édité une première fois en octobre 2021 jusqu’en juin 2023, et il reparaîtra aux éditions Plume Blanche le <strong>1<sup>er</sup>&nbsp;avril 2025</strong>.
+                    <em>Les Carmidor</em> est une pentalogie (une saga en 5 tomes) de <strong>fantasy de mœurs</strong>. Le tome&nbsp;1 avait été édité une première fois en octobre 2021 jusqu’en juin 2023, et il reparaîtra aux éditions Plume Blanche le <strong>1<sup>er</sup>&nbsp;avril 2025</strong> avec le tome&nbsp;2.
                 <p>
 
                 <p>
@@ -64,17 +64,17 @@
             {% include 'svg/wave.svg' %}
         </section>
 
-        <section class="container">
-            <article class="maxwidth--lg text--center">
-                <h2>Et après le tome&nbsp;<span>1</span>&nbsp;?</h2>
+        <section class="container container--flex-start">
+            <img src="/img/medias/t2-paperback.png" class="img img--sm" alt="Tome 2 : Unir et Détruire (format broché)" />
 
-                <p>
-                    Le tome&nbsp;2, <em>Unir et Détruire</em>, est actuellement en cours d’écriture. Comme le tome&nbsp;1, sa sortie est prévue pour 2025&nbsp;!
-                </p>
+            <article class="maxwidth--sm text--margin-sm">
+                <h2>
+                    Tome&nbsp;<span>2</span> – Unir et Détruire
+                </h2>
 
-                <p>
-                    Les 3 tomes suivants paraîtront au rythme de un par an&nbsp;: le tome&nbsp;3 en 2026, le tome&nbsp;4 en 2027 et le tome&nbsp;5 (le final) en 2028.
-                </p>
+                <p>Du drame, du sang, des larmes, des trahisons et de nouvelles alliances&hellip; L’histoire ne fait que commencer.</p>
+                <p>Découvrez le tome&nbsp;2, inédit, en même temps que le tome&nbsp;1.</p>
+                <p>Sortie officielle le {{books[2].release | safe}}.</p>
             </article>
         </section>
 
@@ -103,19 +103,18 @@
         </section>
 
         <section class="container">
-            <article class="text--center">
-                <h2>
-                    Ce que les lecteurs en disent
-                </h2>
+            <article class="maxwidth--lg text--center text--margin-sm">
+                <h2>Et après le tome&nbsp;<span>2</span>&nbsp;?</h2>
 
-                {% from 'quote.njk' import quote %}
-                {{ quote(comments.anouklangel, hasButton=false) }}
+                <p>Les tomes suivants paraîtront au rythme de un par an.</p>
 
-                <div class="buttons">
-                    <a href="/avis" class="button button--primary">
-                        Lire plus d’avis
-                    </a>
-                </div>
+                <p>
+                    Le tome&nbsp;3 est actuellement en cours d’écriture. Sa sortie est prévue en 2026&nbsp;!
+                </p>
+
+                <p>
+                    Le tome&nbsp;4 sortira quand à lui en 2027 et le tome&nbsp;5 (le final) en 2028.
+                </p>
             </article>
         </section>
 
@@ -162,15 +161,16 @@
         <section class="container">
             <article class="text--center">
                 <h2>
-                    Les médias en parlent
+                    Ce que les lecteurs en disent
                 </h2>
 
+                {% from 'quote.njk' import quote %}
+                {{ quote(comments.anouklangel, hasButton=false) }}
+
                 <div class="buttons">
-                    {% for id, media in websites.media %}
-                        <a href="{{media.link}}" class="logo logo--md logo--black" rel="external" target="_blank" aria-label="{{media.name}}">
-                            {% include "svg/logos/medias/" + id + ".svg" %}
-                        </a>
-                    {% endfor %}
+                    <a href="/avis" class="button button--primary">
+                        Lire plus d’avis
+                    </a>
                 </div>
             </article>
         </section>

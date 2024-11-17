@@ -48,23 +48,5 @@
     "goodreads": "",
     "gleeph": "",
     "storygraph": ""
-  },
-  "media": {
-    "parisco": {
-      "name": "Paris&Co",
-      "link": "https://labodeledition.parisandco.paris/a-la-une/actualites/Interview-de-l-autrice-Olivia-Gometz-Beta-Book-Jam-Nuit-de-la-Lecture-2021"
-    },
-    "epinalinfos": {
-      "name": "Épinal Infos",
-      "link": "https://epinalinfos.fr/2021/10/livres-palpitants-de-maison-dedition-beta-publisher/"
-    },
-    "20minutes": {
-      "name": "20 minutes",
-      "link": "https://www.20minutes.fr/arts-stars/livres/3145319-20211014-carmidor-olivia-gometz-trahit-besoin-imagination-survivre"
-    },
-    "desauteursdeslivres": {
-      "name": "Des auteurs des livres",
-      "link": "https://magazine-desauteursdeslivres.fr/olivia-gometz-presente-les-carmidor/"
-    }
   }
 }
