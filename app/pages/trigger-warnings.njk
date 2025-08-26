@@ -67,15 +67,9 @@
                         <h3 class="title--underline title--underline--secondary margin-top--xs">Tome&nbsp;<span>{{ number }}</span></h3>
 
                         <ul class="list-centered">
-                            {% for tw, tomes in triggerwarnings %}
-                                {% for tome in tomes %}
-                                    {% if number == tome %}
-                                    <li>
-                                        {{ tw }}
-                                    </li>
-                                    {% endif %}
-                                {% endfor %}
-                            {% endfor %}
+                            {% for tw, tomes in triggerwarnings %}{% for tome in tomes %}{% if number == tome %}
+                                <li>{{ tw }}</li>
+                            {% endif %}{% endfor %}{% endfor %}
                         <ul>
                     </article>
                 {% endfor %}
