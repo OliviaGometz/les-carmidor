@@ -52,13 +52,13 @@
             <div class="container container--wrap-reverse">
                 <article class="maxwidth--sm text--sm text--margin-sm">
                     <h2>
-                        Tome&nbsp;<span>1</span> – Trahir et Survivre
+                        Tome&nbsp;<span>1</span> – {{books[1].title}}
                     </h2>
 
                     {% include 'textes/quatrieme-t1.njk' %}
                 </article>
 
-                <img src="/img/medias/t1-paperback.png" class="img img--sm" alt="Tome 1 : Trahir et Survivre (format broché)" />
+                <img src="/img/medias/t1-paperback.png" class="img img--sm" alt="Tome 1 : {{books[1].title}} (format broché)" />
             </div>
 
             {% include 'svg/wave.svg' %}
@@ -67,7 +67,7 @@
         <section class="container text--center">
             {% for number, book in books %}
                 {% if number > 1 %}
-                    <article class="maxwidth--xs text--margin-sm"> <!-- passer en maxwidth--xs lorsqu'il y aura le T4 -->
+                    <article class="maxwidth--xs text--margin-sm"> <!-- passer en maxwidth--xs lorsqu'il y aura la couv du T4 -->
                         <img src="/img/medias/t{{ number }}-paperback.png" class="img img--md centered" alt="Tome {{ number }} : {{ book.title }} (format broché)" />
 
                         <h2 class="subtitle margin-top--xs margin-bottom--xs">Tome&nbsp;<span>{{ number }}</span></h2>
@@ -76,7 +76,7 @@
                             {{ book.title }}
                         </h3>
 
-                        <p>{% if number > 2 %}Sortie officielle{% else %}Paru{% endif %} le <strong>{{book.release | safe}}</strong></p>
+                        <p>{% if number > 2 %}Sortie officielle{% else %}Paru{% endif %} le <strong>{{book.release | safe}}</strong></p> <!-- passer en > 3 lorsque le T3 sera sorti -->
                     </article>
                 {% endif %}
             {% endfor %}
