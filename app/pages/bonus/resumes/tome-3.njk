@@ -1,0 +1,125 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Les Carmidor - Résumé du tome 3</title>
+    <meta name="description" content="Besoin d’un rappel du tome 3, Renaître et Sacrifier, avant d’entamer la lecture du tome 4 ? Consultez le résumé court ou le récapitulatif complet des événements du tome 3." />
+{% endblock %}
+
+{% block content %}
+    {% from 'nav.njk' import nav %}
+    {{nav()}}
+
+    <main>
+        <section class="banner-fixed-image banner-fixed-image--t3">
+            <div class="container">
+                <article class="maxwidth--md text--margin-sm">
+                    <h1 class="title--header">Résumé du tome&nbsp;<span>3</span></h1>
+
+                    <p>
+                        Besoin de vous rafraîchir la mémoire avant de commencer la <strong>lecture du tome&nbsp;4&nbsp;?</strong> Consultez ci-dessous la quatrième de couverture et/ou les résumés du tome&nbsp;3, <em>Renaître et Sacrifier</em>.
+                    </p>
+
+                    <p>
+                        Attention&nbsp;: à l’exception de la quatrième de couverture ci-dessous, ce qui suit contient des spoilers sur l’intégralité du tome&nbsp;3.
+                    </p>
+                </article>
+
+                <img src="/img/medias/t3-paperback.png" class="img img--sm margin-top--lg" alt="Tome 3 : Renaître et Sacrifier (format broché)" />
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            <div class="container container--wrap-reverse">
+                <img src="/img/medias/t3-ebook.png" class="img img--md" alt="Tome 3 : Renaître et Sacrifier (format ebook)" />
+
+                <article class="maxwidth--sm text--sm text--margin-sm">
+                    <h2>
+                        Quatrième de couverture du tome&nbsp;<span>3</span>
+                    </h2>
+
+                    {% include 'textes/quatrieme-t3.njk' %}
+                </article>
+            </div>
+        </section>
+
+        <section class="banner-gradient banner-gradient--secondary wave-bottom-reverse">
+            {% include 'svg/wave.svg' %}
+
+            <div class="container">
+                <aside class="maxwidth--lg text--margin-sm text--center">
+                    <h2 class="title--header">
+                        Attention aux spoilers
+                    </h2>
+
+                    <p>
+                        Les récapitulatifs ci-dessous <strong>contiennent tous les spoilers du tome&nbsp;3</strong>. Ne descendez pas plus bas si vous n’avez pas encore fini la lecture du tome&nbsp;3 (et si besoin, pensez à consulter les <a href="/trigger-warnings">trigger warnings</a>).
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#court" class="link link--white">
+                            Résumé rapide
+                        </a>
+
+                        <a href="#complet" class="button button--white button--active-secondary">
+                            Récapitulatif complet
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section id="court">
+            <article class="chapter">
+                <h2>Résumé rapide</h2>
+
+                {% include 'textes/resume-court-t3.njk' %}
+            </article>
+        </section>
+
+        <section class="banner-fixed-image banner-fixed-image--bloodsea wave-top-reverse" id="complet">
+            {% include 'svg/wave.svg' %}
+
+            <div class="container">
+                <article class="chapter">
+                    <h2>Récapitulatif complet</h2>
+
+                    {% include 'textes/recap-complet-t3.njk' %}
+                </article>
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            {% include 'lore-popins.njk' %}
+        </section>
+
+        <section class="container">
+            <div class="maxwidth--lg text--center">
+                <h2>Toujours des trous de mémoire&nbsp;?</h2>
+
+                <p>
+                    Consultez la carte interactive pour vous remémorer les lieux, ainsi que les arbres généalogiques des personnages pour vous rappeler qui a épousé, trahi ou tué vos chouchous.
+                </p>
+
+                <div class="buttons">
+                    <a href="/carte" class="link link--primary">
+                        Carte du monde
+                    </a>
+
+                    <a href="/familles" class="button button--primary">
+                        Personnages
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.njk' %}
+
+    <script src="/js/popin.js?v={{version}}"></script>
+{% endblock %}
