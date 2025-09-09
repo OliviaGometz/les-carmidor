@@ -86,7 +86,7 @@
         "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
         "details": [
             "Le duché de Lorsis est une riche terre continentale, fort du rayonnement culturel de <strong data-js='popin' data-popin='lorsis'>son chef-lieu</strong>.",
-            "Idéalement situé entre la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>, et l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, il est l’intermédiaire des échanges entre l’est et l’ouest du royaume.",
+            "Idéalement situé entre la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>, et l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, il est le carrefour des échanges entre l’est et l’ouest du royaume.",
             "Autrefois, il englobait même la capitale, avant que <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> ne l’obtienne."
         ],
         "family": "virdemis"
@@ -264,7 +264,7 @@
         "title": "Naudèle",
         "subtitle": "Chef-lieu de la baronnie de Naudèle",
         "details": [
-            "Dernier port au nord de l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Naudèle est l’intermédiaire des échanges entre l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong> et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
+            "Dernier port au nord de l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Naudèle est le carrefour des échanges entre l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong> et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
         ],
         "family": "pondarque"
     },
