@@ -36,6 +36,11 @@
         margin: $spaceMD;
         background-color: $white00;
         text-shadow: none;
+
+        @media #{$minMD} {
+            max-width: 720px;
+            padding: $spaceXXL;
+        }
         
         h2,
         p {
