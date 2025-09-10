@@ -30,15 +30,16 @@ function html() {
     .src("app/pages/**/*.njk")
     .pipe(
       data(function () {
-        const characters = require("./app/content/characters.json");
-        const comments = require("./app/content/comments.json");
         const books = require("./app/content/books.json");
+        const characters = require("./app/content/characters.json");
+        const cities = require("./app/content/cities.json");
+        const comments = require("./app/content/comments.json");
         const families = require("./app/content/families.json");
         const logos = require("./app/content/logos.json");
         const triggerwarnings = require("./app/content/triggerwarnings.json");
         const websites = require("./app/content/websites.json");
         const world = require("./app/content/world.json");
-        return { characters, comments, books, families, logos, triggerwarnings, websites, world };
+        return { books, characters, cities, comments, families, logos, triggerwarnings, websites, world };
       })
     )
     .pipe(

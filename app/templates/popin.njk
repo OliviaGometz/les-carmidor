@@ -1,0 +1,30 @@
+{% macro popin(id, mainTitle='', details=[], subtitle='', picture=false, family='') %}
+<article class="popin" data-popin="{{id}}">
+    <div class="popin__header{% if not picture %} popin__header--border{% endif %}">
+        <h2>{{mainTitle}}</h2>
+
+        <button type="button" title="Fermer la popin">{% include 'svg/icons/cross.svg' %}</button>
+    </div>
+
+    <div class="popin__content">
+        {% if picture %}<img src="/img/world/{{id}}.png" class="popin__content__banner" />{% endif %}
+
+        <div class="popin__content__text">
+            {% if subtitle|length %}<p class="emphasis">{{subtitle | safe}}</p>{% endif %}
+
+            {% include 'svg/world/zones/' + id + '.svg' ignore missing %}
+
+            {% for paragraph in details %}
+                <p>{{paragraph | safe}}</p>
+            {% endfor %}
+        </div>
+
+        {% if family %}
+            <div class="popin__footer popin__footer--{{family}}">
+                <span>Dirigeants</span>
+                <p>Les {{families[family]}}</p>
+            </div>
+        {% endif %}
+    </div>
+</article>
+{% endmacro %}
