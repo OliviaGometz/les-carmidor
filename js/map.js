@@ -85,9 +85,9 @@ const setZoom = function(z) {
 };
 
 const scaleWidth = {
-    a: 18,
-    b: 10.8,
-    c: 5.4
+    a: 18.36, // 150/817
+    b: 11, // 90/817
+    c: 5.5 // 45/817
 };
 
 const mapZoom = function() {

@@ -1,0 +1,20 @@
+{% macro mapGrid(mapWidth, mapHeight, squareSize) %}
+
+{% set countX = mapHeight//squareSize %}
+{% set startX = (mapHeight - countX*squareSize)//2 %}
+
+<g>
+{% for i in range(0, countX +1) -%}
+    <line y1={{i*squareSize + startX}} y2={{i*squareSize + startX}} x2={{mapWidth}} />
+{%- endfor %}
+</g>
+
+{% set countY = mapWidth//squareSize %}
+{% set startY = (mapWidth - countY*squareSize)//2 %}
+
+<g>
+{% for i in range(0, countY +1) -%}
+    <line x1={{i*squareSize + startY}} x2={{i*squareSize + startY}} y2={{mapHeight}} />
+{%- endfor %}
+</g>
+{% endmacro %}
