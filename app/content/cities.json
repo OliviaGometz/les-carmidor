@@ -1,53 +1,79 @@
 {
     "angeve": {
-        "title": "Angève",
+        "name": "Angève",
         "subtitle": "Chef-lieu du comté d’Angève",
         "details": [
             "Port du nord-ouest du <strong data-js='popin' data-popin='arcavie'>royaume d’Arcavie</strong> à l’embouchure du Garron, Angève bénéficie grâce à la mer Mongaise d’un accès prilégié à l’ouest du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong> et à <strong data-js='popin' data-popin='kavong'>l’empire du Kavong</strong>.",
             "Toutefois, sous l’inflence du Népéisme, le commerce maritime y demeure limité. La pêche constitue l’une de ses plus grandes richesses."
         ],
-        "family": "valbriquin"
+        "family": "valbriquin",
+        "main": true,
+        "position": {
+            "x": 284,
+            "y": 375,
+            "text": "top"
+        }
     },
     "bogdar": {
-        "title": "Bogdar",
+        "name": "Bogdar",
         "subtitle": "Capitale du <strong data-js='popin' data-popin='sarouha'>sultanat du Sarouha</strong>",
         "details": [
             "Siège du pouvoir sultanesque, Bogdar est aussi le plus grand port du Sarouha.",
             "Sa situation géographique lui offre en effet un accès privilégié à <strong data-js='popin' data-popin='region-corance'>l’île de Corance</strong>, qui l’ouvre au commerce avec toute la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
             "Bogdar est une ville morcelée par les nombreux bras du Tenzith, le fleuve qui la traverse pour se jeter dans l’océan Priadique."
         ],
-        "family": "al-beymir"
+        "family": "al-beymir",
+        "main": true,
+        "position": {
+            "x": 626,
+            "y": 578
+        }
     },
     "brivage": {
-        "title": "Brivage",
+        "name": "Brivage",
         "subtitle": "Chef-lieu du comté de Brivage",
         "details": [
             "Bâtie sur les rives d’un lac dans les terres de l’est du <strong data-js='popin' data-popin='arcavie'>royaume d’Arcavie</strong>, Brivage a la particularité d’avoir des canaux navigables au lieu de rues.",
             "Les Brivageais s’y déplacent en gondoles."
         ],
-        "family": "hosbourg"
+        "family": "hosbourg",
+        "main": true,
+        "position": {
+            "x": 525,
+            "y": 312
+        }
     },
     "caradesse": {
-        "title": "Caradesse",
+        "name": "Caradesse",
         "subtitle": "Chef-lieu du comté de Caradesse",
         "details": [
             "Caradesse est le plus grand port d’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>, et sa plus grande cité estalienne.",
             "Elle commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et notamment avec le <strong data-js='popin' data-popin='naudele'>port de Naudèle</strong>.",
             "Elle dispose de la seule arène semi-circulaire du monde&nbsp;: le théâtre de Népéidon, à flanc d’océan, dans lequel des jeux mortels se déroulaient plusieurs siècles auparavant."
         ],
-        "family": "jostiral"
+        "family": "jostiral",
+        "main": true,
+        "position": {
+            "x": 604,
+            "y": 323
+        }
     },
     "carlate": {
-        "title": "Carlate",
+        "name": "Carlate",
         "subtitle": "Chef-lieu de la baronnie de Carlate",
         "details": [
             "À l’est du <strong data-js='popin' data-popin='region-goragna'>duché de Goragna</strong>, Carlate est une petite ville bâtie sur les premiers contreforts des Petites Apondrées.",
             "Elle vit de l’agriculture et de l’élevage."
         ],
-        "family": "rhodives"
+        "family": "rhodives",
+        "position": {
+            "x": 457,
+            "y": 423,
+            "text": "top"
+        }
     },
     "cavar": {
-        "title": "Cavar",
+        "name": "Cavar",
         "subtitle": "Chef-lieu de la baronnie de Cavar",
         "details": [
             "Au nord-est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, la petite ville de Cavar se trouve au creux d’un canyon, dans les massifs des Apondrées Estaliennes.",
@@ -55,28 +81,42 @@
             "Un orphelinat pour filles le jouxte&nbsp;: une fois adolescentes, les enfants abandonnées parfois par de nobles familles, qui y laissent leurs bâtardes, deviennent prêtresses.",
             "Le sanctuaire suspendu au-dessus de la ville de Cavar est réputé indéfendable en raison de ses remparts partiels au sommet de la falaise."
         ],
-        "family": "tasquin"
+        "family": "tasquin",
+        "position": {
+            "x": 524,
+            "y": 423
+        }
     },
     "corance": {
-        "title": "Corance",
+        "name": "Corance",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-corance'>duché de Corance</strong>",
         "details": [
             "La cité de Corance est le plus grand port du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>.",
             "La plupart des navires marchands qui relient la Rubisie et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> transitent par Corance&nbsp;: pour ce faire, ils doivent s’acquitter de la taxe corancienne, dont le bénéfice revient au duc. Avec le développement du commerce maritime, la taxe corancienne a ainsi considérablement enrichi les Carmidor."
         ],
-        "family": "carmidor"
+        "family": "carmidor",
+        "main": true,
+        "position": {
+            "x": 561,
+            "y": 511
+        }
     },
     "diveniam": {
-        "title": "Diveniam",
+        "name": "Diveniam",
         "subtitle": "Capitale de l’<strong data-js='popin' data-popin='kavong'>empire du Kavong</strong>",
         "details": [
             "Diveniam est le siège du pouvoir de l’empereur.",
             "Son port est l’un des plus grand de l’empire, et celui qui accueille le plus d’étrangers, notamment en provenance de <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
         ],
-        "family": "qan"
+        "family": "qan",
+        "main": true,
+        "position": {
+            "x": 51,
+            "y": 405
+        }
     },
     "erinthe": {
-        "title": "Érinthe",
+        "name": "Érinthe",
         "subtitle": "Capitale du <strong data-js='popin' data-popin='arcavie'>royaume d’Arcavie</strong>",
         "details": [
             "Siège du pouvoir royal, Érinthe est également le siège de la Chambre des Comtes, assemblée qui seconde le roi dans l’administration des comtés et vicomtés.",
@@ -84,161 +124,251 @@
             "La cité est notamment connue pour la qualité de ses vitraux et ses verriers sont renommés dans le monde entier.",
             "Elle est traversée par le Garron qui se jette à Angève dans la mer Mongaise. Entre deux bras du fleuve s’élève l’île palatine, où se dresse le palais royal."
         ],
-        "family": "tordheon"
+        "family": "tordheon",
+        "main": true,
+        "position": {
+            "x": 423,
+            "y": 353,
+            "text": "top"
+        }
     },
     "fahirah": {
-        "title": "Fahirah",
+        "name": "Fahirah",
         "details": [
             "Entre montagnes et désert, Fahirah est une petite ville qui n’aurait jamais prospéré sans ses mines d’or toutes proches.",
             "Renommé dans tout le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>, son précieux métal en fait la cible d’attaques régulières.",
             "Pour éviter que la ville soit mise à sac et son or dérobé, des troupes armées y séjournent à titre permanent."
-        ]
+        ],
+        "position": {
+            "x": 687,
+            "y": 650,
+            "text": "top"
+        }
     },
     "fort-havel": {
-        "title": "Fort-Havel",
+        "name": "Fort-Havel",
         "subtitle": "Village du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
         "details": [
             "Au creux d’un canyon de la vallée de la Dramonne, le village de Fort-Havel s’étend à l’ombre du château de ses seigneurs.",
             "Le bastion garde la frontière terrestre du domaine ducal de <strong data-js='popin' data-popin='lorsis'>Lorsis</strong>."
         ],
-        "family": "arganza"
+        "family": "arganza",
+        "position": {
+            "x": 511,
+            "y": 504,
+            "text": "top"
+        }
     },
     "goragna": {
-        "title": "Goragna",
+        "name": "Goragna",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-goragna'>duché de Goragna</strong>",
         "details": [
             "Petite ville fortifiée bâtie sur les contreforts des Apondrées Ouestarines, elle était autrefois la plaque tournante du commerce agricole.",
             "En effet, son emplacement stratégique en faisait le passage obligé de la plupart des échanges avec l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
             "Hélas, le développement du commerce maritime a porté un coup dur à l’économie du duché, au détriment de son chef-lieu."
         ],
-        "family": "arvagna"
+        "family": "arvagna",
+        "main": true,
+        "position": {
+            "x": 427,
+            "y": 403
+        }
     },
     "honterra": {
-        "title": "Honterra",
+        "name": "Honterra",
         "subtitle": "Chef-lieu du vicomté de Honterra",
         "details": [
             "Idéalement placée sur la route de <strong data-js='popin' data-popin='goragna'>Goragna</strong>, la petite ville frontalière vit uniquement du commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
             "En effet, située sur les contreforts des Apondrées Ouestarines, Honterra est entourée de terres impropres aux usages agricoles."
         ],
-        "family": "urchain"
+        "family": "urchain",
+        "position": {
+            "x": 425,
+            "y": 392,
+            "text": "top"
+        }
     },
     "ispin": {
-        "title": "Col d’Ispin",
+        "name": "Ispin",
         "subtitle": "Village de montagne dans les Vardes",
         "details": [
             "Ispin est le dernier village estalien sur la route qui relie l’est à l’ouest du <strong data-js='popin' data-popin='arcavie'>royaume d’Arcavie</strong>.",
             "Niché sous le col du même nom, il est le passage quasi-obligé des voyageurs qui veulent rallier <strong data-js='popin' data-popin='erinthe'>Érinthe</strong> depuis <strong data-js='popin' data-popin='caradesse'>Caradesse</strong>."
-        ]
+        ],
+        "position": {
+            "x": 493,
+            "y": 345,
+            "text": "right"
+        }
     },
     "jaramis": {
-        "title": "Jaramis",
+        "name": "Jaramis",
         "subtitle": "Chef-lieu de la baronnie de Jaramis",
         "details": [
             "Port de l’est du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, Jaramis commerce avec le nord de <strong data-js='popin' data-popin='region-corance'>Corance</strong>."
         ],
-        "family": "achard"
+        "family": "achard",
+        "position": {
+            "x": 533,
+            "y": 483,
+            "text": "top"
+        }
     },
     "lorsis": {
-        "title": "Lorsis",
+        "name": "Lorsis",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
         "details": [
             "À l’embouchure de la Dramonne, Lorsis est le deuxième plus grand port de la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, juste après sa voisine <strong data-js='popin' data-popin='corance'>Corance</strong>.",
             "Elle s’illustre comme la capitale culturelle du royaume&nbsp;: elle dispose de la plus grande bibliothèque du monde, qui réunit des dizaines de milliers d’ouvrages provenant de tous les États.",
             "De nombreux penseurs et intellectuels y vivent et y sont entretenus par les ducs de Lorsis, leurs mécènes."
         ],
-        "family": "virdemis"
+        "family": "virdemis",
+        "main": true,
+        "position": {
+            "x": 528,
+            "y": 515
+        }
     },
     "mavas": {
-        "title": "Mavas",
+        "name": "Mavas",
         "subtitle": "Chef-lieu de l’émirat de Mavas",
         "details": [
             "Mavas est le deuxième plus grand port du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>.",
             "Elle est connue dans toutes les terres émergées pour ses armes en acier mavassais, notamment ses épées, dagues et sabres, ce qui lui vaut le surnom de <i>reine des lames</i>."
         ],
-        "family": "al-mehet"
+        "family": "al-mehet",
+        "main": true,
+        "position": {
+            "x": 606,
+            "y": 650
+        }
     },
     "naudele": {
-        "title": "Naudèle",
+        "name": "Naudèle",
         "subtitle": "Chef-lieu de la baronnie de Naudèle",
         "details": [
             "Dernier port au nord de l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Naudèle est le carrefour des échanges entre l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong> et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
         ],
-        "family": "pondarque"
+        "family": "pondarque",
+        "position": {
+            "x": 576,
+            "y": 477,
+            "text": "top"
+        }
     },
     "ravene": {
-        "title": "Ravène",
+        "name": "Ravène",
         "subtitle": "Chef-lieu de la baronnie de Ravène",
         "details": [
             "Petit port à l’est de l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Ravène n’accueille que peu de navires étrangers.",
             "Moins bien située que les cités de <strong data-js='popin' data-popin='corance'>Corance</strong> ou d’<strong data-js='popin' data-popin='ultimance'>Ultimance</strong>, elle est en effet trop loin des routes maritimes par rapport à ses consœurs."
         ],
-        "family": "sirgion"
+        "family": "sirgion",
+        "position": {
+            "x": 595,
+            "y": 503,
+            "text": "top"
+        }
     },
     "riveline": {
-        "title": "Riveline",
+        "name": "Riveline",
         "subtitle": "Chef-lieu de la baronnie de Riveline",
         "details": [
             "Riveline est un port de l’ouest du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>.",
             "Si certaines navires du <strong data-js='popin' data-popin='kavong'>Kavong</strong> y accostent parfois, ce sont surtout les navires rubisiens qui y jettent l’ancre."
         ],
-        "family": "firmis"
+        "family": "firmis",
+        "position": {
+            "x": 349,
+            "y": 496,
+            "text": "top"
+        }
     },
     "sorgone": {
-        "title": "Sorgone",
+        "name": "Sorgone",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>",
         "details": [
             "Troisième port du royaume, Sorgone est cité antique entourée par les marécages du delta du Bispao.",
             "Elle domine une baie où se jette l’un des bras du fleuve.",
             "Son architecture très ancienne et ses nombreux temples, notamment celui de Catovis, en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
         ],
-        "family": "moronard"
+        "family": "moronard",
+        "main": true,
+        "position": {
+            "x": 388,
+            "y": 533,
+            "text": "top"
+        }
     },
     "tervelie": {
-        "title": "Tervélie",
+        "name": "Tervélie",
         "subtitle": "Chef-lieu de la baronnie de Tervélie",
         "details": [
             "À l’ouest du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>, Tervélie est une ville fortifiée, au sommet de falaises face à la mer Mongaise.",
             "Elle dispose d’un petit port qui peut accueillir les plus hardis des navires originaires du <strong data-js='popin' data-popin='kavong'>Kavong</strong>."
         ],
-        "family": "vanderic"
+        "family": "vanderic",
+        "position": {
+            "x": 325,
+            "y": 464,
+            "text": "top"
+        }
     },
     "thordovat": {
-        "title": "Thordovat",
+        "name": "Thordovat",
         "subtitle": "Capitale de la <strong data-js='popin' data-popin='scorvege'>Scorvège</strong>",
         "details": [
             "Thordovat est le cœur politique de la Scorvège. C’est là que le grand jarl réunit les jarls de tous les clans scorvégiens lorsqu’une grande décision doit être prise.",
             "Loin des côtes, Thordovat vit du commerce agricole, de l’élevage et de la chasse au renne."
         ],
-        "family": "obrok"
+        "family": "obrok",
+        "main": true,
+        "position": {
+            "x": 367,
+            "y": 178,
+            "text": "top"
+        }
     },
     "tourege": {
-        "title": "Tourège",
+        "name": "Tourège",
         "subtitle": "Chef-lieu de la baronnie de Tourège",
         "details": [
             "Cité fortifiée bâtie au sommet d’une colline, Tourège est le dernier bastion sorgonète à la frontière entre les trois duchés rubisiens continentaux&nbsp;: <strong data-js='popin' data-popin='region-sorgone'>Sorgone</strong> auquel elle appartient, <strong data-js='popin' data-popin='region-goragna'>Goragna</strong> au nord et <strong data-js='popin' data-popin='region-lorsis'>Lorsis</strong> à l’est.",
             "Elle domine le pont fortifié, qui enjambe le Bispao pour relier Sorgone à la route gorandine qui mène à Lorsis. Proche de la capitale, <strong data-js='popin' data-popin='virda'>Virda</strong>, et au carrefour des trois duchés continentaux, Tourège occupe donc un emplacement stratégique au sein du royaume."
         ],
-        "family": "girenord"
+        "family": "girenord",
+        "position": {
+            "x": 440,
+            "y": 469
+        }
     },
     "ultimance": {
-        "title": "Ultimance",
+        "name": "Ultimance",
         "subtitle": "Chef-lieu de la baronnie d’Ultimance",
         "details": [
             "Grand port du sud de l’<strong data-js='popin' data-popin='region-corance'>île de Corance</strong>, Ultimance est le dernier arrêt des navires rubisiens faisant voile pour le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>."
         ],
-        "family": "erevord"
+        "family": "erevord",
+        "position": {
+            "x": 580,
+            "y": 533
+        }
     },
     "vassilis": {
-        "title": "Vassilis",
+        "name": "Vassilis",
         "subtitle": "Chef-lieu de la baronnie de Vassilis",
         "details": [
             "À l’ouest du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, traversée par la Dramonne, Vassilis est sur la route entre le <strong data-js='popin' data-popin='lorsis'>chef-lieu du duché</strong> et la capitale rubisienne, <strong data-js='popin' data-popin='virda'>Virda</strong>.",
             "Elle profite ainsi de tous les échanges commerciaux entre ces deux cités, et tout particulièrement du commerce fluvial."
         ],
-        "family": "depinant"
+        "family": "depinant",
+        "position": {
+            "x": 473,
+            "y": 477
+        }
     },
     "virda": {
-        "title": "Virda",
+        "name": "Virda",
         "subtitle": "Capitale du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
         "details": [
             "Traversée à la fois par le Bispao et la Dramonne, Virda est au carrefour de toutes les grandes routes terrestres et fluviales du royaume.",
@@ -247,6 +377,12 @@
             "On y trouve notamment la crypte des Virdemis, sous le temple d’Ordéon, et le légendaire mausolée des Arvagna, sous les fondations du palais royal.",
             "La cité s’illustre également par la couleur ocre-rouge très reconnaissable de ses pierres."
         ],
-        "family": "arvagna"
+        "family": "arvagna",
+        "main": true,
+        "position": {
+            "x": 439,
+            "y": 448,
+            "text": "top"
+        }
     }
 }

@@ -1,0 +1,18 @@
+{%- macro mapCity(id, name, x, y, main = false, textPosition = 'bottom') %}
+{%- set textAnchor = 'middle' %}
+{%- set textTransform = 'matrix(1 0 0 1 0 10)' %}
+{%- if textPosition == 'top' %}
+    {%- set textTransform = 'matrix(1 0 0 1 0 -2)' %}
+{%- elif textPosition == 'left' %}
+    {%- set textAnchor = 'start' %}
+    {%- set textTransform = 'matrix(1 0 0 1 3 4)' %}
+{%- elif textPosition == 'right' %}
+    {%- set textAnchor = 'end' %}
+    {%- set textTransform = 'matrix(1 0 0 1 -3 4)' %}
+{%- endif %}
+
+    <g class="ville{% if main %} grande-ville{% endif %}" transform="matrix(1 0 0 1 {{x}} {{y}})" data-js="popin" data-popin="{{id}}">
+        <circle cx="0" cy="2" r="2" />
+        <text text-anchor="{{textAnchor}}" transform="{{textTransform}}">{{name}}</text>
+    </g>
+{%- endmacro %}
