@@ -1,6 +1,6 @@
 {
     "arcavie": {
-        "title": "Arcavie",
+        "name": "Arcavie",
         "details": [
             "L’Arcavie est un royaume divisé en comtés, eux-mêmes subdivisés en vicomtés, sous l’autorité d’un roi qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
             "Le large territoire a pour particularité d’être coupé en deux par une chaîne montagneuse, les Vardes, ce qui rend son administration particulièrement délicate.",
@@ -18,7 +18,7 @@
         ]
     },
     "kavong": {
-        "title": "Kavong",
+        "name": "Kavong",
         "details": [
             "L’empire du Kavong, surnommé l’empire du soleil couchant, est un archipel isolé du reste du monde par une mer indomptable, la mer Mongaise.",
             "De nombreuses tornades s’y déchaînent&nbsp;; pour commercer avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, les navires kavongans préfèrent généralement longer les côtes et traverser plus au sud jusqu’à <strong data-js='popin' data-popin='sorgone'>Sorgone</strong>.",
@@ -32,7 +32,7 @@
         ]
     },
     "rubisie": {
-        "title": "Rubisie",
+        "name": "Rubisie",
         "details": [
             "Le royaume de Rubisie est une terre tempérée au carrefour de plusieurs civilisations.",
             "S’il tire son nom de sa première richesse, les mines de rubis, il est avant tout porté sur le commerce, notamment fluvial et maritime.",
@@ -43,7 +43,7 @@
         "picture": true,
         "regions": {
             "region-corance": {
-                "title": "Duché de Corance",
+                "name": "Duché de Corance",
                 "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
                 "details": [
                     "Le duché de Corance est la seule île de Rubisie&nbsp;: son climat privilégié et sa position géographique en ont fait la terre la plus riche du royaume.",
@@ -59,7 +59,7 @@
                 ]
             },
             "region-goragna": {
-                "title": "Duché de Goragna",
+                "name": "Duché de Goragna",
                 "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
                 "details": [
                     "Le duché de Goragna était autrefois le cœur du royaume, au carrefour entre le sud du continent et l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>. Hélas, sa puissance agricole a décru au fil des sécheresses, ce qui l’a considéralement appauvri.",
@@ -74,7 +74,7 @@
                 ]
             },
             "region-lorsis": {
-                "title": "Duché de Lorsis",
+                "name": "Duché de Lorsis",
                 "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
                 "details": [
                     "Le duché de Lorsis est une riche terre continentale, fort du rayonnement culturel de <strong data-js='popin' data-popin='lorsis'>son chef-lieu</strong>.",
@@ -91,7 +91,7 @@
                 ]
             },
             "region-sorgone": {
-                "title": "Duché de Sorgone",
+                "name": "Duché de Sorgone",
                 "subtitle": "Région du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>",
                 "details": [
                     "Forte de ses mines de rubis qui ont donné son nom au royaume, le duché de Sorgone dispose également de nombreux ports.",
@@ -110,7 +110,7 @@
         }
     },
     "sarouha": {
-        "title": "Sarouha",
+        "name": "Sarouha",
         "details": [
             "Riche sultanat du sud des terres émergées, le Sarouha est une terre au climat chaud voire désertique.",
             "S’il commerce largement avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, et particulièrement <strong data-js='popin' data-popin='corance'>Corance</strong>, qui sont friands de son acier, le Sarouha s’illustre également dans le commerce d’opium, fort de ses cultures de pavot.",
@@ -125,7 +125,7 @@
         ]
     },
     "scorvege": {
-        "title": "Scorvège",
+        "name": "Scorvège",
         "details": [
             "La Scorvège est une immense étendue aride et inhospitalière, bordée de glaciers et de banquises.",
             "Elle se divise en plusieurs territoires aux mains d’une cinquantaine de clans dirigés par des jarls.",
@@ -139,7 +139,7 @@
         ]
     },
     "inconnu": {
-        "title": "Terres inconnues",
+        "name": "Terres inconnues",
         "details": [
             "Situé loin au sud-ouest des terres émergées, dans l’océan Priadique, là où l’on croit que les dieux naviguent avec l’esprit des défunts, un continent tout entier sommeille, absent des cartes.",
             "De mémoire d’homme, nul n’en a jamais foulé le sol et n’en est revenu pour en témoigner.",

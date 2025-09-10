@@ -1,17 +1,17 @@
 {% from 'popin.njk' import popin with context %}
 
 {% for id, country in world %}
-    {{popin(id, country.title, country.details, country.subtitle, country.picture, country.family)}}
+    {{popin(id, country.name, country.details, country.subtitle, country.picture, country.family)}}
 
     {% if country.cities %}{% for city in country.cities %}
-        {{popin(city, cities[city].title, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
+        {{popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
     {% endfor %}{% endif %}
 
     {% if country.regions %}{% for id, region in country.regions %}
-        {{popin(id, region.title, region.details, region.subtitle, region.picture, region.family)}}
+        {{popin(id, region.name, region.details, region.subtitle, region.picture, region.family)}}
 
         {% if region.cities %}{% for city in region.cities %}
-                {{popin(city, cities[city].title, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
+                {{popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
         {% endfor %}{% endif %}
     {% endfor %}{% endif %}
 {% endfor %}
