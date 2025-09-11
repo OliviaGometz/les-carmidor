@@ -3,10 +3,10 @@
 {%- set textTransform = 'matrix(1 0 0 1 0 10)' %}
 {%- if textPosition == 'top' %}
     {%- set textTransform = 'matrix(1 0 0 1 0 -2)' %}
-{%- elif textPosition == 'left' %}
+{%- elif textPosition == 'right' %}
     {%- set textAnchor = 'start' %}
     {%- set textTransform = 'matrix(1 0 0 1 3 4)' %}
-{%- elif textPosition == 'right' %}
+{%- elif textPosition == 'left' %}
     {%- set textAnchor = 'end' %}
     {%- set textTransform = 'matrix(1 0 0 1 -3 4)' %}
 {%- endif %}
