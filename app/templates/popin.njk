@@ -7,24 +7,28 @@
     </div>
 
     <div class="popin__content">
-        {% if picture %}<img src="/img/world/{{id}}.png" class="popin__content__banner" />{% endif %}
+        {%- if picture %}
+            <img src="/img/world/{{id}}.png" class="popin__content__banner" />
+        {%- endif %}
 
         <div class="popin__content__text">
-            {% if subtitle|length %}<p class="emphasis">{{subtitle | safe}}</p>{% endif %}
+            {%- if subtitle|length %}
+                <p class="emphasis">{{subtitle | safe}}</p>
+            {%- endif %}
 
-            {% include 'svg/world/zones/' + id + '.svg' ignore missing %}
+            {%- include 'svg/world/zones/' + id + '.svg' ignore missing %}
 
-            {% for paragraph in details %}
+            {%- for paragraph in details %}
                 <p>{{paragraph | safe}}</p>
-            {% endfor %}
+            {%- endfor %}
         </div>
 
-        {% if family %}
+        {%- if family %}
             <div class="popin__footer popin__footer--{{family}}">
                 <span>Dirigeants</span>
                 <p>Les {{families[family]}}</p>
             </div>
-        {% endif %}
+        {%- endif %}
     </div>
 </article>
 {% endmacro %}

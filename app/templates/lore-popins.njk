@@ -1,17 +1,23 @@
-{% from 'popin.njk' import popin with context %}
+{%- from 'popin.njk' import popin with context %}
 
-{% for id, country in world %}
-    {{popin(id, country.name, country.details, country.subtitle, country.picture, country.family)}}
+{%- for id, country in world %}
+    {{- popin(id, country.name, country.details, country.subtitle, country.picture, country.family)}}
 
-    {% if country.cities %}{% for city in country.cities %}
-        {{popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
-    {% endfor %}{% endif %}
+    {%- if country.cities %}
+    {%- for city in country.cities %}
+        {{- popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
+    {%- endfor %}
+    {%- endif %}
 
-    {% if country.regions %}{% for id, region in country.regions %}
-        {{popin(id, region.name, region.details, region.subtitle, region.picture, region.family)}}
+    {%- if country.regions %}
+    {%- for id, region in country.regions %}
+        {{- popin(id, region.name, region.details, region.subtitle, region.picture, region.family)}}
 
-        {% if region.cities %}{% for city in region.cities %}
-                {{popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
-        {% endfor %}{% endif %}
-    {% endfor %}{% endif %}
-{% endfor %}
+        {%- if region.cities %}
+        {%- for city in region.cities %}
+            {{- popin(city, cities[city].name, cities[city].details, cities[city].subtitle, cities[city].picture, cities[city].family)}}
+        {%- endfor %}
+        {%- endif %}
+    {%- endfor %}
+    {%- endif %}
+{%- endfor %}
