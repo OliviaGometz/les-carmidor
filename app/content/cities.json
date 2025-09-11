@@ -84,7 +84,8 @@
         "family": "tasquin",
         "position": {
             "x": 524,
-            "y": 423
+            "y": 423,
+            "text": "left"
         }
     },
     "corance": {
@@ -214,12 +215,24 @@
             "text": "top"
         }
     },
+    "landrene": {
+        "name": "Landrène",
+        "subtitle": "Village du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
+        "details": [
+            "Village de l’ouest du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>, Landrène se situe sur la route reliant le chef-lieu à la capitale, <strong data-js='popin' data-popin='virda'>Virda</strong>.",
+            "Outre les routes terrestres, il enjambe la Dramonne, le fleuve qui relie les deux grandes cités rubisiennes."
+        ],
+        "position": {
+            "x": 470,
+            "y": 462
+        }
+    },
     "lorsis": {
         "name": "Lorsis",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
         "details": [
             "À l’embouchure de la Dramonne, Lorsis est le deuxième plus grand port de la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, juste après sa voisine <strong data-js='popin' data-popin='corance'>Corance</strong>.",
-            "Elle s’illustre comme la capitale culturelle du royaume&nbsp;: elle dispose de la plus grande bibliothèque du monde, qui réunit des dizaines de milliers d’ouvrages provenant de tous les États.",
+            "Elle s’illustre comme la capitale culturelle du royaume&nbsp;: elle dispose de la plus grande bibliothèque du monde, qui réunit des dizaines de milliers d’ouvrages provenant du monde entier.",
             "De nombreux penseurs et intellectuels y vivent et y sont entretenus par les ducs de Lorsis, leurs mécènes."
         ],
         "family": "virdemis",
@@ -254,6 +267,31 @@
             "x": 576,
             "y": 477,
             "text": "top"
+        }
+    },
+    "nurat": {
+        "name": "Nurat",
+        "subtitle": "Chef-lieu de la baronnie de Nurat",
+        "details": [
+            "La cité et son fort, à l’est de <strong data-js='popin' data-popin='virda'>Virda</strong>, gardent l’entrée du <strong data-js='popin' data-popin='region-goragna'>duché de Goragna</strong>, près de la frontière avec le <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong> ."
+        ],
+        "family": "ilverny",
+        "position": {
+            "x": 448,
+            "y": 452,
+            "text": "right"
+        }
+    },
+    "port-ferel": {
+        "name": "Port-Férel",
+        "subtitle": "Port mineur de la baronnie de <strong data-js='popin' data-popin='cavar'>Cavar</strong>",
+        "details": [
+            "Port de l’est de la baronnie de <strong data-js='popin' data-popin='cavar'>Cavar</strong>, Port-Férel est le carrefour entre le sud de <strong data-js='popin' data-popin='arcavie'>l’Arcavie</strong> et le nord de la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> estalienne."
+        ],
+        "position": {
+            "x": 545,
+            "y": 423,
+            "text": "right"
         }
     },
     "ravene": {
@@ -352,6 +390,18 @@
         "position": {
             "x": 580,
             "y": 533
+        }
+    },
+    "varillac": {
+        "name": "Varillac",
+        "subtitle": "Village de la baronnie de <strong data-js='popin' data-popin='cavar'>Cavar</strong>",
+        "details": [
+            "Varillac est un village minuscule, plus proche d’un hameau que d’un véritable village.",
+            "Son seul intérêt réside en sa situation&nbsp;: il se situe sur la route qui mène à <strong data-js='popin' data-popin='cavar'>Cavar</strong>."
+        ],
+        "position": {
+            "x": 522,
+            "y": 429
         }
     },
     "vassilis": {

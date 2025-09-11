@@ -2,9 +2,10 @@
     "arcavie": {
         "name": "Arcavie",
         "details": [
-            "L’Arcavie est un royaume divisé en comtés, eux-mêmes subdivisés en vicomtés, sous l’autorité d’un roi qui règne en monarque absolu depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
+            "L’Arcavie est un royaume divisé en comtés, eux-mêmes subdivisés en vicomtés, sous l’autorité d’un roi qui règne en accord avec la Chambre des Comtes depuis sa capitale, <strong data-js='popin' data-popin='erinthe'>Érinthe</strong>.",
             "Le large territoire a pour particularité d’être coupé en deux par une chaîne montagneuse, les Vardes, ce qui rend son administration particulièrement délicate.",
-            "Des dissenssions naissent régulièrement à l’est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>le port de Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis."
+            "Des dissenssions naissent régulièrement à l’est, dont les cités comme <strong data-js='popin' data-popin='caradesse'>Caradesse</strong> commercent avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> en dépit des restrictions religieuses édictées par les Népéis.",
+            "En effet, le népéisme y a remplacé le culte de la Famille Originelle, commun aux Rubisiens, avec son lot de contraintes nouvelles, notamment au regard de l’océan."
         ],
         "family": "tordheon",
         "picture": true,
@@ -21,7 +22,7 @@
         "name": "Kavong",
         "details": [
             "L’empire du Kavong, surnommé l’empire du soleil couchant, est un archipel isolé du reste du monde par une mer indomptable, la mer Mongaise.",
-            "De nombreuses tornades s’y déchaînent&nbsp;; pour commercer avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, les navires kavongans préfèrent généralement longer les côtes et traverser plus au sud jusqu’à <strong data-js='popin' data-popin='sorgone'>Sorgone</strong>.",
+            "De nombreuses tornades s’y déchaînent. Pour commercer avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, les navires kavongans préfèrent généralement longer les côtes et traverser plus au sud jusqu’à <strong data-js='popin' data-popin='sorgone'>Sorgone</strong>.",
             "L’empire est divisé en provinces dirigées par des seigneurs appelés shogun. Leurs vassaux sont les daïmio.",
             "Sa capitale est <strong data-js='popin' data-popin='diveniam'>Diveniam</strong>."
         ],
@@ -70,6 +71,7 @@
                 "cities": [
                     "carlate",
                     "goragna",
+                    "nurat",
                     "virda"
                 ]
             },
@@ -86,7 +88,10 @@
                     "cavar",
                     "fort-havel",
                     "jaramis",
+                    "landrene",
                     "lorsis",
+                    "port-ferel",
+                    "varillac",
                     "vassilis"
                 ]
             },
