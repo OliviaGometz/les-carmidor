@@ -1,5 +1,4 @@
-{% macro quote(selectedComment, hasButton=true, buttonCss='') %}
-
+{%- macro quote(selectedComment, hasButton=true, buttonCss='') %}
 <figure>
     <blockquote cite="{{selectedComment.link}}">
         {% for paragraph in selectedComment.comment %}
@@ -13,14 +12,13 @@
     </figcaption>
 </figure>
 
-{% if hasButton %}
-    {% set logoPath = 'icons/website' %}
-
-    {% for logo in logos %}
-        {% if logo.url in selectedComment.link %}
-            {% set logoPath = 'logos/websites/' + logo.icon %}
-        {% endif %}
-    {% endfor %}
+{%- if hasButton %}
+    {%- set logoPath = 'icons/website' %}
+    {%- for logo in logos %}
+        {%- if logo.url in selectedComment.link %}
+            {%- set logoPath = 'logos/websites/' + logo.icon %}
+        {%- endif %}
+    {%- endfor %}
 
     <div class="buttons">
         <a href="{{selectedComment.link}}" class="button logo logo--left {{buttonCss}}" rel="external" target="_blank">
@@ -28,6 +26,5 @@
             Avis complet
         </a>
     </div>
-{% endif %}
-
-{% endmacro %}
+{%- endif %}
+{%- endmacro %}

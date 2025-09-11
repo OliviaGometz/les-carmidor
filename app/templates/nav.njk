@@ -1,4 +1,4 @@
-{% macro nav(activePage='') %}
+{%- macro nav(activePage='') %}
 <nav>
     <button type="button" class="hamburger" title="Menu principal">
         <span></span>
@@ -6,13 +6,11 @@
         <span></span>
     </button>
 
-    <a href="/" class="home" title="Menu principal">
-        {% include 'svg/carmidor-embleme.svg' %}
-    </a>
+    <a href="/" class="home" title="Menu principal">{% include 'svg/carmidor-embleme.svg' %}</a>
 
     <div class="overlay"></div>
 
-    {%
+    {%-
         set links = {
             home: {
                 name: 'Accueil',
@@ -46,18 +44,16 @@
         }
     %}
 
-    <ul>
-        {% for id, link in links %}
-            <li>
-                <a
-                    href="{{ link.url }}"
-                    class="{% if link.button %}button--active-primary button button{% else %}link link{% endif %}--white{%if activePage == id %} active{% endif %}"
-                    {% if 'https://' in link.url %}rel="external" target="_blank"{% endif %}
-                >
-                    {{ link.name }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+    <ul>{% for id, link in links %}
+        <li>
+            <a
+                href="{{ link.url }}"
+                class="{% if link.button %}button--active-primary button button{% else %}link link{% endif %}--white{%if activePage == id %} active{% endif %}"
+                {%- if 'https://' in link.url %}rel="external" target="_blank"{% endif %}
+            >
+                {{ link.name }}
+            </a>
+        </li>
+    {% endfor %}</ul>
 </nav>
-{% endmacro %}
+{%- endmacro %}
