@@ -49,7 +49,7 @@
                 "details": [
                     "Le duché de Corance est la seule île de Rubisie&nbsp;: son climat privilégié et sa position géographique en ont fait la terre la plus riche du royaume.",
                     "La majorité des échanges commerciaux entre la Rubisie et le Sarouha passe par ses ports, et notamment celui du chef-lieu éponyme, la <strong data-js='popin' data-popin='corance'>cité de Corance</strong>. En effet, les voies maritimes entre Corance et le nord du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> sont peu exposées aux aléas des tempêtes, ce qui permet à de nombreux types de navires d’effectuer la traversée sans encombres.",
-                    "Autrefois, Corance était une principauté indépendante. Mais en 987, alors que l’île souffrait de famines et d’épidémies, elle fut annexée de force par la Rubisie continentale."
+                    "Autrefois, Corance était une principauté indépendante. Mais en 987, alors que l’île souffrait de famines et d’épidémies, elle fut annexée par la Rubisie continentale."
                 ],
                 "family": "carmidor",
                 "cities": [
@@ -135,7 +135,7 @@
             "La Scorvège est une immense étendue aride et inhospitalière, bordée de glaciers et de banquises.",
             "Elle se divise en plusieurs territoires aux mains d’une cinquantaine de clans dirigés par des jarls.",
             "Le développement de l’exploration maritime ayant augmenté les risques d’incursions ennemies, les clans se sont alliés pour préserver l’intégrité de leurs terres, là où il leur suffisait autrefois de protéger l’isthme d’Osund qui les relie à l’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>.",
-            "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en things à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
+            "Le grand jarl dirige en accord avec les autres chefs de clans, réunis en <em>thing</em> à <strong data-js='popin' data-popin='thordovat'>Thordovat</strong>, leur capitale."
         ],
         "family": "obrok",
         "picture": true,

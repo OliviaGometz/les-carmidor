@@ -93,7 +93,9 @@
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-corance'>duché de Corance</strong>",
         "details": [
             "La cité de Corance est le plus grand port du <strong data-js='popin' data-popin='rubisie'>royaume de Rubisie</strong>.",
-            "La plupart des navires marchands qui relient la Rubisie et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> transitent par Corance&nbsp;: pour ce faire, ils doivent s’acquitter de la taxe corancienne, dont le bénéfice revient au duc. Avec le développement du commerce maritime, la taxe corancienne a ainsi considérablement enrichi les Carmidor."
+            "La plupart des navires marchands qui relient la Rubisie et le <strong data-js='popin' data-popin='sarouha'>Sarouha</strong> transitent par Corance. Ils doivent s’acquitter de la taxe corancienne, dont le bénéfice revient au duc. Avec le développement du commerce maritime, la taxe corancienne a considérablement enrichi les Carmidor.",
+            "Le port est enclavé dans la rade des Carmides, à laquelle on accède en empruntant le chenal du même nom. Cet étroit passage rend l’accès presque impossible aux plus gros navires par marée basse, mais il garantit la sécurité du port. Ces contraintes naturelles constituent l’atout majeur de la défense de Corance. Les falaises à pic toisant le large rendent inenvisageable leur ascension par une armée, et la seule entrée praticable est si exiguë qu’une poignée d’hommes suffit à en bloquer l’accès.",
+            "Sur l’esplanade du phare, en hauteur, l’artillerie corancienne est capable de couler une flotte avant même qu’elle approche assez pour lui rendre la pareille. Ainsi, Corance est presque imprenable."
         ],
         "family": "carmidor",
         "main": true,
@@ -107,7 +109,7 @@
         "subtitle": "Capitale de l’<strong data-js='popin' data-popin='kavong'>empire du Kavong</strong>",
         "details": [
             "Diveniam est le siège du pouvoir de l’empereur.",
-            "Son port est l’un des plus grand de l’empire, et celui qui accueille le plus d’étrangers, notamment en provenance de <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
+            "Son port est l’un des plus grand de l’empire, et celui qui accueille le plus d’étrangers, notamment en provenance d’<strong data-js='popin' data-popin='arcavie'>Arcavie</strong>."
         ],
         "family": "qan",
         "main": true,
@@ -151,7 +153,8 @@
         "subtitle": "Village du <strong data-js='popin' data-popin='region-lorsis'>duché de Lorsis</strong>",
         "details": [
             "Au creux d’un canyon de la vallée de la Dramonne, le village de Fort-Havel s’étend à l’ombre du château de ses seigneurs.",
-            "Le bastion garde la frontière terrestre du domaine ducal de <strong data-js='popin' data-popin='lorsis'>Lorsis</strong>."
+            "Le bastion garde la frontière terrestre du domaine ducal de <strong data-js='popin' data-popin='lorsis'>Lorsis</strong>.",
+            "Ses habitants sont les Havelins."
         ],
         "family": "arganza",
         "position": {
@@ -180,7 +183,8 @@
         "subtitle": "Chef-lieu du vicomté de Honterra",
         "details": [
             "Idéalement placée sur la route de <strong data-js='popin' data-popin='goragna'>Goragna</strong>, la petite ville frontalière vit uniquement du commerce avec la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
-            "En effet, située sur les contreforts des Apondrées Ouestarines, Honterra est entourée de terres impropres aux usages agricoles."
+            "En effet, située sur les contreforts des Apondrées Ouestarines, Honterra est entourée de terres impropres aux usages agricoles.",
+            "Avec la guerre, elle subit donc de plein fouet la cessassion des échanges entre les deux royaumes."
         ],
         "family": "urchain",
         "position": {
@@ -247,7 +251,8 @@
         "subtitle": "Chef-lieu de l’émirat de Mavas",
         "details": [
             "Mavas est le deuxième plus grand port du <strong data-js='popin' data-popin='sarouha'>Sarouha</strong>.",
-            "Elle est connue dans toutes les terres émergées pour ses armes en acier mavassais, notamment ses épées, dagues et sabres, ce qui lui vaut le surnom de <i>reine des lames</i>."
+            "Elle est connue dans toutes les terres émergées pour ses armes en acier mavassais, notamment ses épées, dagues et sabres, ce qui lui vaut le surnom de <i>reine des lames</i>.",
+            "La cité exporte un grand nombre de ces épées fines, légères et extrêmement tranchantes en <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>, ce qui la rend très dépendante du commerce maritime qui passe par <strong data-js='popin' data-popin='region-corance'>Corance</strong>."
         ],
         "family": "al-mehet",
         "main": true,
@@ -326,9 +331,10 @@
         "name": "Sorgone",
         "subtitle": "Chef-lieu du <strong data-js='popin' data-popin='region-sorgone'>duché de Sorgone</strong>",
         "details": [
-            "Troisième port du royaume, Sorgone est cité antique entourée par les marécages du delta du Bispao.",
+            "Troisième port du royaume, dans lequel mouillent de nombreux navires kavongans, Sorgone est cité antique entourée par les marécages du delta du Bispao.",
             "Elle domine une baie où se jette l’un des bras du fleuve.",
-            "Son architecture très ancienne et ses nombreux temples, notamment celui de Catovis, en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>."
+            "Son architecture très ancienne et ses nombreux temples, notamment celui de Catovis, en font un haut lieu religieux pour la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong>.",
+            "Pour prévenir la population de grandes marées, la corne de Népéidon retentit dans la ville. Elle a notamment résonné lors du raz-de-marée d’octobre 1310."
         ],
         "family": "moronard",
         "main": true,
@@ -423,8 +429,9 @@
         "details": [
             "Traversée à la fois par le Bispao et la Dramonne, Virda est au carrefour de toutes les grandes routes terrestres et fluviales du royaume.",
             "Au centre d’une région très fertile, la Virdanie, la capitale aux solides fortifications entourées de champs de blés demeure au fil des siècles une cité riche et prospère.",
+            "Au-delà de ses murs, des faubourgs s’étendent encore au nord, au sud et à l’est tant sa population ne cesse de croître. On y dénombre plus de 100&nbsp;000 habitants.",
             "Outre le temple d’Ordéon, en surplomb des quartiers pauvres, et le palais royal, qui domine les quartiers riches, elle compte de nombreux bijoux d’architecture, forte d’un millénaire d’occupation par la noblesse rubisienne.",
-            "On y trouve notamment la crypte des Virdemis, sous le temple d’Ordéon, et le légendaire mausolée des Arvagna, sous les fondations du palais royal.",
+            "On y trouve notamment la crypte des Virdemis, sous le temple d’Ordéon, et le légendaire mausolée des Arvagna, sous les fondations du palais royal, bâti sur une colline qui sépare la Dramonne du Bispao.",
             "La cité s’illustre également par la couleur ocre-rouge très reconnaissable de ses pierres."
         ],
         "family": "arvagna",
