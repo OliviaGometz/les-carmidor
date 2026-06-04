@@ -47,6 +47,7 @@
 
             <div class="container margin-bottom--md">
                 {% for number, book in books %}
+                {% if number < 4 %} <!-- < 5 quand résumé et couv du T4 prêts -->
                     <article class="card card--white maxwidth--xxs">
                         <img src="/img/medias/t{{ number }}-paperback.png" class="img img--sm centered" alt="Tome {{ number }} : {{ book.title }} (format broché)" />
 
@@ -56,6 +57,7 @@
                             </a>
                         </div>
                     </article>
+                {% endif %}
                 {% endfor %}
             </div>
         </section>

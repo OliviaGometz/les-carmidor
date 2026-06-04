@@ -66,7 +66,7 @@
 
         <section class="container text--center">
             {% for number, book in books %}
-                {% if number > 1 %}
+                {% if number > 1 and number < 4 %} <!-- passer en < 5 lorsque le T4 aura sa couv définitive -->
                     <article class="maxwidth--xs text--margin-sm"> <!-- passer en maxwidth--xs lorsqu'il y aura la couv du T4 -->
                         <img src="/img/medias/t{{ number }}-paperback.png" class="img img--md centered" alt="Tome {{ number }} : {{ book.title }} (format broché)" />
 
@@ -76,7 +76,7 @@
                             {{ book.title }}
                         </h3>
 
-                        <p>{% if number > 2 %}Sortie officielle{% else %}Paru{% endif %} le <strong>{{book.release | safe}}</strong></p> <!-- passer en > 3 lorsque le T3 sera sorti -->
+                        <p>{% if number > 3 %}Sortie officielle{% else %}Paru{% endif %} le <strong>{{book.release | safe}}</strong></p> <!-- passer en > 4 lorsque le T4 sera sorti -->
                     </article>
                 {% endif %}
             {% endfor %}
@@ -111,7 +111,7 @@
                 <h2>Et après le tome&nbsp;<span>3</span>&nbsp;?</h2>
 
                 <p>
-                    Le tome&nbsp;4 est actuellement en cours d’écriture. Sa sortie est prévue en 2027&nbsp;!
+                    Le tome&nbsp;4 est actuellement en cours d’écriture. Sa sortie est prévue le 6 juillet 2027&nbsp;!
                 </p>
 
                 <p>
