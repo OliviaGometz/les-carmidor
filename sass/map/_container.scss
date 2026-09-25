@@ -1,3 +1,5 @@
+@use "../variables/_variables" as *;
+
 .map-container {
     scroll-behavior: auto;
     background-color: $primaryDark;

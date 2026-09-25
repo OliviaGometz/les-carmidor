@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .button {
     height: $buttonHeight;
     padding: 0 ($spaceSM - 2) 0 $spaceSM;
@@ -69,13 +72,13 @@
 
     @each $colorName, $color in $colors {
         &--#{$colorName}-dark {
-            border-color: map-get($color, "dark");;
-            color: map-get($color, "dark");;
-            background-image: linear-gradient(transparent 50%, map-get($color, "dark") 50%);
+            border-color: map.get($color, "dark");;
+            color: map.get($color, "dark");;
+            background-image: linear-gradient(transparent 50%, map.get($color, "dark") 50%);
 
             &.logo {
                 svg {
-                    fill: map-get($color, "dark");
+                    fill: map.get($color, "dark");
                 }
             }
         }
@@ -85,11 +88,11 @@
             &:active,
             &:focus,
             &.active {
-                color: map-get($color, "dark");
+                color: map.get($color, "dark");
 
                 &.logo {
                     svg {
-                        fill: map-get($color, "dark");
+                        fill: map.get($color, "dark");
                     }
                 }
             }

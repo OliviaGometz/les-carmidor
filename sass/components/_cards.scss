@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .card {
     margin: $spaceMD;
     padding: $spaceLG $spaceMD;
@@ -46,33 +49,33 @@
 
     @each $colorName, $color in $colors {
         &--#{$colorName} {
-            background-color: map-get($color, "ultraLight");
-            color: map-get($color, "dark");
-            outline-color: map-get($color, "ultraLight");
+            background-color: map.get($color, "ultraLight");
+            color: map.get($color, "dark");
+            outline-color: map.get($color, "ultraLight");
 
             p {
                 a {
-                    color: map-get($color, "ultraDark");
+                    color: map.get($color, "ultraDark");
 
                     &:hover,
                     &:active,
                     &:focus {
-                        color: map-get($color, "ultraDark");
-                        background-color: map-get($color, "light");
+                        color: map.get($color, "ultraDark");
+                        background-color: map.get($color, "light");
                     }
                 }
             }
 
             figure {
-                color: map-get($color, "dark");
+                color: map.get($color, "dark");
             }
         }
 
         &--gradient-#{$colorName} {
-            background-color: map-get($color, "main");
-            background-image: linear-gradient(map-get($color, "main"), map-get($color, "dark"));
+            background-color: map.get($color, "main");
+            background-image: linear-gradient(map.get($color, "main"), map.get($color, "dark"));
             color: $white00;
-            outline-color: map-get($color, "main");
+            outline-color: map.get($color, "main");
 
             p {
                 a {
@@ -82,7 +85,7 @@
                     &:active,
                     &:focus {
                         color: $white00;
-                        background-color: map-get($color, "dark");
+                        background-color: map.get($color, "dark");
                     }
                 }
             }

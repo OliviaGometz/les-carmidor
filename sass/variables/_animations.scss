@@ -1,10 +1,12 @@
+@use "sass:string";
+
 $durationXS: 0.1s;
 $durationSM: 0.3s;
 $durationMD: 0.5s;
 $durationLG: 0.8s;
 
 @mixin animation($params) {
-    $name: animation-#{unique-id()};
+    $name: animation-#{string.unique-id()};
     animation: $name $params;
 
     @keyframes #{$name} {

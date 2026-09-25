@@ -1,3 +1,5 @@
+@use "../variables/_variables" as *;
+
 figure {
     max-width: $widthLG;
     margin: $spaceMD 0;

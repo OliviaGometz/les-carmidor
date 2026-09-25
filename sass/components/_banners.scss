@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .banner-gradient {
     color: $white00;
 
@@ -12,7 +16,7 @@
             h2,
             h3,
             small {
-                color: map-get($color, "ultraLight");
+                color: map.get($color, "ultraLight");
             }
 
             p {
@@ -21,11 +25,11 @@
         }
 
         &--#{$colorName} {
-            background-color: map-get($color, "main");
+            background-color: map.get($color, "main");
             background-image: linear-gradient(
                 to bottom,
-                map-get($color, "main"),
-                map-get($color, "dark")
+                map.get($color, "main"),
+                map.get($color, "dark")
             );
         }
 
@@ -34,7 +38,7 @@
             background-image: linear-gradient(
                 to bottom,
                 $black00,
-                map-get($color, "ultraDark")
+                map.get($color, "ultraDark")
             );
         }
     }

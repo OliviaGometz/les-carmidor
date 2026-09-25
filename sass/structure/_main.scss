@@ -1,3 +1,5 @@
+@use "../variables/_variables" as *;
+
 main {
     padding-top: $navHeight;
 }

@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .title {
     &--header {
         text-align: center;
@@ -23,7 +26,7 @@
         @each $colorName, $color in $colors {
             &--#{$colorName} {
                 &::after {
-                    background-color: map-get($color, "light");
+                    background-color: map.get($color, "light");
                 }
             }
         }
@@ -42,7 +45,7 @@
 
     @each $colorName, $color in $colors {
         &--#{$colorName} {
-            color: map-get($color, "main");
+            color: map.get($color, "main");
         }
     }
 }

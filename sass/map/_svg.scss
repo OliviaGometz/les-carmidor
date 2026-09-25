@@ -1,3 +1,9 @@
+@use "../variables/_variables" as *;
+@use "svg/decoration";
+@use "svg/lands";
+@use "svg/montains";
+@use "svg/water";
+
 .map {
     * {
         transition: opacity $durationSM, stroke-opacity $durationSM;
@@ -21,9 +27,4 @@
             }
         }
     }
-
-    @import "svg/decoration";
-    @import "svg/lands";
-    @import "svg/montains";
-    @import "svg/water";
 }

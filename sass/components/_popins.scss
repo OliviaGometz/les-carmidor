@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .popin {
     position: fixed;
     z-index: $z-index-popin;
@@ -176,7 +179,7 @@
                 background-image:
                     linear-gradient(to right, #{$white20} 30%, transparent 70%),
                     url($toile),
-                    radial-gradient(map-get($color, "main"), map-get($color, "dark"));
+                    radial-gradient(map.get($color, "main"), map.get($color, "dark"));
                 
                 &::after {
                     background-image: url(../img/banners/#{$family}.svg);

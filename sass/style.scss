@@ -1,54 +1,39 @@
-@use "sass:color";
-@use 'sass:math';
-
-// Variables
-@import "variables/animations";
-@import "variables/colors";
-@import "variables/families";
-@import "variables/fonts";
-@import "variables/shadows";
-@import "variables/spaces";
-@import "variables/sizes";
-@import "variables/widths";
-@import "variables/z-index";
-@import "variables/responsive";
-
 // Bases
-@import "base/normalize";
-@import "base/general";
-@import "base/helpers";
-@import "base/containers";
+@use "base/normalize";
+@use "base/general";
+@use "base/helpers";
+@use "base/containers";
 
 // Components
-@import "components/banners";
-@import "components/badges";
-@import "components/buttons";
-@import "components/cards";
-@import "components/chapter";
-@import "components/hamburger";
-@import "components/images";
-@import "components/links";
-@import "components/lists";
-@import "components/logos";
-@import "components/overlays";
-@import "components/popins";
-@import "components/quotes";
-@import "components/texts";
-@import "components/titles";
-@import "components/wave";
+@use "components/banners";
+@use "components/badges";
+@use "components/buttons";
+@use "components/cards";
+@use "components/chapter";
+@use "components/hamburger";
+@use "components/images";
+@use "components/links";
+@use "components/lists";
+@use "components/logos";
+@use "components/overlays";
+@use "components/popins";
+@use "components/quotes";
+@use "components/texts";
+@use "components/titles";
+@use "components/wave";
 
 // SVG (hors carte)
-@import "svg/carmidor-embleme";
-@import "svg/carmidor-title";
-@import "svg/lore";
+@use "svg/carmidor-embleme";
+@use "svg/carmidor-title";
+@use "svg/lore";
 
 // Structure
-@import "structure/main";
-@import "structure/nav";
-@import "structure/footer";
+@use "structure/main";
+@use "structure/nav";
+@use "structure/footer";
 
 // Carte
-@import "map/container";
-@import "map/controls";
-@import "map/svg";
-@import "map/zoom";
+@use "map/container";
+@use "map/controls";
+@use "map/svg";
+@use "map/zoom";

@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 $indent: 2em;
 
 .list {
@@ -20,7 +23,7 @@ $indent: 2em;
         &--#{$colorName} {
             li {
                 &::before {
-                    color: map-get($color, "main");
+                    color: map.get($color, "main");
                 }
             }
         }

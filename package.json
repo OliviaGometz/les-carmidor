@@ -32,5 +32,8 @@
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
   }
 }

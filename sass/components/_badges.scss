@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .badge {
     padding: 0 $spaceSM;
     font-family: $fontDefault, serif;
@@ -19,12 +23,12 @@
 
     @each $colorName, $color in $colors {
         &--#{$colorName} {
-            color: map-get($color, "main");
-            background-color: map-get($color, "ultraLight");
-            box-shadow: $spaceXXS $spaceXXS 0 0 color.adjust(map-get($color, "ultraLight"), $alpha: -0.5);
+            color: map.get($color, "main");
+            background-color: map.get($color, "ultraLight");
+            box-shadow: $spaceXXS $spaceXXS 0 0 color.adjust(map.get($color, "ultraLight"), $alpha: -0.5);
 
             small {
-                color: map-get($color, "main");
+                color: map.get($color, "main");
             }
         }
     }

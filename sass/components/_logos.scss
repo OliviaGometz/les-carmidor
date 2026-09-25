@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../variables/_variables" as *;
+
 .logo {
     svg {
         transition: all $durationXS, fill $durationSM;
@@ -60,7 +63,7 @@
     @each $colorName, $color in $colors {
         &--#{$colorName} {
             svg {
-                fill: map-get($color, "main");
+                fill: map.get($color, "main");
             }
 
             &:hover,

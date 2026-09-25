@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../variables/_variables" as *;
+
 .overlay {
     @media #{$menuMobile} {
         pointer-events: none;
