@@ -1,0 +1,127 @@
+{% extends "layout.njk" %}
+
+{% set bookNumber = 4 %}
+
+{% block head %}
+    <title>Les Carmidor - Résumé du tome {{bookNumber}}</title>
+    <meta name="description" content="Besoin d’un rappel du tome {{bookNumber}}, {{books[bookNumber].title}}, avant d’entamer la lecture du tome {{bookNumber + 1}} ? Consultez le résumé court ou le récapitulatif complet des événements du tome {{bookNumber}}." />
+{% endblock %}
+
+{% block content %}
+    {% from 'nav.njk' import nav %}
+    {{nav()}}
+
+    <main>
+        <section class="banner-fixed-image banner-fixed-image--t{{bookNumber}}">
+            <div class="container">
+                <article class="maxwidth--md text--margin-sm">
+                    <h1 class="title--header">Résumé du tome&nbsp;<span>{{bookNumber}}</span></h1>
+
+                    <p>
+                        Besoin de vous rafraîchir la mémoire avant de commencer la <strong>lecture du tome&nbsp;{{bookNumber + 1}}&nbsp;?</strong> Consultez ci-dessous la quatrième de couverture et/ou les résumés du tome&nbsp;{{bookNumber}}, <em>{{books[bookNumber].title}}</em>.
+                    </p>
+
+                    <p>
+                        Attention&nbsp;: à l’exception de la quatrième de couverture ci-dessous, ce qui suit contient des spoilers sur l’intégralité du tome&nbsp;{{bookNumber}}.
+                    </p>
+                </article>
+
+                <img src="/img/medias/t{{bookNumber}}-paperback.png" class="img img--sm margin-top--lg" alt="Tome {{bookNumber}} : {{books[bookNumber].title}} (format broché)" />
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            <div class="container container--wrap-reverse">
+                <img src="/img/medias/t{{bookNumber}}-ebook.png" class="img img--md" alt="Tome {{bookNumber}} : {{books[bookNumber].title}} (format ebook)" />
+
+                <article class="maxwidth--sm text--sm text--margin-sm">
+                    <h2>
+                        Quatrième de couverture du tome&nbsp;<span>{{bookNumber}}</span>
+                    </h2>
+
+                    {% include 'textes/quatrieme-t' + bookNumber + '.njk' %}
+                </article>
+            </div>
+        </section>
+
+        <section class="banner-gradient banner-gradient--secondary wave-bottom-reverse">
+            {% include 'svg/wave.svg' %}
+
+            <div class="container">
+                <aside class="maxwidth--lg text--margin-sm text--center">
+                    <h2 class="title--header">
+                        Attention aux spoilers
+                    </h2>
+
+                    <p>
+                        Les récapitulatifs ci-dessous <strong>contiennent tous les spoilers du tome&nbsp;{{bookNumber}}</strong>. Ne descendez pas plus bas si vous n’avez pas encore fini la lecture du tome&nbsp;{{bookNumber}} (et, si besoin, pensez à consulter les <a href="/trigger-warnings">trigger warnings</a>).
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#court" class="link link--white">
+                            Résumé rapide
+                        </a>
+
+                        <a href="#complet" class="button button--white button--active-secondary">
+                            Récapitulatif complet
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section id="court">
+            <article class="chapter">
+                <h2>Résumé rapide</h2>
+
+                {% include 'textes/resume-court-t' + bookNumber + '.njk' %}
+            </article>
+        </section>
+
+        <section class="banner-fixed-image banner-fixed-image--bloodsea wave-top-reverse" id="complet">
+            {% include 'svg/wave.svg' %}
+
+            <div class="container">
+                <article class="chapter">
+                    <h2>Récapitulatif complet</h2>
+
+                    {% include 'textes/recap-complet-t' + bookNumber + '.njk' %}
+                </article>
+            </div>
+
+            {% include 'svg/wave.svg' %}
+        </section>
+
+        <section>
+            {% include 'lore-popins.njk' %}
+        </section>
+
+        <section class="container">
+            <div class="maxwidth--lg text--center">
+                <h2>Toujours des trous de mémoire&nbsp;?</h2>
+
+                <p>
+                    Consultez la carte interactive pour vous remémorer les lieux, ainsi que les arbres généalogiques des personnages pour vous rappeler qui a épousé, trahi ou tué vos chouchous.
+                </p>
+
+                <div class="buttons">
+                    <a href="/carte" class="link link--primary">
+                        Carte du monde
+                    </a>
+
+                    <a href="/familles" class="button button--primary">
+                        Personnages
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.njk' %}
+
+    <script src="/js/popin.js?v={{version}}"></script>
+{% endblock %}
