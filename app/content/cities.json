@@ -287,6 +287,21 @@
             "text": "right"
         }
     },
+    "osund": {
+        "name": "Osund",
+        "subtitle": "Chef-lieu du comté d’Osund",
+        "details": [
+            "Osund est une cité fortifiée bâtie contre la muraille éponyme, qui sépare <strong data-js='popin' data-popin='arcavie'>l’Arcavie</strong> de ses terribles ennemis de <strong data-js='popin' data-popin='scorvege'>Scorvège</strong>.",
+            "La Porte Sanglante est l’unique faille dans ce haut mur qui tranche le continent en deux au niveau de l’isthme d’Osund.",
+            "Les Birvand veillent sur leurs défenses depuis onze générations."
+        ],
+        "family": "birvand",
+        "main": true,
+        "position": {
+            "x": 432,
+            "y": 205
+        }
+    },
     "port-ferel": {
         "name": "Port-Férel",
         "subtitle": "Port mineur de la baronnie de <strong data-js='popin' data-popin='cavar'>Cavar</strong>",
@@ -296,6 +311,18 @@
         "position": {
             "x": 545,
             "y": 423,
+            "text": "right"
+        }
+    },
+    "port-ombrine": {
+        "name": "Port-Ombrine",
+        "subtitle": "Port mineur du sud-est du royaume <strong data-js='popin' data-popin='arcavie'>d’Arcavie</strong>",
+        "details": [
+            "Port du sud-est du royaume <strong data-js='popin' data-popin='arcavie'>d’Arcavie</strong>, Port-Ombrine est la dernière halte avant le nord de la <strong data-js='popin' data-popin='rubisie'>Rubisie</strong> estalienne."
+        ],
+        "position": {
+            "x": 537,
+            "y": 410,
             "text": "right"
         }
     },
